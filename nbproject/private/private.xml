@@ -5,7 +5,9 @@
         <group>
             <file>file:/D:/Paul/IEC/EncoderPulseTool/EncoderPulseCounter/PulseCounter.X/mcc_generated_files/tmr0.c</file>
             <file>file:/D:/Paul/IEC/EncoderPulseTool/EncoderPulseCounter/PulseCounter.X/main.h</file>
+            <file>file:/D:/Paul/IEC/EncoderPulseTool/EncoderPulseCounter/PulseCounter.X/ModbusManager.h</file>
             <file>file:/D:/Paul/IEC/EncoderPulseTool/EncoderPulseCounter/PulseCounter.X/mcc_generated_files/tmr3.c</file>
+            <file>file:/D:/Paul/IEC/EncoderPulseTool/EncoderPulseCounter/PulseCounter.X/LED_Ctrl.c</file>
             <file>file:/D:/Paul/IEC/EncoderPulseTool/EncoderPulseCounter/PulseCounter.X/ModbusManager.c</file>
             <file>file:/D:/Paul/IEC/EncoderPulseTool/EncoderPulseCounter/PulseCounter.X/main.c</file>
             <file>file:/D:/Paul/IEC/EncoderPulseTool/EncoderPulseCounter/PulseCounter.X/mcc_generated_files/tmr5.c</file>

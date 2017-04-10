@@ -10040,7 +10040,7 @@ void OSCILLATOR_Initialize(void);
 # 102
 void WDT_Initialize(void);
 
-# 30 "ModbusManager.h"
+# 33 "ModbusManager.h"
 unsigned char EncPulseCntResult;
 unsigned int EncPulseOpState;
 
@@ -10068,7 +10068,7 @@ unsigned int OldEncPulseOpState=0;
 # 64
 unsigned long EncEdgeTimeIntervalOld=0, EncEdgeTimeInterval=0x00000000, EncEdgeMinTimeInterval=0xEFFFFFFF;
 unsigned long EncEdgeMinTimeIntSumAvg=0;
-unsigned int EncSpdredFact= 3;
+unsigned long EncSpdredFact= 30;
 
 unsigned int NutRunLength = 0;
 
@@ -10077,7 +10077,7 @@ unsigned char multipleTimecheck1=0;
 
 signed int EncoderPosition=0, OldEncPos=0, EncoderPositionAtIndex=0;
 signed char EncoderPositionOneCycle=0;
-bool EncPulseError=0;
+unsigned char EncPulseError=0;
 bool flagForFirstRevolution=0;
 
 bool EncEdgeGotFlag=0;
@@ -10146,10 +10146,14 @@ while(LedONStatusBusy());
 
 do { LATBbits.LATB6 = 1; } while(0);
 
+
+EUSART_Write('>');
+EUSART_Write('>');
+
 while (1)
 {
 
-# 168
+# 172
 EPC_StateMachineControlLoop();
 }
 }
@@ -10159,12 +10163,13 @@ void EPC_StateMachineControlLoop()
 
 if((NutRunstate == 1) || (NutRunstate == 2))
 {
-if((EncEdgeGotFlag == 0) && (EncEdgeTimeInterval > 10000))
+
+if((EncEdgeGotFlag == 0) && (EncEdgeTimeInterval > 2000000))
 {
 NutRunstate= 0;
-EncoderPosition = 0;
-EncEdgeMinTimeInterval= 0xEFFFFFFF;
-EUSART_Write('%');
+NutRunCycleReset();
+EUSART_Write('1');
+do { LATCbits.LATC1 = 0; } while(0);
 
 }
 }
@@ -10173,6 +10178,7 @@ if(ShutdownDetected == 1)
 {
 
 ShutdownDetected=0;
+do { LATCbits.LATC1 = 0; } while(0);
 LedONStartConfig(0, 2, 15);
 EUSART_Write('\r');
 EUSART_Write('\n');
@@ -10210,7 +10216,7 @@ if(EncEdgeGotFlag==1)
 {
 EncEdgeGotFlag=0;
 
-# 254
+# 260
 }
 
 }
@@ -10239,7 +10245,7 @@ do { LATCbits.LATC3 = 1; } while(0);
 
 PIE4bits.CCP2IE = 0;
 
-# 287
+# 293
 do { LATCbits.LATC3 = 0; } while(0);
 }
 
@@ -10260,23 +10266,25 @@ if((EncoderPosition>32)||(EncoderPosition < -32))
 
 {
 NutRunstate= 1;
-EUSART_Write('!');
+EUSART_Write('B');
 }
 break;
 
 case 1:
-if(EncEdgeTimeInterval < 3000)
+if(EncEdgeTimeInterval < 6000)
 {
 NutRunstate= 2;
 multipleTimecheck0=0;
 EncEdgeMinTimeIntSumAvg=0;
 multipleTimecheck1=0;
 EncEdgeMinTimeInterval=0xEFFFFFFF;
-EUSART_Write('@');
+EUSART_Write('C');
+do { LATCbits.LATC1 = 1; } while(0);
 }
 break;
 
 case 2:
+
 if(EncEdgeTimeInterval < EncEdgeMinTimeInterval)
 {
 multipleTimecheck0++;
@@ -10304,7 +10312,7 @@ default:break;
 
 
 }
-else if(EncEdgeTimeInterval >= (EncEdgeMinTimeInterval + ((EncEdgeMinTimeInterval*EncSpdredFact)/10)))
+else if(EncEdgeTimeInterval >= (EncEdgeMinTimeInterval + ((EncEdgeMinTimeInterval*EncSpdredFact)/100)))
 {
 
 
@@ -10330,7 +10338,7 @@ else
 NutRunLength = EncoderPosition;
 
 IdleTimeOnShutOff = millis() + 2100;
-
+EUSART_Write('D');
 NutRunstate = 3;
 }
 multipleTimecheck1=0;
@@ -10348,7 +10356,7 @@ if(millis() > IdleTimeOnShutOff )
 NutRunstate = 0;
 EncoderPosition = 0;
 EncEdgeMinTimeInterval= 0xEFFFFFFF;
-EUSART_Write('$');
+EUSART_Write('A');
 NutRunCycleStart();
 }
 break;
@@ -10364,10 +10372,34 @@ EncEdgeGotFlag=1;
 OldEncPulseOpState=EncPulseOpState;
 getEncoderState();
 
+if((OldEncPulseOpState == 0) && (EncPulseOpState == 1))
+{
+if(PORTCbits.RC4)
+{
+EncoderPosition--;
+EncoderPositionOneCycle--;
+}
+else
+{
 EncoderPosition++;
 EncoderPositionOneCycle++;
+}
+}
+else if((OldEncPulseOpState == 1) && (EncPulseOpState == 0))
+{
+if(PORTCbits.RC4)
+{
+EncoderPosition++;
+EncoderPositionOneCycle++;
+}
+else
+{
+EncoderPosition--;
+EncoderPositionOneCycle--;
+}
+}
 
-# 472
+# 505
 }
 
 
@@ -10378,6 +10410,7 @@ EncEdgeMinTimeInterval= 0xEFFFFFFF;
 EncEdgeTimeInterval= 0x00000000;
 
 EncoderPosition= 0;
+
 
 NutRunLength = 0;
 
@@ -10410,17 +10443,19 @@ void getEncoderState(void)
 {
 if(PORTCbits.RC5)
 {
-EncPulseOpState= 2;
+
+EncPulseOpState= 1;
 
 
 }
 else
 {
-EncPulseOpState= 1;
+
+EncPulseOpState= 0;
 
 }
 
-# 551
+# 587
 }
 
 
@@ -10428,24 +10463,28 @@ void EncINX_PulseRisingEvent(void)
 {
 EncoderPositionAtIndex = EncoderPosition;
 
-if(flagForFirstRevolution == 1)
+if(EncoderPositionOneCycle < 0)
+EncoderPositionOneCycle=-EncoderPositionOneCycle;
+
+if(flagForFirstRevolution == 1 && EncoderPositionOneCycle > 5)
+
 {
-if((EncoderPositionOneCycle < 32) && (EncoderPositionOneCycle>0))
+if(EncoderPositionOneCycle < 32)
 {
 EncPulseError=1;
 EUSART_Write('X');
+EUSART_Write(valuetocharHighNibble((unsigned char)((EncoderPositionOneCycle) & 0x00FF)));
+EUSART_Write(valuetocharLowNibble((unsigned char)((EncoderPositionOneCycle) & 0x00FF)));
 }
-else if((EncoderPositionOneCycle > -32) && (EncoderPositionOneCycle<0))
+else if(EncoderPositionOneCycle > 32)
 {
-EncPulseError=1;
-EUSART_Write('X');
-}
-else if((EncoderPositionOneCycle > 32) || (EncoderPositionOneCycle < -32))
-{
+EncPulseError=2;
 EUSART_Write('Y');
+EUSART_Write(valuetocharHighNibble((unsigned char)((EncoderPositionOneCycle) & 0x00FF)));
+EUSART_Write(valuetocharLowNibble((unsigned char)((EncoderPositionOneCycle) & 0x00FF)));
 }
 
-# 588
+# 628
 }
 
 flagForFirstRevolution=1;

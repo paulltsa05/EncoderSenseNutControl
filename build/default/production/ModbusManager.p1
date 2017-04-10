@@ -250,26 +250,26 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;ModbusMaster.h: 215: unsigned char writeMultipleRegisters(unsigned int, unsigned int);
 [; ;ModbusMaster.h: 217: unsigned char maskWriteRegister(unsigned int, unsigned int, unsigned int);
 [; ;ModbusMaster.h: 218: unsigned char readWriteMultipleRegisters(unsigned int, unsigned int, unsigned int, unsigned int);
-"30 ModbusManager.h
+"33 ModbusManager.h
 [v _EncPulseCntResult `uc ~T0 @X0 1 e ]
-[; ;ModbusManager.h: 30: unsigned char EncPulseCntResult;
-"31
-[v _EncPulseOpState `ui ~T0 @X0 1 e ]
-[; ;ModbusManager.h: 31: unsigned int EncPulseOpState;
+[; ;ModbusManager.h: 33: unsigned char EncPulseCntResult;
 "34
+[v _EncPulseOpState `ui ~T0 @X0 1 e ]
+[; ;ModbusManager.h: 34: unsigned int EncPulseOpState;
+"37
 [v _MBreadNoOfPulseCnt `ui ~T0 @X0 1 e ]
-[; ;ModbusManager.h: 34: unsigned int MBreadNoOfPulseCnt;
-"35
+[; ;ModbusManager.h: 37: unsigned int MBreadNoOfPulseCnt;
+"38
 [v _MBreadPulseTimeoutSec `ui ~T0 @X0 1 e ]
-[; ;ModbusManager.h: 35: unsigned int MBreadPulseTimeoutSec;
-"36
+[; ;ModbusManager.h: 38: unsigned int MBreadPulseTimeoutSec;
+"39
 [v _MBread_EPC_Ctrl `ui ~T0 @X0 1 e ]
-[; ;ModbusManager.h: 36: unsigned int MBread_EPC_Ctrl;
-[; ;ModbusManager.h: 39: void ModbusMasterSetup(void);
-[; ;ModbusManager.h: 40: void MB_UpdateEPCParameter(void);
-[; ;ModbusManager.h: 41: void MB_getEPC_PLC_Control(void);
-[; ;ModbusManager.h: 42: void MB_SendEncPulseOpState(void);
-[; ;ModbusManager.h: 43: void MB_SendEncPulseCntResult(void);
+[; ;ModbusManager.h: 39: unsigned int MBread_EPC_Ctrl;
+[; ;ModbusManager.h: 42: void ModbusMasterSetup(void);
+[; ;ModbusManager.h: 43: void MB_UpdateEPCParameter(void);
+[; ;ModbusManager.h: 44: void MB_getEPC_PLC_Control(void);
+[; ;ModbusManager.h: 45: void MB_SendEncPulseOpState(void);
+[; ;ModbusManager.h: 46: void MB_SendEncPulseCntResult(void);
 [; ;pin_manager.h: 316: void PIN_MANAGER_Initialize (void);
 [; ;pin_manager.h: 328: void PIN_MANAGER_IOC(void);
 [; ;pin_manager.h: 341: void IOCCF4_ISR(void);
@@ -7618,25 +7618,25 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;eusart.h: 94: void EUSART_Initialize(void);
 [; ;eusart.h: 114: uint8_t EUSART_Read(void);
 [; ;eusart.h: 134: void EUSART_Write(uint8_t txData);
-"30 ModbusManager.h
+"33 ModbusManager.h
 [i _EncPulseCntResult
 "14 ModbusManager.c
 -> -> 0 `i `uc
 ]
 [; ;ModbusManager.c: 14: bool EncPulseCntResult= 0;
-"31 ModbusManager.h
+"34 ModbusManager.h
 [i _EncPulseOpState
 "18 ModbusManager.c
 -> -> 0 `i `ui
 ]
 [; ;ModbusManager.c: 18: unsigned int EncPulseOpState =0;
-"34 ModbusManager.h
+"37 ModbusManager.h
 [i _MBreadNoOfPulseCnt
 "24 ModbusManager.c
 -> -> 48 `i `ui
 ]
 [; ;ModbusManager.c: 24: unsigned int MBreadNoOfPulseCnt=48;
-"35 ModbusManager.h
+"38 ModbusManager.h
 [i _MBreadPulseTimeoutSec
 "25 ModbusManager.c
 -> -> 4 `i `ui

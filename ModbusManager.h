@@ -21,6 +21,9 @@ extern "C" {
 #define EnAHiEnBHi      3
 #define EnALoEnBHi      4
     
+#define EnALoEnBxx      0
+#define EnAHiEnBxx      1    
+    
 #define EncError         16
     
 

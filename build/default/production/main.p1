@@ -10,7 +10,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _TMR5_WriteTimer `(v ~T0 @X0 0 ef1`ui ]
 "160
 [v _TMR5_StopTimer `(v ~T0 @X0 0 ef ]
-"39 ModbusManager.h
+"42 ModbusManager.h
 [v _ModbusMasterSetup `(v ~T0 @X0 0 ef ]
 "6557 C:\Program Files (x86)\Microchip\xc8\v1.41\include\pic16f18344.h
 [v _INLVLC `Vuc ~T0 @X0 0 e@910 ]
@@ -40,14 +40,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S117 . . ]
 "2377
 [v _LATBbits `VS117 ~T0 @X0 0 e@269 ]
-"98 main.c
-[v _EPC_StateMachineControlLoop `(v ~T0 @X0 0 ef ]
 "134 mcc_generated_files/eusart.h
 [v _EUSART_Write `(v ~T0 @X0 0 ef1`uc ]
-"104 main.c
-[v _valuetocharHighNibble `(uc ~T0 @X0 0 ef1`uc ]
-"105
-[v _valuetocharLowNibble `(uc ~T0 @X0 0 ef1`uc ]
+"98 main.c
+[v _EPC_StateMachineControlLoop `(v ~T0 @X0 0 ef ]
+"92
+[v _NutRunCycleReset `(v ~T0 @X0 0 ef ]
 "2407 C:\Program Files (x86)\Microchip\xc8\v1.41\include\pic16f18344.h
 [s S120 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S120 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 LATC6 LATC7 ]
@@ -56,7 +54,11 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S119 . . ]
 "2418
 [v _LATCbits `VS119 ~T0 @X0 0 e@270 ]
-"1955
+"104 main.c
+[v _valuetocharHighNibble `(uc ~T0 @X0 0 ef1`uc ]
+"105
+[v _valuetocharLowNibble `(uc ~T0 @X0 0 ef1`uc ]
+"1955 C:\Program Files (x86)\Microchip\xc8\v1.41\include\pic16f18344.h
 [s S97 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S97 . CCP1IE CCP2IE CCP3IE CCP4IE TMR5IE TMR5GIE CWG1IE CWG2IE ]
 "1954
@@ -72,15 +74,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _NutRunCycleStop `(v ~T0 @X0 0 ef ]
 "33 mcc_generated_files/../main.h
 [v _millis `(ul ~T0 @X0 0 ef ]
-"1894 C:\Program Files (x86)\Microchip\xc8\v1.41\include\pic16f18344.h
-[s S95 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S95 . CLC1IE CLC2IE CLC3IE CLC4IE TMR3IE TMR3GIE CSWIE OSFIE ]
-"1893
-[u S94 `S95 1 ]
-[n S94 . . ]
-"1905
-[v _PIE3bits `VS94 ~T0 @X0 0 e@147 ]
-"460
+"460 C:\Program Files (x86)\Microchip\xc8\v1.41\include\pic16f18344.h
 [s S32 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S32 . RC0 RC1 RC2 RC3 RC4 RC5 RC6 RC7 ]
 "459
@@ -88,6 +82,14 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S31 . . ]
 "471
 [v _PORTCbits `VS31 ~T0 @X0 0 e@14 ]
+"1894
+[s S95 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S95 . CLC1IE CLC2IE CLC3IE CLC4IE TMR3IE TMR3GIE CSWIE OSFIE ]
+"1893
+[u S94 `S95 1 ]
+[n S94 . . ]
+"1905
+[v _PIE3bits `VS94 ~T0 @X0 0 e@147 ]
 "23 LED_Ctrl.h
 [v _LedON_Control_10msec `(v ~T0 @X0 0 ef ]
 "106 main.c
@@ -7543,26 +7545,26 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;mcc.h: 76: void SYSTEM_Initialize(void);
 [; ;mcc.h: 89: void OSCILLATOR_Initialize(void);
 [; ;mcc.h: 102: void WDT_Initialize(void);
-"30 ModbusManager.h
+"33 ModbusManager.h
 [v _EncPulseCntResult `uc ~T0 @X0 1 e ]
-[; ;ModbusManager.h: 30: unsigned char EncPulseCntResult;
-"31
-[v _EncPulseOpState `ui ~T0 @X0 1 e ]
-[; ;ModbusManager.h: 31: unsigned int EncPulseOpState;
+[; ;ModbusManager.h: 33: unsigned char EncPulseCntResult;
 "34
+[v _EncPulseOpState `ui ~T0 @X0 1 e ]
+[; ;ModbusManager.h: 34: unsigned int EncPulseOpState;
+"37
 [v _MBreadNoOfPulseCnt `ui ~T0 @X0 1 e ]
-[; ;ModbusManager.h: 34: unsigned int MBreadNoOfPulseCnt;
-"35
+[; ;ModbusManager.h: 37: unsigned int MBreadNoOfPulseCnt;
+"38
 [v _MBreadPulseTimeoutSec `ui ~T0 @X0 1 e ]
-[; ;ModbusManager.h: 35: unsigned int MBreadPulseTimeoutSec;
-"36
+[; ;ModbusManager.h: 38: unsigned int MBreadPulseTimeoutSec;
+"39
 [v _MBread_EPC_Ctrl `ui ~T0 @X0 1 e ]
-[; ;ModbusManager.h: 36: unsigned int MBread_EPC_Ctrl;
-[; ;ModbusManager.h: 39: void ModbusMasterSetup(void);
-[; ;ModbusManager.h: 40: void MB_UpdateEPCParameter(void);
-[; ;ModbusManager.h: 41: void MB_getEPC_PLC_Control(void);
-[; ;ModbusManager.h: 42: void MB_SendEncPulseOpState(void);
-[; ;ModbusManager.h: 43: void MB_SendEncPulseCntResult(void);
+[; ;ModbusManager.h: 39: unsigned int MBread_EPC_Ctrl;
+[; ;ModbusManager.h: 42: void ModbusMasterSetup(void);
+[; ;ModbusManager.h: 43: void MB_UpdateEPCParameter(void);
+[; ;ModbusManager.h: 44: void MB_getEPC_PLC_Control(void);
+[; ;ModbusManager.h: 45: void MB_SendEncPulseOpState(void);
+[; ;ModbusManager.h: 46: void MB_SendEncPulseCntResult(void);
 [; ;LED_Ctrl.h: 20: char LedONStatusBusy(void);
 [; ;LED_Ctrl.h: 22: char LedONStartConfig(unsigned char LEDColor, unsigned char LedONDurationSec, unsigned char LedONNumBlink);
 [; ;LED_Ctrl.h: 23: void LedON_Control_10msec(void);
@@ -7593,11 +7595,11 @@ Version 3.2 HI-TECH Software Intermediate Code
 ]
 [; ;main.c: 65: unsigned long EncEdgeMinTimeIntSumAvg=0;
 "66
-[v _EncSpdredFact `ui ~T0 @X0 1 e ]
+[v _EncSpdredFact `ul ~T0 @X0 1 e ]
 [i _EncSpdredFact
--> -> 3 `i `ui
+-> -> -> 30 `i `l `ul
 ]
-[; ;main.c: 66: unsigned int EncSpdredFact= 3;
+[; ;main.c: 66: unsigned long EncSpdredFact= 30;
 "68
 [v _NutRunLength `ui ~T0 @X0 1 e ]
 [i _NutRunLength
@@ -7641,7 +7643,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [i _EncPulseError
 -> -> 0 `i `uc
 ]
-[; ;main.c: 75: bool EncPulseError=0;
+[; ;main.c: 75: unsigned char EncPulseError=0;
 "76
 [v _flagForFirstRevolution `uc ~T0 @X0 1 e ]
 [i _flagForFirstRevolution
@@ -7787,1123 +7789,1234 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e = . . _LATBbits 0 3 -> -> 1 `i `uc ]
 }
 [e :U 942 ]
-[; ;main.c: 155: while (1)
-"155
-[e :U 945 ]
-[; ;main.c: 156: {
+[; ;main.c: 156: EUSART_Write('>');
 "156
+[e ( _EUSART_Write (1 -> -> 62 `ui `uc ]
+[; ;main.c: 157: EUSART_Write('>');
+"157
+[e ( _EUSART_Write (1 -> -> 62 `ui `uc ]
+[; ;main.c: 159: while (1)
+"159
+[e :U 945 ]
+[; ;main.c: 160: {
+"160
 {
-[; ;main.c: 168: EPC_StateMachineControlLoop();
-"168
+[; ;main.c: 172: EPC_StateMachineControlLoop();
+"172
 [e ( _EPC_StateMachineControlLoop ..  ]
-"169
+"173
 }
 [e :U 944 ]
-"155
+"159
 [e $U 945  ]
 [e :U 946 ]
-[; ;main.c: 169: }
-[; ;main.c: 170: }
-"170
+[; ;main.c: 173: }
+[; ;main.c: 174: }
+"174
 [e :UE 931 ]
 }
-"172
+"176
 [v _EPC_StateMachineControlLoop `(v ~T0 @X0 1 ef ]
-"173
+"177
 {
-[; ;main.c: 172: void EPC_StateMachineControlLoop()
-[; ;main.c: 173: {
+[; ;main.c: 176: void EPC_StateMachineControlLoop()
+[; ;main.c: 177: {
 [e :U _EPC_StateMachineControlLoop ]
 [f ]
-[; ;main.c: 175: if((NutRunstate == 1) || (NutRunstate == 2))
-"175
-[e $ ! || == -> _NutRunstate `i -> 1 `i == -> _NutRunstate `i -> 2 `i 948  ]
-[; ;main.c: 176: {
-"176
-{
-[; ;main.c: 177: if((EncEdgeGotFlag == 0) && (EncEdgeTimeInterval > 10000))
-"177
-[e $ ! && == -> _EncEdgeGotFlag `i -> 0 `i > _EncEdgeTimeInterval -> -> -> 10000 `i `l `ul 949  ]
-[; ;main.c: 178: {
-"178
-{
-[; ;main.c: 179: NutRunstate= 0;
+[; ;main.c: 179: if((NutRunstate == 1) || (NutRunstate == 2))
 "179
-[e = _NutRunstate -> -> 0 `i `uc ]
-[; ;main.c: 180: EncoderPosition = 0;
+[e $ ! || == -> _NutRunstate `i -> 1 `i == -> _NutRunstate `i -> 2 `i 948  ]
+[; ;main.c: 180: {
 "180
-[e = _EncoderPosition -> 0 `i ]
-[; ;main.c: 181: EncEdgeMinTimeInterval= 0xEFFFFFFF;
-"181
-[e = _EncEdgeMinTimeInterval -> -268435457 `ul ]
-[; ;main.c: 182: EUSART_Write('%');
+{
+[; ;main.c: 182: if((EncEdgeGotFlag == 0) && (EncEdgeTimeInterval > 2000000))
 "182
-[e ( _EUSART_Write (1 -> -> 37 `ui `uc ]
+[e $ ! && == -> _EncEdgeGotFlag `i -> 0 `i > _EncEdgeTimeInterval -> -> 2000000 `l `ul 949  ]
+[; ;main.c: 183: {
+"183
+{
+[; ;main.c: 184: NutRunstate= 0;
 "184
+[e = _NutRunstate -> -> 0 `i `uc ]
+[; ;main.c: 185: NutRunCycleReset();
+"185
+[e ( _NutRunCycleReset ..  ]
+[; ;main.c: 186: EUSART_Write('1');
+"186
+[e ( _EUSART_Write (1 -> -> 49 `ui `uc ]
+[; ;main.c: 187: do { LATCbits.LATC1 = 0; } while(0);
+"187
+[e :U 952 ]
+{
+[e = . . _LATCbits 0 1 -> -> 0 `i `uc ]
+}
+[e :U 951 ]
+"189
 }
 [e :U 949 ]
-"185
+"190
 }
 [e :U 948 ]
-[; ;main.c: 184: }
-[; ;main.c: 185: }
-[; ;main.c: 187: if(ShutdownDetected == 1)
-"187
-[e $ ! == -> _ShutdownDetected `i -> 1 `i 950  ]
-[; ;main.c: 188: {
-"188
-{
-[; ;main.c: 190: ShutdownDetected=0;
-"190
-[e = _ShutdownDetected -> -> 0 `i `uc ]
-[; ;main.c: 191: LedONStartConfig(0, 2, 15);
-"191
-[e ( _LedONStartConfig (3 , , -> -> 0 `i `uc -> -> 2 `i `uc -> -> 15 `i `uc ]
-[; ;main.c: 192: EUSART_Write('\r');
+[; ;main.c: 189: }
+[; ;main.c: 190: }
+[; ;main.c: 192: if(ShutdownDetected == 1)
 "192
-[e ( _EUSART_Write (1 -> -> 13 `ui `uc ]
-[; ;main.c: 193: EUSART_Write('\n');
+[e $ ! == -> _ShutdownDetected `i -> 1 `i 953  ]
+[; ;main.c: 193: {
 "193
-[e ( _EUSART_Write (1 -> -> 10 `ui `uc ]
-[; ;main.c: 194: EUSART_Write('N');
-"194
-[e ( _EUSART_Write (1 -> -> 78 `ui `uc ]
-[; ;main.c: 195: EUSART_Write('u');
+{
+[; ;main.c: 195: ShutdownDetected=0;
 "195
-[e ( _EUSART_Write (1 -> -> 117 `ui `uc ]
-[; ;main.c: 196: EUSART_Write('t');
+[e = _ShutdownDetected -> -> 0 `i `uc ]
+[; ;main.c: 196: do { LATCbits.LATC1 = 0; } while(0);
 "196
-[e ( _EUSART_Write (1 -> -> 116 `ui `uc ]
-[; ;main.c: 197: EUSART_Write(' ');
+[e :U 956 ]
+{
+[e = . . _LATCbits 0 1 -> -> 0 `i `uc ]
+}
+[e :U 955 ]
+[; ;main.c: 197: LedONStartConfig(0, 2, 15);
 "197
-[e ( _EUSART_Write (1 -> -> 32 `ui `uc ]
-[; ;main.c: 198: EUSART_Write('R');
+[e ( _LedONStartConfig (3 , , -> -> 0 `i `uc -> -> 2 `i `uc -> -> 15 `i `uc ]
+[; ;main.c: 198: EUSART_Write('\r');
 "198
-[e ( _EUSART_Write (1 -> -> 82 `ui `uc ]
-[; ;main.c: 199: EUSART_Write('u');
+[e ( _EUSART_Write (1 -> -> 13 `ui `uc ]
+[; ;main.c: 199: EUSART_Write('\n');
 "199
-[e ( _EUSART_Write (1 -> -> 117 `ui `uc ]
+[e ( _EUSART_Write (1 -> -> 10 `ui `uc ]
 [; ;main.c: 200: EUSART_Write('N');
 "200
 [e ( _EUSART_Write (1 -> -> 78 `ui `uc ]
-[; ;main.c: 201: EUSART_Write('=');
+[; ;main.c: 201: EUSART_Write('u');
 "201
-[e ( _EUSART_Write (1 -> -> 61 `ui `uc ]
-[; ;main.c: 202: EUSART_Write('0');
+[e ( _EUSART_Write (1 -> -> 117 `ui `uc ]
+[; ;main.c: 202: EUSART_Write('t');
 "202
-[e ( _EUSART_Write (1 -> -> 48 `ui `uc ]
-[; ;main.c: 203: EUSART_Write('x');
+[e ( _EUSART_Write (1 -> -> 116 `ui `uc ]
+[; ;main.c: 203: EUSART_Write(' ');
 "203
-[e ( _EUSART_Write (1 -> -> 120 `ui `uc ]
-[; ;main.c: 204: EUSART_Write(valuetocharHighNibble((unsigned char)((unsigned int)(NutRunLength>>8) & 0x00FF)));
+[e ( _EUSART_Write (1 -> -> 32 `ui `uc ]
+[; ;main.c: 204: EUSART_Write('R');
 "204
-[e ( _EUSART_Write (1 ( _valuetocharHighNibble (1 -> & >> _NutRunLength -> 8 `i -> -> 255 `i `ui `uc ]
-[; ;main.c: 205: EUSART_Write(valuetocharLowNibble((unsigned char)((unsigned int)(NutRunLength>>8) & 0x00FF)));
+[e ( _EUSART_Write (1 -> -> 82 `ui `uc ]
+[; ;main.c: 205: EUSART_Write('u');
 "205
-[e ( _EUSART_Write (1 ( _valuetocharLowNibble (1 -> & >> _NutRunLength -> 8 `i -> -> 255 `i `ui `uc ]
-[; ;main.c: 206: EUSART_Write(valuetocharHighNibble((unsigned char)((unsigned int)(NutRunLength) & 0x00FF)));
+[e ( _EUSART_Write (1 -> -> 117 `ui `uc ]
+[; ;main.c: 206: EUSART_Write('N');
 "206
-[e ( _EUSART_Write (1 ( _valuetocharHighNibble (1 -> & _NutRunLength -> -> 255 `i `ui `uc ]
-[; ;main.c: 207: EUSART_Write(valuetocharLowNibble((unsigned char)((unsigned int)(NutRunLength) & 0x00FF)));
+[e ( _EUSART_Write (1 -> -> 78 `ui `uc ]
+[; ;main.c: 207: EUSART_Write('=');
 "207
-[e ( _EUSART_Write (1 ( _valuetocharLowNibble (1 -> & _NutRunLength -> -> 255 `i `ui `uc ]
-[; ;main.c: 208: EUSART_Write(',');
+[e ( _EUSART_Write (1 -> -> 61 `ui `uc ]
+[; ;main.c: 208: EUSART_Write('0');
 "208
-[e ( _EUSART_Write (1 -> -> 44 `ui `uc ]
-[; ;main.c: 209: EUSART_Write(valuetocharHighNibble((unsigned char)((unsigned long)(EncEdgeMinTimeInterval>>24) & 0x000000FF)));
+[e ( _EUSART_Write (1 -> -> 48 `ui `uc ]
+[; ;main.c: 209: EUSART_Write('x');
 "209
-[e ( _EUSART_Write (1 ( _valuetocharHighNibble (1 -> & >> _EncEdgeMinTimeInterval -> 24 `i -> -> -> 255 `i `l `ul `uc ]
-[; ;main.c: 210: EUSART_Write(valuetocharLowNibble((unsigned char)((unsigned long)(EncEdgeMinTimeInterval>>24) & 0x000000FF)));
+[e ( _EUSART_Write (1 -> -> 120 `ui `uc ]
+[; ;main.c: 210: EUSART_Write(valuetocharHighNibble((unsigned char)((unsigned int)(NutRunLength>>8) & 0x00FF)));
 "210
-[e ( _EUSART_Write (1 ( _valuetocharLowNibble (1 -> & >> _EncEdgeMinTimeInterval -> 24 `i -> -> -> 255 `i `l `ul `uc ]
-[; ;main.c: 211: EUSART_Write(valuetocharHighNibble((unsigned char)((unsigned long)(EncEdgeMinTimeInterval>>16) & 0x000000FF)));
+[e ( _EUSART_Write (1 ( _valuetocharHighNibble (1 -> & >> _NutRunLength -> 8 `i -> -> 255 `i `ui `uc ]
+[; ;main.c: 211: EUSART_Write(valuetocharLowNibble((unsigned char)((unsigned int)(NutRunLength>>8) & 0x00FF)));
 "211
-[e ( _EUSART_Write (1 ( _valuetocharHighNibble (1 -> & >> _EncEdgeMinTimeInterval -> 16 `i -> -> -> 255 `i `l `ul `uc ]
-[; ;main.c: 212: EUSART_Write(valuetocharLowNibble((unsigned char)((unsigned long)(EncEdgeMinTimeInterval>>16) & 0x000000FF)));
+[e ( _EUSART_Write (1 ( _valuetocharLowNibble (1 -> & >> _NutRunLength -> 8 `i -> -> 255 `i `ui `uc ]
+[; ;main.c: 212: EUSART_Write(valuetocharHighNibble((unsigned char)((unsigned int)(NutRunLength) & 0x00FF)));
 "212
-[e ( _EUSART_Write (1 ( _valuetocharLowNibble (1 -> & >> _EncEdgeMinTimeInterval -> 16 `i -> -> -> 255 `i `l `ul `uc ]
-[; ;main.c: 213: EUSART_Write(valuetocharHighNibble((unsigned char)((unsigned int)(EncEdgeMinTimeInterval>>8) & 0x00FF)));
+[e ( _EUSART_Write (1 ( _valuetocharHighNibble (1 -> & _NutRunLength -> -> 255 `i `ui `uc ]
+[; ;main.c: 213: EUSART_Write(valuetocharLowNibble((unsigned char)((unsigned int)(NutRunLength) & 0x00FF)));
 "213
-[e ( _EUSART_Write (1 ( _valuetocharHighNibble (1 -> & -> >> _EncEdgeMinTimeInterval -> 8 `i `ui -> -> 255 `i `ui `uc ]
-[; ;main.c: 214: EUSART_Write(valuetocharLowNibble((unsigned char)((unsigned int)(EncEdgeMinTimeInterval>>8) & 0x00FF)));
+[e ( _EUSART_Write (1 ( _valuetocharLowNibble (1 -> & _NutRunLength -> -> 255 `i `ui `uc ]
+[; ;main.c: 214: EUSART_Write(',');
 "214
-[e ( _EUSART_Write (1 ( _valuetocharLowNibble (1 -> & -> >> _EncEdgeMinTimeInterval -> 8 `i `ui -> -> 255 `i `ui `uc ]
-[; ;main.c: 215: EUSART_Write(valuetocharHighNibble((unsigned char)((unsigned int)(EncEdgeMinTimeInterval) & 0x00FF)));
+[e ( _EUSART_Write (1 -> -> 44 `ui `uc ]
+[; ;main.c: 215: EUSART_Write(valuetocharHighNibble((unsigned char)((unsigned long)(EncEdgeMinTimeInterval>>24) & 0x000000FF)));
 "215
-[e ( _EUSART_Write (1 ( _valuetocharHighNibble (1 -> & -> _EncEdgeMinTimeInterval `ui -> -> 255 `i `ui `uc ]
-[; ;main.c: 216: EUSART_Write(valuetocharLowNibble((unsigned char)((unsigned int)(EncEdgeMinTimeInterval) & 0x00FF)));
+[e ( _EUSART_Write (1 ( _valuetocharHighNibble (1 -> & >> _EncEdgeMinTimeInterval -> 24 `i -> -> -> 255 `i `l `ul `uc ]
+[; ;main.c: 216: EUSART_Write(valuetocharLowNibble((unsigned char)((unsigned long)(EncEdgeMinTimeInterval>>24) & 0x000000FF)));
 "216
-[e ( _EUSART_Write (1 ( _valuetocharLowNibble (1 -> & -> _EncEdgeMinTimeInterval `ui -> -> 255 `i `ui `uc ]
-[; ;main.c: 218: EUSART_Write('\r');
+[e ( _EUSART_Write (1 ( _valuetocharLowNibble (1 -> & >> _EncEdgeMinTimeInterval -> 24 `i -> -> -> 255 `i `l `ul `uc ]
+[; ;main.c: 217: EUSART_Write(valuetocharHighNibble((unsigned char)((unsigned long)(EncEdgeMinTimeInterval>>16) & 0x000000FF)));
+"217
+[e ( _EUSART_Write (1 ( _valuetocharHighNibble (1 -> & >> _EncEdgeMinTimeInterval -> 16 `i -> -> -> 255 `i `l `ul `uc ]
+[; ;main.c: 218: EUSART_Write(valuetocharLowNibble((unsigned char)((unsigned long)(EncEdgeMinTimeInterval>>16) & 0x000000FF)));
 "218
-[e ( _EUSART_Write (1 -> -> 13 `ui `uc ]
-[; ;main.c: 219: EUSART_Write('\n');
+[e ( _EUSART_Write (1 ( _valuetocharLowNibble (1 -> & >> _EncEdgeMinTimeInterval -> 16 `i -> -> -> 255 `i `l `ul `uc ]
+[; ;main.c: 219: EUSART_Write(valuetocharHighNibble((unsigned char)((unsigned int)(EncEdgeMinTimeInterval>>8) & 0x00FF)));
 "219
-[e ( _EUSART_Write (1 -> -> 10 `ui `uc ]
+[e ( _EUSART_Write (1 ( _valuetocharHighNibble (1 -> & -> >> _EncEdgeMinTimeInterval -> 8 `i `ui -> -> 255 `i `ui `uc ]
+[; ;main.c: 220: EUSART_Write(valuetocharLowNibble((unsigned char)((unsigned int)(EncEdgeMinTimeInterval>>8) & 0x00FF)));
+"220
+[e ( _EUSART_Write (1 ( _valuetocharLowNibble (1 -> & -> >> _EncEdgeMinTimeInterval -> 8 `i `ui -> -> 255 `i `ui `uc ]
+[; ;main.c: 221: EUSART_Write(valuetocharHighNibble((unsigned char)((unsigned int)(EncEdgeMinTimeInterval) & 0x00FF)));
+"221
+[e ( _EUSART_Write (1 ( _valuetocharHighNibble (1 -> & -> _EncEdgeMinTimeInterval `ui -> -> 255 `i `ui `uc ]
+[; ;main.c: 222: EUSART_Write(valuetocharLowNibble((unsigned char)((unsigned int)(EncEdgeMinTimeInterval) & 0x00FF)));
 "222
-}
-[e :U 950 ]
-[; ;main.c: 222: }
-[; ;main.c: 224: if(EncEdgeGotFlag==1)
+[e ( _EUSART_Write (1 ( _valuetocharLowNibble (1 -> & -> _EncEdgeMinTimeInterval `ui -> -> 255 `i `ui `uc ]
+[; ;main.c: 224: EUSART_Write('\r');
 "224
-[e $ ! == -> _EncEdgeGotFlag `i -> 1 `i 951  ]
-[; ;main.c: 225: {
+[e ( _EUSART_Write (1 -> -> 13 `ui `uc ]
+[; ;main.c: 225: EUSART_Write('\n');
 "225
+[e ( _EUSART_Write (1 -> -> 10 `ui `uc ]
+"228
+}
+[e :U 953 ]
+[; ;main.c: 228: }
+[; ;main.c: 230: if(EncEdgeGotFlag==1)
+"230
+[e $ ! == -> _EncEdgeGotFlag `i -> 1 `i 957  ]
+[; ;main.c: 231: {
+"231
 {
-[; ;main.c: 226: EncEdgeGotFlag=0;
-"226
+[; ;main.c: 232: EncEdgeGotFlag=0;
+"232
 [e = _EncEdgeGotFlag -> -> 0 `i `uc ]
-"254
-}
-[e :U 951 ]
-[; ;main.c: 254: }
-[; ;main.c: 256: }
-"256
-[e :UE 947 ]
-}
-"259
-[v _EncA_PulseEdgeEvent `(v ~T0 @X0 1 ef1`ui ]
 "260
-{
-[; ;main.c: 259: void EncA_PulseEdgeEvent(uint16_t capturedValue)
-[; ;main.c: 260: {
-[e :U _EncA_PulseEdgeEvent ]
-"259
-[v _capturedValue `ui ~T0 @X0 1 r1 ]
-"260
-[f ]
-[; ;main.c: 261: do { LATCbits.LATC3 = 1; } while(0);
-"261
-[e :U 955 ]
-{
-[e = . . _LATCbits 0 3 -> -> 1 `i `uc ]
-}
-[e :U 954 ]
-[; ;main.c: 263: PIE4bits.CCP1IE = 0;
-"263
-[e = . . _PIE4bits 0 0 -> -> 0 `i `uc ]
-[; ;main.c: 265: PIE4bits.CCP2IE = 0;
-"265
-[e = . . _PIE4bits 0 1 -> -> 0 `i `uc ]
-[; ;main.c: 266: OnEncPulseEdgeEvent(capturedValue);
-"266
-[e ( _OnEncPulseEdgeEvent (1 _capturedValue ]
-[; ;main.c: 268: PIE4bits.CCP1IE = 1;
-"268
-[e = . . _PIE4bits 0 0 -> -> 1 `i `uc ]
-[; ;main.c: 271: do { LATCbits.LATC3 = 0; } while(0);
-"271
-[e :U 958 ]
-{
-[e = . . _LATCbits 0 3 -> -> 0 `i `uc ]
 }
 [e :U 957 ]
-[; ;main.c: 273: }
-"273
-[e :UE 952 ]
+[; ;main.c: 260: }
+[; ;main.c: 262: }
+"262
+[e :UE 947 ]
 }
-"274
-[v _EncB_PulseEdgeEvent `(v ~T0 @X0 1 ef1`ui ]
-"275
+"265
+[v _EncA_PulseEdgeEvent `(v ~T0 @X0 1 ef1`ui ]
+"266
 {
-[; ;main.c: 274: void EncB_PulseEdgeEvent(uint16_t capturedValue)
-[; ;main.c: 275: {
-[e :U _EncB_PulseEdgeEvent ]
-"274
+[; ;main.c: 265: void EncA_PulseEdgeEvent(uint16_t capturedValue)
+[; ;main.c: 266: {
+[e :U _EncA_PulseEdgeEvent ]
+"265
 [v _capturedValue `ui ~T0 @X0 1 r1 ]
-"275
+"266
 [f ]
-[; ;main.c: 276: do { LATCbits.LATC3 = 1; } while(0);
-"276
-[e :U 962 ]
+[; ;main.c: 267: do { LATCbits.LATC3 = 1; } while(0);
+"267
+[e :U 961 ]
 {
 [e = . . _LATCbits 0 3 -> -> 1 `i `uc ]
 }
-[e :U 961 ]
-[; ;main.c: 280: PIE4bits.CCP2IE = 0;
-"280
+[e :U 960 ]
+[; ;main.c: 269: PIE4bits.CCP1IE = 0;
+"269
+[e = . . _PIE4bits 0 0 -> -> 0 `i `uc ]
+[; ;main.c: 271: PIE4bits.CCP2IE = 0;
+"271
 [e = . . _PIE4bits 0 1 -> -> 0 `i `uc ]
-[; ;main.c: 287: do { LATCbits.LATC3 = 0; } while(0);
-"287
-[e :U 965 ]
+[; ;main.c: 272: OnEncPulseEdgeEvent(capturedValue);
+"272
+[e ( _OnEncPulseEdgeEvent (1 _capturedValue ]
+[; ;main.c: 274: PIE4bits.CCP1IE = 1;
+"274
+[e = . . _PIE4bits 0 0 -> -> 1 `i `uc ]
+[; ;main.c: 277: do { LATCbits.LATC3 = 0; } while(0);
+"277
+[e :U 964 ]
 {
 [e = . . _LATCbits 0 3 -> -> 0 `i `uc ]
 }
-[e :U 964 ]
-[; ;main.c: 288: }
-"288
-[e :UE 959 ]
+[e :U 963 ]
+[; ;main.c: 279: }
+"279
+[e :UE 958 ]
 }
-"290
-[v _OnEncPulseEdgeEvent `(v ~T0 @X0 1 ef1`ui ]
-"291
+"280
+[v _EncB_PulseEdgeEvent `(v ~T0 @X0 1 ef1`ui ]
+"281
 {
-[; ;main.c: 290: void OnEncPulseEdgeEvent(uint16_t capturevalue)
-[; ;main.c: 291: {
-[e :U _OnEncPulseEdgeEvent ]
-"290
-[v _capturevalue `ui ~T0 @X0 1 r1 ]
-"291
+[; ;main.c: 280: void EncB_PulseEdgeEvent(uint16_t capturedValue)
+[; ;main.c: 281: {
+[e :U _EncB_PulseEdgeEvent ]
+"280
+[v _capturedValue `ui ~T0 @X0 1 r1 ]
+"281
 [f ]
-[; ;main.c: 293: TMR3_WriteTimer(0);
+[; ;main.c: 282: do { LATCbits.LATC3 = 1; } while(0);
+"282
+[e :U 968 ]
+{
+[e = . . _LATCbits 0 3 -> -> 1 `i `uc ]
+}
+[e :U 967 ]
+[; ;main.c: 286: PIE4bits.CCP2IE = 0;
+"286
+[e = . . _PIE4bits 0 1 -> -> 0 `i `uc ]
+[; ;main.c: 293: do { LATCbits.LATC3 = 0; } while(0);
 "293
-[e ( _TMR3_WriteTimer (1 -> -> 0 `i `ui ]
-[; ;main.c: 294: TMR3_StartTimer();
-"294
-[e ( _TMR3_StartTimer ..  ]
-[; ;main.c: 298: EncEdgeTimeInterval= EncEdgeTimeInterval + capturevalue;
-"298
-[e = _EncEdgeTimeInterval + _EncEdgeTimeInterval -> _capturevalue `ul ]
-[; ;main.c: 300: switch(NutRunstate)
-"300
-[e $U 968  ]
-[; ;main.c: 301: {
-"301
+[e :U 971 ]
 {
-[; ;main.c: 302: case 0:
-"302
-[e :U 969 ]
-[; ;main.c: 303: if((EncoderPosition>32)||(EncoderPosition < -32))
-"303
-[e $ ! || > _EncoderPosition -> 32 `i < _EncoderPosition -U -> 32 `i 970  ]
-[; ;main.c: 305: {
-"305
-{
-[; ;main.c: 306: NutRunstate= 1;
-"306
-[e = _NutRunstate -> -> 1 `i `uc ]
-[; ;main.c: 307: EUSART_Write('!');
-"307
-[e ( _EUSART_Write (1 -> -> 33 `ui `uc ]
-"308
+[e = . . _LATCbits 0 3 -> -> 0 `i `uc ]
 }
 [e :U 970 ]
-[; ;main.c: 308: }
-[; ;main.c: 309: break;
+[; ;main.c: 294: }
+"294
+[e :UE 965 ]
+}
+"296
+[v _OnEncPulseEdgeEvent `(v ~T0 @X0 1 ef1`ui ]
+"297
+{
+[; ;main.c: 296: void OnEncPulseEdgeEvent(uint16_t capturevalue)
+[; ;main.c: 297: {
+[e :U _OnEncPulseEdgeEvent ]
+"296
+[v _capturevalue `ui ~T0 @X0 1 r1 ]
+"297
+[f ]
+[; ;main.c: 299: TMR3_WriteTimer(0);
+"299
+[e ( _TMR3_WriteTimer (1 -> -> 0 `i `ui ]
+[; ;main.c: 300: TMR3_StartTimer();
+"300
+[e ( _TMR3_StartTimer ..  ]
+[; ;main.c: 304: EncEdgeTimeInterval= EncEdgeTimeInterval + capturevalue;
+"304
+[e = _EncEdgeTimeInterval + _EncEdgeTimeInterval -> _capturevalue `ul ]
+[; ;main.c: 306: switch(NutRunstate)
+"306
+[e $U 974  ]
+[; ;main.c: 307: {
+"307
+{
+[; ;main.c: 308: case 0:
+"308
+[e :U 975 ]
+[; ;main.c: 309: if((EncoderPosition>32)||(EncoderPosition < -32))
 "309
-[e $U 967  ]
-[; ;main.c: 311: case 1:
+[e $ ! || > _EncoderPosition -> 32 `i < _EncoderPosition -U -> 32 `i 976  ]
+[; ;main.c: 311: {
 "311
-[e :U 971 ]
-[; ;main.c: 312: if(EncEdgeTimeInterval < 3000)
+{
+[; ;main.c: 312: NutRunstate= 1;
 "312
-[e $ ! < _EncEdgeTimeInterval -> -> -> 3000 `i `l `ul 972  ]
-[; ;main.c: 313: {
+[e = _NutRunstate -> -> 1 `i `uc ]
+[; ;main.c: 313: EUSART_Write('B');
 "313
-{
-[; ;main.c: 314: NutRunstate= 2;
+[e ( _EUSART_Write (1 -> -> 66 `ui `uc ]
 "314
-[e = _NutRunstate -> -> 2 `i `uc ]
-[; ;main.c: 315: multipleTimecheck0=0;
+}
+[e :U 976 ]
+[; ;main.c: 314: }
+[; ;main.c: 315: break;
 "315
-[e = _multipleTimecheck0 -> -> 0 `i `uc ]
-[; ;main.c: 316: EncEdgeMinTimeIntSumAvg=0;
-"316
-[e = _EncEdgeMinTimeIntSumAvg -> -> -> 0 `i `l `ul ]
-[; ;main.c: 317: multipleTimecheck1=0;
+[e $U 973  ]
+[; ;main.c: 317: case 1:
 "317
-[e = _multipleTimecheck1 -> -> 0 `i `uc ]
-[; ;main.c: 318: EncEdgeMinTimeInterval=0xEFFFFFFF;
-"318
-[e = _EncEdgeMinTimeInterval -> -268435457 `ul ]
-[; ;main.c: 319: EUSART_Write('@');
-"319
-[e ( _EUSART_Write (1 -> -> 64 `ui `uc ]
-"320
-}
-[e :U 972 ]
-[; ;main.c: 320: }
-[; ;main.c: 321: break;
-"321
-[e $U 967  ]
-[; ;main.c: 323: case 2:
-"323
-[e :U 973 ]
-[; ;main.c: 324: if(EncEdgeTimeInterval < EncEdgeMinTimeInterval)
-"324
-[e $ ! < _EncEdgeTimeInterval _EncEdgeMinTimeInterval 974  ]
-[; ;main.c: 325: {
-"325
-{
-[; ;main.c: 326: multipleTimecheck0++;
-"326
-[e ++ _multipleTimecheck0 -> -> 1 `i `uc ]
-[; ;main.c: 327: switch(multipleTimecheck0)
-"327
-[e $U 976  ]
-[; ;main.c: 328: {
-"328
-{
-[; ;main.c: 329: case 1: OldEncPos=EncoderPosition;
-"329
 [e :U 977 ]
-[e = _OldEncPos _EncoderPosition ]
-[; ;main.c: 330: EncEdgeMinTimeIntSumAvg+=EncEdgeTimeInterval;
-"330
-[e =+ _EncEdgeMinTimeIntSumAvg _EncEdgeTimeInterval ]
-[; ;main.c: 331: break;
-"331
-[e $U 975  ]
-[; ;main.c: 332: case 2: EncEdgeMinTimeIntSumAvg+=EncEdgeTimeInterval;
-"332
-[e :U 978 ]
-[e =+ _EncEdgeMinTimeIntSumAvg _EncEdgeTimeInterval ]
-[; ;main.c: 333: break;
-"333
-[e $U 975  ]
-[; ;main.c: 334: case 3: EncEdgeMinTimeIntSumAvg+=EncEdgeTimeInterval;
-"334
-[e :U 979 ]
-[e =+ _EncEdgeMinTimeIntSumAvg _EncEdgeTimeInterval ]
-[; ;main.c: 335: break;
-"335
-[e $U 975  ]
-[; ;main.c: 336: case 4: EncEdgeMinTimeIntSumAvg+=EncEdgeTimeInterval;
-"336
-[e :U 980 ]
-[e =+ _EncEdgeMinTimeIntSumAvg _EncEdgeTimeInterval ]
-[; ;main.c: 337: break;
-"337
-[e $U 975  ]
-[; ;main.c: 338: case 5: EncEdgeMinTimeIntSumAvg+=EncEdgeTimeInterval;
-"338
-[e :U 981 ]
-[e =+ _EncEdgeMinTimeIntSumAvg _EncEdgeTimeInterval ]
-[; ;main.c: 339: if((EncoderPosition-OldEncPos) == (multipleTimecheck0-1))
-"339
-[e $ ! == - _EncoderPosition _OldEncPos - -> _multipleTimecheck0 `i -> 1 `i 982  ]
-[; ;main.c: 340: {
-"340
+[; ;main.c: 318: if(EncEdgeTimeInterval < 6000)
+"318
+[e $ ! < _EncEdgeTimeInterval -> -> -> 6000 `i `l `ul 978  ]
+[; ;main.c: 319: {
+"319
 {
-[; ;main.c: 341: EncEdgeMinTimeInterval= EncEdgeMinTimeIntSumAvg/multipleTimecheck0;
-"341
-[e = _EncEdgeMinTimeInterval / _EncEdgeMinTimeIntSumAvg -> _multipleTimecheck0 `ul ]
-"342
-}
-[e :U 982 ]
-[; ;main.c: 342: }
-[; ;main.c: 343: multipleTimecheck0=0;
-"343
+[; ;main.c: 320: NutRunstate= 2;
+"320
+[e = _NutRunstate -> -> 2 `i `uc ]
+[; ;main.c: 321: multipleTimecheck0=0;
+"321
 [e = _multipleTimecheck0 -> -> 0 `i `uc ]
-[; ;main.c: 344: EncEdgeMinTimeIntSumAvg=0;
-"344
+[; ;main.c: 322: EncEdgeMinTimeIntSumAvg=0;
+"322
 [e = _EncEdgeMinTimeIntSumAvg -> -> -> 0 `i `l `ul ]
+[; ;main.c: 323: multipleTimecheck1=0;
+"323
+[e = _multipleTimecheck1 -> -> 0 `i `uc ]
+[; ;main.c: 324: EncEdgeMinTimeInterval=0xEFFFFFFF;
+"324
+[e = _EncEdgeMinTimeInterval -> -268435457 `ul ]
+[; ;main.c: 325: EUSART_Write('C');
+"325
+[e ( _EUSART_Write (1 -> -> 67 `ui `uc ]
+[; ;main.c: 326: do { LATCbits.LATC1 = 1; } while(0);
+"326
+[e :U 981 ]
+{
+[e = . . _LATCbits 0 1 -> -> 1 `i `uc ]
+}
+[e :U 980 ]
+"327
+}
+[e :U 978 ]
+[; ;main.c: 327: }
+[; ;main.c: 328: break;
+"328
+[e $U 973  ]
+[; ;main.c: 330: case 2:
+"330
+[e :U 982 ]
+[; ;main.c: 332: if(EncEdgeTimeInterval < EncEdgeMinTimeInterval)
+"332
+[e $ ! < _EncEdgeTimeInterval _EncEdgeMinTimeInterval 983  ]
+[; ;main.c: 333: {
+"333
+{
+[; ;main.c: 334: multipleTimecheck0++;
+"334
+[e ++ _multipleTimecheck0 -> -> 1 `i `uc ]
+[; ;main.c: 335: switch(multipleTimecheck0)
+"335
+[e $U 985  ]
+[; ;main.c: 336: {
+"336
+{
+[; ;main.c: 337: case 1: OldEncPos=EncoderPosition;
+"337
+[e :U 986 ]
+[e = _OldEncPos _EncoderPosition ]
+[; ;main.c: 338: EncEdgeMinTimeIntSumAvg+=EncEdgeTimeInterval;
+"338
+[e =+ _EncEdgeMinTimeIntSumAvg _EncEdgeTimeInterval ]
+[; ;main.c: 339: break;
+"339
+[e $U 984  ]
+[; ;main.c: 340: case 2: EncEdgeMinTimeIntSumAvg+=EncEdgeTimeInterval;
+"340
+[e :U 987 ]
+[e =+ _EncEdgeMinTimeIntSumAvg _EncEdgeTimeInterval ]
+[; ;main.c: 341: break;
+"341
+[e $U 984  ]
+[; ;main.c: 342: case 3: EncEdgeMinTimeIntSumAvg+=EncEdgeTimeInterval;
+"342
+[e :U 988 ]
+[e =+ _EncEdgeMinTimeIntSumAvg _EncEdgeTimeInterval ]
+[; ;main.c: 343: break;
+"343
+[e $U 984  ]
+[; ;main.c: 344: case 4: EncEdgeMinTimeIntSumAvg+=EncEdgeTimeInterval;
+"344
+[e :U 989 ]
+[e =+ _EncEdgeMinTimeIntSumAvg _EncEdgeTimeInterval ]
 [; ;main.c: 345: break;
 "345
-[e $U 975  ]
-[; ;main.c: 346: default:break;
+[e $U 984  ]
+[; ;main.c: 346: case 5: EncEdgeMinTimeIntSumAvg+=EncEdgeTimeInterval;
 "346
-[e :U 983 ]
-[e $U 975  ]
+[e :U 990 ]
+[e =+ _EncEdgeMinTimeIntSumAvg _EncEdgeTimeInterval ]
+[; ;main.c: 347: if((EncoderPosition-OldEncPos) == (multipleTimecheck0-1))
 "347
-}
-[; ;main.c: 347: }
-[e $U 975  ]
-"327
-[e :U 976 ]
-[e [\ _multipleTimecheck0 , $ -> -> 1 `i `uc 977
- , $ -> -> 2 `i `uc 978
- , $ -> -> 3 `i `uc 979
- , $ -> -> 4 `i `uc 980
- , $ -> -> 5 `i `uc 981
- 983 ]
-"347
-[e :U 975 ]
+[e $ ! == - _EncoderPosition _OldEncPos - -> _multipleTimecheck0 `i -> 1 `i 991  ]
+[; ;main.c: 348: {
+"348
+{
+[; ;main.c: 349: EncEdgeMinTimeInterval= EncEdgeMinTimeIntSumAvg/multipleTimecheck0;
+"349
+[e = _EncEdgeMinTimeInterval / _EncEdgeMinTimeIntSumAvg -> _multipleTimecheck0 `ul ]
 "350
 }
-[; ;main.c: 350: }
-[e $U 984  ]
-"351
-[e :U 974 ]
-[; ;main.c: 351: else if(EncEdgeTimeInterval >= (EncEdgeMinTimeInterval + ((EncEdgeMinTimeInterval*EncSpdredFact)/10)))
-[e $ ! >= _EncEdgeTimeInterval + _EncEdgeMinTimeInterval / * _EncEdgeMinTimeInterval -> _EncSpdredFact `ul -> -> -> 10 `i `l `ul 985  ]
-[; ;main.c: 352: {
-"352
-{
-[; ;main.c: 355: multipleTimecheck1++;
-"355
-[e ++ _multipleTimecheck1 -> -> 1 `i `uc ]
-[; ;main.c: 356: switch(multipleTimecheck1)
-"356
-[e $U 987  ]
-[; ;main.c: 357: {
-"357
-{
-[; ;main.c: 358: case 1: OldEncPos=EncoderPosition;
-"358
-[e :U 988 ]
-[e = _OldEncPos _EncoderPosition ]
-[; ;main.c: 359: break;
-"359
-[e $U 986  ]
-[; ;main.c: 360: case 2:
-"360
-[e :U 989 ]
-[; ;main.c: 361: break;
-"361
-[e $U 986  ]
-[; ;main.c: 362: case 3:
-"362
-[e :U 990 ]
-[; ;main.c: 363: break;
-"363
-[e $U 986  ]
-[; ;main.c: 364: case 4:
-"364
 [e :U 991 ]
-[; ;main.c: 365: break;
-"365
-[e $U 986  ]
-[; ;main.c: 366: case 5: if((EncoderPosition-OldEncPos) == (multipleTimecheck1-1))
-"366
+[; ;main.c: 350: }
+[; ;main.c: 351: multipleTimecheck0=0;
+"351
+[e = _multipleTimecheck0 -> -> 0 `i `uc ]
+[; ;main.c: 352: EncEdgeMinTimeIntSumAvg=0;
+"352
+[e = _EncEdgeMinTimeIntSumAvg -> -> -> 0 `i `l `ul ]
+[; ;main.c: 353: break;
+"353
+[e $U 984  ]
+[; ;main.c: 354: default:break;
+"354
 [e :U 992 ]
-[e $ ! == - _EncoderPosition _OldEncPos - -> _multipleTimecheck1 `i -> 1 `i 993  ]
-[; ;main.c: 367: {
-"367
-{
-[; ;main.c: 368: ShutdownDetected = 1;
-"368
-[e = _ShutdownDetected -> -> 1 `i `uc ]
-[; ;main.c: 369: NutRunCycleStop();
-"369
-[e ( _NutRunCycleStop ..  ]
-[; ;main.c: 371: if(EncoderPosition < 0)
-"371
-[e $ ! < _EncoderPosition -> 0 `i 994  ]
-[; ;main.c: 372: NutRunLength = -EncoderPosition;
-"372
-[e = _NutRunLength -> -U _EncoderPosition `ui ]
-[e $U 995  ]
-"373
-[e :U 994 ]
-[; ;main.c: 373: else
-[; ;main.c: 374: NutRunLength = EncoderPosition;
-"374
-[e = _NutRunLength -> _EncoderPosition `ui ]
-[e :U 995 ]
-[; ;main.c: 376: IdleTimeOnShutOff = millis() + 2100;
-"376
-[e = _IdleTimeOnShutOff + ( _millis ..  -> -> -> 2100 `i `l `ul ]
-[; ;main.c: 378: NutRunstate = 3;
-"378
-[e = _NutRunstate -> -> 3 `i `uc ]
-"379
+[e $U 984  ]
+"355
 }
-[e :U 993 ]
-[; ;main.c: 379: }
-[; ;main.c: 380: multipleTimecheck1=0;
-"380
-[e = _multipleTimecheck1 -> -> 0 `i `uc ]
-[; ;main.c: 381: break;
-"381
-[e $U 986  ]
-[; ;main.c: 382: default:break;
-"382
-[e :U 996 ]
-[e $U 986  ]
-"383
-}
-[; ;main.c: 383: }
-[e $U 986  ]
-"356
-[e :U 987 ]
-[e [\ _multipleTimecheck1 , $ -> -> 1 `i `uc 988
- , $ -> -> 2 `i `uc 989
- , $ -> -> 3 `i `uc 990
- , $ -> -> 4 `i `uc 991
- , $ -> -> 5 `i `uc 992
- 996 ]
-"383
-[e :U 986 ]
-"386
-}
+[; ;main.c: 355: }
+[e $U 984  ]
+"335
 [e :U 985 ]
-"387
+[e [\ _multipleTimecheck0 , $ -> -> 1 `i `uc 986
+ , $ -> -> 2 `i `uc 987
+ , $ -> -> 3 `i `uc 988
+ , $ -> -> 4 `i `uc 989
+ , $ -> -> 5 `i `uc 990
+ 992 ]
+"355
 [e :U 984 ]
-[; ;main.c: 386: }
-[; ;main.c: 387: break;
-[e $U 967  ]
-[; ;main.c: 389: case 3:
-"389
+"358
+}
+[; ;main.c: 358: }
+[e $U 993  ]
+"359
+[e :U 983 ]
+[; ;main.c: 359: else if(EncEdgeTimeInterval >= (EncEdgeMinTimeInterval + ((EncEdgeMinTimeInterval*EncSpdredFact)/100)))
+[e $ ! >= _EncEdgeTimeInterval + _EncEdgeMinTimeInterval / * _EncEdgeMinTimeInterval _EncSpdredFact -> -> -> 100 `i `l `ul 994  ]
+[; ;main.c: 360: {
+"360
+{
+[; ;main.c: 363: multipleTimecheck1++;
+"363
+[e ++ _multipleTimecheck1 -> -> 1 `i `uc ]
+[; ;main.c: 364: switch(multipleTimecheck1)
+"364
+[e $U 996  ]
+[; ;main.c: 365: {
+"365
+{
+[; ;main.c: 366: case 1: OldEncPos=EncoderPosition;
+"366
 [e :U 997 ]
-[; ;main.c: 390: if(millis() > IdleTimeOnShutOff )
-"390
-[e $ ! > ( _millis ..  _IdleTimeOnShutOff 998  ]
-[; ;main.c: 391: {
-"391
-{
-[; ;main.c: 392: NutRunstate = 0;
-"392
-[e = _NutRunstate -> -> 0 `i `uc ]
-[; ;main.c: 393: EncoderPosition = 0;
-"393
-[e = _EncoderPosition -> 0 `i ]
-[; ;main.c: 394: EncEdgeMinTimeInterval= 0xEFFFFFFF;
-"394
-[e = _EncEdgeMinTimeInterval -> -268435457 `ul ]
-[; ;main.c: 395: EUSART_Write('$');
-"395
-[e ( _EUSART_Write (1 -> -> 36 `ui `uc ]
-[; ;main.c: 396: NutRunCycleStart();
-"396
-[e ( _NutRunCycleStart ..  ]
-"397
-}
+[e = _OldEncPos _EncoderPosition ]
+[; ;main.c: 367: break;
+"367
+[e $U 995  ]
+[; ;main.c: 368: case 2:
+"368
 [e :U 998 ]
-[; ;main.c: 397: }
-[; ;main.c: 398: break;
-"398
-[e $U 967  ]
-[; ;main.c: 400: default : break;
-"400
+[; ;main.c: 369: break;
+"369
+[e $U 995  ]
+[; ;main.c: 370: case 3:
+"370
 [e :U 999 ]
-[e $U 967  ]
-"401
-}
-[; ;main.c: 401: }
-[e $U 967  ]
-"300
-[e :U 968 ]
-[e [\ _NutRunstate , $ -> -> 0 `i `uc 969
- , $ -> -> 1 `i `uc 971
- , $ -> -> 2 `i `uc 973
- , $ -> -> 3 `i `uc 997
- 999 ]
-"401
-[e :U 967 ]
-[; ;main.c: 403: EncEdgeTimeIntervalOld= EncEdgeTimeInterval;
-"403
-[e = _EncEdgeTimeIntervalOld _EncEdgeTimeInterval ]
-[; ;main.c: 404: EncEdgeTimeInterval=0;
-"404
-[e = _EncEdgeTimeInterval -> -> -> 0 `i `l `ul ]
-[; ;main.c: 406: EncEdgeGotFlag=1;
-"406
-[e = _EncEdgeGotFlag -> -> 1 `i `uc ]
-[; ;main.c: 408: OldEncPulseOpState=EncPulseOpState;
-"408
-[e = _OldEncPulseOpState _EncPulseOpState ]
-[; ;main.c: 409: getEncoderState();
-"409
-[e ( _getEncoderState ..  ]
-[; ;main.c: 411: EncoderPosition++;
-"411
-[e ++ _EncoderPosition -> 1 `i ]
-[; ;main.c: 412: EncoderPositionOneCycle++;
-"412
-[e ++ _EncoderPositionOneCycle -> -> 1 `i `c ]
-[; ;main.c: 472: }
-"472
-[e :UE 966 ]
-}
-"476
-[v _NutRunCycleReset `(v ~T0 @X0 1 ef ]
-"477
+[; ;main.c: 371: break;
+"371
+[e $U 995  ]
+[; ;main.c: 372: case 4:
+"372
+[e :U 1000 ]
+[; ;main.c: 373: break;
+"373
+[e $U 995  ]
+[; ;main.c: 374: case 5: if((EncoderPosition-OldEncPos) == (multipleTimecheck1-1))
+"374
+[e :U 1001 ]
+[e $ ! == - _EncoderPosition _OldEncPos - -> _multipleTimecheck1 `i -> 1 `i 1002  ]
+[; ;main.c: 375: {
+"375
 {
-[; ;main.c: 476: void NutRunCycleReset(void)
-[; ;main.c: 477: {
-[e :U _NutRunCycleReset ]
-[f ]
-[; ;main.c: 478: EncEdgeMinTimeInterval= 0xEFFFFFFF;
-"478
-[e = _EncEdgeMinTimeInterval -> -268435457 `ul ]
-[; ;main.c: 479: EncEdgeTimeInterval= 0x00000000;
-"479
-[e = _EncEdgeTimeInterval -> -> -> 0 `i `l `ul ]
-[; ;main.c: 481: EncoderPosition= 0;
-"481
-[e = _EncoderPosition -> 0 `i ]
-[; ;main.c: 483: NutRunLength = 0;
-"483
-[e = _NutRunLength -> -> 0 `i `ui ]
-[; ;main.c: 485: }
-"485
-[e :UE 1000 ]
-}
-"487
-[v _NutRunCycleStart `(v ~T0 @X0 1 ef ]
-"488
-{
-[; ;main.c: 487: void NutRunCycleStart(void)
-[; ;main.c: 488: {
-[e :U _NutRunCycleStart ]
-[f ]
-[; ;main.c: 489: NutRunCycleReset();
-"489
-[e ( _NutRunCycleReset ..  ]
-[; ;main.c: 491: TMR3_WriteTimer(0);
-"491
-[e ( _TMR3_WriteTimer (1 -> -> 0 `i `ui ]
-[; ;main.c: 492: TMR3_StartTimer();
-"492
-[e ( _TMR3_StartTimer ..  ]
-[; ;main.c: 493: PIE3bits.TMR3IE = 1;
-"493
-[e = . . _PIE3bits 0 4 -> -> 1 `i `uc ]
-[; ;main.c: 498: }
-"498
-[e :UE 1001 ]
-}
-"500
-[v _NutRunCycleStop `(v ~T0 @X0 1 ef ]
-"501
-{
-[; ;main.c: 500: void NutRunCycleStop(void)
-[; ;main.c: 501: {
-[e :U _NutRunCycleStop ]
-[f ]
-[; ;main.c: 502: TMR3_WriteTimer(0);
-"502
-[e ( _TMR3_WriteTimer (1 -> -> 0 `i `ui ]
-[; ;main.c: 503: TMR3_StopTimer();
-"503
-[e ( _TMR3_StopTimer ..  ]
-[; ;main.c: 504: PIE3bits.TMR3IE = 0;
-"504
-[e = . . _PIE3bits 0 4 -> -> 0 `i `uc ]
-[; ;main.c: 505: TMR5_WriteTimer(0);
-"505
-[e ( _TMR5_WriteTimer (1 -> -> 0 `i `ui ]
-[; ;main.c: 506: TMR5_StopTimer();
-"506
-[e ( _TMR5_StopTimer ..  ]
-[; ;main.c: 507: PIE4bits.TMR5IE = 0;
-"507
-[e = . . _PIE4bits 0 4 -> -> 0 `i `uc ]
-[; ;main.c: 508: }
-"508
-[e :UE 1002 ]
-}
-"510
-[v _getEncoderState `(v ~T0 @X0 1 ef ]
-"511
-{
-[; ;main.c: 510: void getEncoderState(void)
-[; ;main.c: 511: {
-[e :U _getEncoderState ]
-[f ]
-[; ;main.c: 512: if(PORTCbits.RC5)
-"512
-[e $ ! != -> . . _PORTCbits 0 5 `i -> -> -> 0 `i `Vuc `i 1004  ]
-[; ;main.c: 513: {
-"513
-{
-[; ;main.c: 514: EncPulseOpState= 2;
-"514
-[e = _EncPulseOpState -> -> 2 `i `ui ]
-"517
-}
-[; ;main.c: 517: }
-[e $U 1005  ]
-"518
+[; ;main.c: 376: ShutdownDetected = 1;
+"376
+[e = _ShutdownDetected -> -> 1 `i `uc ]
+[; ;main.c: 377: NutRunCycleStop();
+"377
+[e ( _NutRunCycleStop ..  ]
+[; ;main.c: 379: if(EncoderPosition < 0)
+"379
+[e $ ! < _EncoderPosition -> 0 `i 1003  ]
+[; ;main.c: 380: NutRunLength = -EncoderPosition;
+"380
+[e = _NutRunLength -> -U _EncoderPosition `ui ]
+[e $U 1004  ]
+"381
+[e :U 1003 ]
+[; ;main.c: 381: else
+[; ;main.c: 382: NutRunLength = EncoderPosition;
+"382
+[e = _NutRunLength -> _EncoderPosition `ui ]
 [e :U 1004 ]
-[; ;main.c: 518: else
-[; ;main.c: 519: {
-"519
-{
-[; ;main.c: 520: EncPulseOpState= 1;
-"520
-[e = _EncPulseOpState -> -> 1 `i `ui ]
-"522
+[; ;main.c: 384: IdleTimeOnShutOff = millis() + 2100;
+"384
+[e = _IdleTimeOnShutOff + ( _millis ..  -> -> -> 2100 `i `l `ul ]
+[; ;main.c: 385: EUSART_Write('D');
+"385
+[e ( _EUSART_Write (1 -> -> 68 `ui `uc ]
+[; ;main.c: 386: NutRunstate = 3;
+"386
+[e = _NutRunstate -> -> 3 `i `uc ]
+"387
 }
+[e :U 1002 ]
+[; ;main.c: 387: }
+[; ;main.c: 388: multipleTimecheck1=0;
+"388
+[e = _multipleTimecheck1 -> -> 0 `i `uc ]
+[; ;main.c: 389: break;
+"389
+[e $U 995  ]
+[; ;main.c: 390: default:break;
+"390
 [e :U 1005 ]
-[; ;main.c: 522: }
-[; ;main.c: 551: }
-"551
-[e :UE 1003 ]
+[e $U 995  ]
+"391
 }
-"554
-[v _EncINX_PulseRisingEvent `(v ~T0 @X0 1 ef ]
-"555
-{
-[; ;main.c: 554: void EncINX_PulseRisingEvent(void)
-[; ;main.c: 555: {
-[e :U _EncINX_PulseRisingEvent ]
-[f ]
-[; ;main.c: 556: EncoderPositionAtIndex = EncoderPosition;
-"556
-[e = _EncoderPositionAtIndex _EncoderPosition ]
-[; ;main.c: 558: if(flagForFirstRevolution == 1)
-"558
-[e $ ! == -> _flagForFirstRevolution `i -> 1 `i 1007  ]
-[; ;main.c: 559: {
-"559
-{
-[; ;main.c: 560: if((EncoderPositionOneCycle < 32) && (EncoderPositionOneCycle>0))
-"560
-[e $ ! && < -> _EncoderPositionOneCycle `i -> 32 `i > -> _EncoderPositionOneCycle `i -> 0 `i 1008  ]
-[; ;main.c: 561: {
-"561
-{
-[; ;main.c: 562: EncPulseError=1;
-"562
-[e = _EncPulseError -> -> 1 `i `uc ]
-[; ;main.c: 563: EUSART_Write('X');
-"563
-[e ( _EUSART_Write (1 -> -> 88 `ui `uc ]
-"564
+[; ;main.c: 391: }
+[e $U 995  ]
+"364
+[e :U 996 ]
+[e [\ _multipleTimecheck1 , $ -> -> 1 `i `uc 997
+ , $ -> -> 2 `i `uc 998
+ , $ -> -> 3 `i `uc 999
+ , $ -> -> 4 `i `uc 1000
+ , $ -> -> 5 `i `uc 1001
+ 1005 ]
+"391
+[e :U 995 ]
+"394
 }
-[; ;main.c: 564: }
-[e $U 1009  ]
-"565
-[e :U 1008 ]
-[; ;main.c: 565: else if((EncoderPositionOneCycle > -32) && (EncoderPositionOneCycle<0))
-[e $ ! && > -> _EncoderPositionOneCycle `i -U -> 32 `i < -> _EncoderPositionOneCycle `i -> 0 `i 1010  ]
-[; ;main.c: 566: {
-"566
+[e :U 994 ]
+"395
+[e :U 993 ]
+[; ;main.c: 394: }
+[; ;main.c: 395: break;
+[e $U 973  ]
+[; ;main.c: 397: case 3:
+"397
+[e :U 1006 ]
+[; ;main.c: 398: if(millis() > IdleTimeOnShutOff )
+"398
+[e $ ! > ( _millis ..  _IdleTimeOnShutOff 1007  ]
+[; ;main.c: 399: {
+"399
 {
-[; ;main.c: 567: EncPulseError=1;
-"567
-[e = _EncPulseError -> -> 1 `i `uc ]
-[; ;main.c: 568: EUSART_Write('X');
-"568
-[e ( _EUSART_Write (1 -> -> 88 `ui `uc ]
-"569
-}
-[; ;main.c: 569: }
-[e $U 1011  ]
-"570
-[e :U 1010 ]
-[; ;main.c: 570: else if((EncoderPositionOneCycle > 32) || (EncoderPositionOneCycle < -32))
-[e $ ! || > -> _EncoderPositionOneCycle `i -> 32 `i < -> _EncoderPositionOneCycle `i -U -> 32 `i 1012  ]
-[; ;main.c: 571: {
-"571
-{
-[; ;main.c: 572: EUSART_Write('Y');
-"572
-[e ( _EUSART_Write (1 -> -> 89 `ui `uc ]
-"573
-}
-[e :U 1012 ]
-"588
-[e :U 1011 ]
-[e :U 1009 ]
+[; ;main.c: 400: NutRunstate = 0;
+"400
+[e = _NutRunstate -> -> 0 `i `uc ]
+[; ;main.c: 401: EncoderPosition = 0;
+"401
+[e = _EncoderPosition -> 0 `i ]
+[; ;main.c: 402: EncEdgeMinTimeInterval= 0xEFFFFFFF;
+"402
+[e = _EncEdgeMinTimeInterval -> -268435457 `ul ]
+[; ;main.c: 403: EUSART_Write('A');
+"403
+[e ( _EUSART_Write (1 -> -> 65 `ui `uc ]
+[; ;main.c: 404: NutRunCycleStart();
+"404
+[e ( _NutRunCycleStart ..  ]
+"405
 }
 [e :U 1007 ]
-[; ;main.c: 573: }
-[; ;main.c: 588: }
-[; ;main.c: 590: flagForFirstRevolution=1;
-"590
-[e = _flagForFirstRevolution -> -> 1 `i `uc ]
-[; ;main.c: 593: EncoderPositionOneCycle=0;
-"593
-[e = _EncoderPositionOneCycle -> -> 0 `i `c ]
-[; ;main.c: 594: }
-"594
-[e :UE 1006 ]
+[; ;main.c: 405: }
+[; ;main.c: 406: break;
+"406
+[e $U 973  ]
+[; ;main.c: 408: default : break;
+"408
+[e :U 1008 ]
+[e $U 973  ]
+"409
 }
-"597
-[v _Timer3_Overflow `(v ~T0 @X0 1 ef ]
-"598
+[; ;main.c: 409: }
+[e $U 973  ]
+"306
+[e :U 974 ]
+[e [\ _NutRunstate , $ -> -> 0 `i `uc 975
+ , $ -> -> 1 `i `uc 977
+ , $ -> -> 2 `i `uc 982
+ , $ -> -> 3 `i `uc 1006
+ 1008 ]
+"409
+[e :U 973 ]
+[; ;main.c: 411: EncEdgeTimeIntervalOld= EncEdgeTimeInterval;
+"411
+[e = _EncEdgeTimeIntervalOld _EncEdgeTimeInterval ]
+[; ;main.c: 412: EncEdgeTimeInterval=0;
+"412
+[e = _EncEdgeTimeInterval -> -> -> 0 `i `l `ul ]
+[; ;main.c: 414: EncEdgeGotFlag=1;
+"414
+[e = _EncEdgeGotFlag -> -> 1 `i `uc ]
+[; ;main.c: 416: OldEncPulseOpState=EncPulseOpState;
+"416
+[e = _OldEncPulseOpState _EncPulseOpState ]
+[; ;main.c: 417: getEncoderState();
+"417
+[e ( _getEncoderState ..  ]
+[; ;main.c: 419: if((OldEncPulseOpState == 0) && (EncPulseOpState == 1))
+"419
+[e $ ! && == _OldEncPulseOpState -> -> 0 `i `ui == _EncPulseOpState -> -> 1 `i `ui 1009  ]
+[; ;main.c: 420: {
+"420
 {
-[; ;main.c: 597: void Timer3_Overflow(void)
-[; ;main.c: 598: {
-[e :U _Timer3_Overflow ]
-[f ]
-[; ;main.c: 599: EncEdgeTimeInterval= EncEdgeTimeInterval + 0x0000FFFF;
-"599
-[e = _EncEdgeTimeInterval + _EncEdgeTimeInterval -> -> 65535 `ui `ul ]
-[; ;main.c: 600: if(EncEdgeTimeInterval >0xEFFFFFFF)
-"600
-[e $ ! > _EncEdgeTimeInterval -> -268435457 `ul 1014  ]
-[; ;main.c: 601: EncEdgeTimeInterval=0xEFFFFFFF;
-"601
-[e = _EncEdgeTimeInterval -> -268435457 `ul ]
+[; ;main.c: 421: if(PORTCbits.RC4)
+"421
+[e $ ! != -> . . _PORTCbits 0 4 `i -> -> -> 0 `i `Vuc `i 1010  ]
+[; ;main.c: 422: {
+"422
+{
+[; ;main.c: 423: EncoderPosition--;
+"423
+[e -- _EncoderPosition -> 1 `i ]
+[; ;main.c: 424: EncoderPositionOneCycle--;
+"424
+[e -- _EncoderPositionOneCycle -> -> 1 `i `c ]
+"425
+}
+[; ;main.c: 425: }
+[e $U 1011  ]
+"426
+[e :U 1010 ]
+[; ;main.c: 426: else
+[; ;main.c: 427: {
+"427
+{
+[; ;main.c: 428: EncoderPosition++;
+"428
+[e ++ _EncoderPosition -> 1 `i ]
+[; ;main.c: 429: EncoderPositionOneCycle++;
+"429
+[e ++ _EncoderPositionOneCycle -> -> 1 `i `c ]
+"430
+}
+[e :U 1011 ]
+"431
+}
+[; ;main.c: 430: }
+[; ;main.c: 431: }
+[e $U 1012  ]
+"432
+[e :U 1009 ]
+[; ;main.c: 432: else if((OldEncPulseOpState == 1) && (EncPulseOpState == 0))
+[e $ ! && == _OldEncPulseOpState -> -> 1 `i `ui == _EncPulseOpState -> -> 0 `i `ui 1013  ]
+[; ;main.c: 433: {
+"433
+{
+[; ;main.c: 434: if(PORTCbits.RC4)
+"434
+[e $ ! != -> . . _PORTCbits 0 4 `i -> -> -> 0 `i `Vuc `i 1014  ]
+[; ;main.c: 435: {
+"435
+{
+[; ;main.c: 436: EncoderPosition++;
+"436
+[e ++ _EncoderPosition -> 1 `i ]
+[; ;main.c: 437: EncoderPositionOneCycle++;
+"437
+[e ++ _EncoderPositionOneCycle -> -> 1 `i `c ]
+"438
+}
+[; ;main.c: 438: }
+[e $U 1015  ]
+"439
 [e :U 1014 ]
-[; ;main.c: 603: }
-"603
-[e :UE 1013 ]
-}
-"604
-[v _Timer5_Overflow `(v ~T0 @X0 1 ef ]
-"605
+[; ;main.c: 439: else
+[; ;main.c: 440: {
+"440
 {
-[; ;main.c: 604: void Timer5_Overflow(void)
-[; ;main.c: 605: {
-[e :U _Timer5_Overflow ]
-[f ]
-[; ;main.c: 607: }
-"607
-[e :UE 1015 ]
+[; ;main.c: 441: EncoderPosition--;
+"441
+[e -- _EncoderPosition -> 1 `i ]
+[; ;main.c: 442: EncoderPositionOneCycle--;
+"442
+[e -- _EncoderPositionOneCycle -> -> 1 `i `c ]
+"443
 }
-"609
-[v _Timer0_tick10msecFunc `(v ~T0 @X0 1 ef ]
-"610
+[e :U 1015 ]
+"444
+}
+[e :U 1013 ]
+"505
+[e :U 1012 ]
+[; ;main.c: 443: }
+[; ;main.c: 444: }
+[; ;main.c: 505: }
+[e :UE 972 ]
+}
+"509
+[v _NutRunCycleReset `(v ~T0 @X0 1 ef ]
+"510
 {
-[; ;main.c: 609: void Timer0_tick10msecFunc(void)
-[; ;main.c: 610: {
-[e :U _Timer0_tick10msecFunc ]
+[; ;main.c: 509: void NutRunCycleReset(void)
+[; ;main.c: 510: {
+[e :U _NutRunCycleReset ]
 [f ]
-[; ;main.c: 611: LedON_Control_10msec();
-"611
-[e ( _LedON_Control_10msec ..  ]
-[; ;main.c: 613: TimertickMsec= TimertickMsec+5;
-"613
-[e = _TimertickMsec + _TimertickMsec -> -> -> 5 `i `l `ul ]
-[; ;main.c: 615: if(delayFlag==1)
-"615
-[e $ ! == -> _delayFlag `i -> 1 `i 1017  ]
-[; ;main.c: 616: delayCount+=5;
-"616
-[e =+ _delayCount -> -> 5 `i `ui ]
-[e :U 1017 ]
-[; ;main.c: 617: }
-"617
+[; ;main.c: 511: EncEdgeMinTimeInterval= 0xEFFFFFFF;
+"511
+[e = _EncEdgeMinTimeInterval -> -268435457 `ul ]
+[; ;main.c: 512: EncEdgeTimeInterval= 0x00000000;
+"512
+[e = _EncEdgeTimeInterval -> -> -> 0 `i `l `ul ]
+[; ;main.c: 514: EncoderPosition= 0;
+"514
+[e = _EncoderPosition -> 0 `i ]
+[; ;main.c: 517: NutRunLength = 0;
+"517
+[e = _NutRunLength -> -> 0 `i `ui ]
+[; ;main.c: 519: }
+"519
 [e :UE 1016 ]
 }
-"619
-[v _millis `(ul ~T0 @X0 1 ef ]
-"620
+"521
+[v _NutRunCycleStart `(v ~T0 @X0 1 ef ]
+"522
 {
-[; ;main.c: 619: unsigned long millis(void)
-[; ;main.c: 620: {
-[e :U _millis ]
+[; ;main.c: 521: void NutRunCycleStart(void)
+[; ;main.c: 522: {
+[e :U _NutRunCycleStart ]
 [f ]
-[; ;main.c: 621: return TimertickMsec;
-"621
-[e ) _TimertickMsec ]
-[e $UE 1018  ]
-[; ;main.c: 622: }
-"622
+[; ;main.c: 523: NutRunCycleReset();
+"523
+[e ( _NutRunCycleReset ..  ]
+[; ;main.c: 525: TMR3_WriteTimer(0);
+"525
+[e ( _TMR3_WriteTimer (1 -> -> 0 `i `ui ]
+[; ;main.c: 526: TMR3_StartTimer();
+"526
+[e ( _TMR3_StartTimer ..  ]
+[; ;main.c: 527: PIE3bits.TMR3IE = 1;
+"527
+[e = . . _PIE3bits 0 4 -> -> 1 `i `uc ]
+[; ;main.c: 532: }
+"532
+[e :UE 1017 ]
+}
+"534
+[v _NutRunCycleStop `(v ~T0 @X0 1 ef ]
+"535
+{
+[; ;main.c: 534: void NutRunCycleStop(void)
+[; ;main.c: 535: {
+[e :U _NutRunCycleStop ]
+[f ]
+[; ;main.c: 536: TMR3_WriteTimer(0);
+"536
+[e ( _TMR3_WriteTimer (1 -> -> 0 `i `ui ]
+[; ;main.c: 537: TMR3_StopTimer();
+"537
+[e ( _TMR3_StopTimer ..  ]
+[; ;main.c: 538: PIE3bits.TMR3IE = 0;
+"538
+[e = . . _PIE3bits 0 4 -> -> 0 `i `uc ]
+[; ;main.c: 539: TMR5_WriteTimer(0);
+"539
+[e ( _TMR5_WriteTimer (1 -> -> 0 `i `ui ]
+[; ;main.c: 540: TMR5_StopTimer();
+"540
+[e ( _TMR5_StopTimer ..  ]
+[; ;main.c: 541: PIE4bits.TMR5IE = 0;
+"541
+[e = . . _PIE4bits 0 4 -> -> 0 `i `uc ]
+[; ;main.c: 542: }
+"542
 [e :UE 1018 ]
 }
-"624
-[v _millisReset `(v ~T0 @X0 1 ef ]
-"625
+"544
+[v _getEncoderState `(v ~T0 @X0 1 ef ]
+"545
 {
-[; ;main.c: 624: void millisReset(void)
-[; ;main.c: 625: {
-[e :U _millisReset ]
+[; ;main.c: 544: void getEncoderState(void)
+[; ;main.c: 545: {
+[e :U _getEncoderState ]
 [f ]
-[; ;main.c: 626: TimertickMsec=0;
-"626
-[e = _TimertickMsec -> -> -> 0 `i `l `ul ]
-[; ;main.c: 627: }
-"627
+[; ;main.c: 546: if(PORTCbits.RC5)
+"546
+[e $ ! != -> . . _PORTCbits 0 5 `i -> -> -> 0 `i `Vuc `i 1020  ]
+[; ;main.c: 547: {
+"547
+{
+[; ;main.c: 549: EncPulseOpState= 1;
+"549
+[e = _EncPulseOpState -> -> 1 `i `ui ]
+"552
+}
+[; ;main.c: 552: }
+[e $U 1021  ]
+"553
+[e :U 1020 ]
+[; ;main.c: 553: else
+[; ;main.c: 554: {
+"554
+{
+[; ;main.c: 556: EncPulseOpState= 0;
+"556
+[e = _EncPulseOpState -> -> 0 `i `ui ]
+"558
+}
+[e :U 1021 ]
+[; ;main.c: 558: }
+[; ;main.c: 587: }
+"587
 [e :UE 1019 ]
 }
-"629
-[v _delayMsec `(v ~T0 @X0 1 ef1`ul ]
-"630
+"590
+[v _EncINX_PulseRisingEvent `(v ~T0 @X0 1 ef ]
+"591
 {
-[; ;main.c: 629: void delayMsec(unsigned long timems)
-[; ;main.c: 630: {
-[e :U _delayMsec ]
-"629
-[v _timems `ul ~T0 @X0 1 r1 ]
-"630
+[; ;main.c: 590: void EncINX_PulseRisingEvent(void)
+[; ;main.c: 591: {
+[e :U _EncINX_PulseRisingEvent ]
 [f ]
-[; ;main.c: 631: delayCount=0;
-"631
-[e = _delayCount -> -> 0 `i `ui ]
-[; ;main.c: 632: delayFlag=1;
-"632
-[e = _delayFlag -> -> 1 `i `uc ]
-[; ;main.c: 633: while(delayCount < timems);
-"633
-[e $U 1021  ]
-[e :U 1022 ]
-[e :U 1021 ]
-[e $ < -> _delayCount `ul _timems 1022  ]
+[; ;main.c: 592: EncoderPositionAtIndex = EncoderPosition;
+"592
+[e = _EncoderPositionAtIndex _EncoderPosition ]
+[; ;main.c: 594: if(EncoderPositionOneCycle < 0)
+"594
+[e $ ! < -> _EncoderPositionOneCycle `i -> 0 `i 1023  ]
+[; ;main.c: 595: EncoderPositionOneCycle=-EncoderPositionOneCycle;
+"595
+[e = _EncoderPositionOneCycle -> -U -> _EncoderPositionOneCycle `i `c ]
 [e :U 1023 ]
-[; ;main.c: 634: delayFlag=0;
-"634
-[e = _delayFlag -> -> 0 `i `uc ]
-[; ;main.c: 635: }
-"635
-[e :UE 1020 ]
-}
-"637
-[v _valuetocharHighNibble `(uc ~T0 @X0 1 ef1`uc ]
-"638
+[; ;main.c: 597: if(flagForFirstRevolution == 1 && EncoderPositionOneCycle > 5)
+"597
+[e $ ! && == -> _flagForFirstRevolution `i -> 1 `i > -> _EncoderPositionOneCycle `i -> 5 `i 1024  ]
+[; ;main.c: 599: {
+"599
 {
-[; ;main.c: 637: unsigned char valuetocharHighNibble(unsigned char hexvalue)
-[; ;main.c: 638: {
-[e :U _valuetocharHighNibble ]
-"637
-[v _hexvalue `uc ~T0 @X0 1 r1 ]
-"638
-[f ]
-"639
-[v _hexval `uc ~T0 @X0 1 a ]
-[; ;main.c: 639: unsigned char hexval;
-[; ;main.c: 640: hexval=(unsigned char)((unsigned char)(hexvalue>>4) & 0x0F);
-"640
-[e = _hexval -> & -> -> >> -> _hexvalue `i -> 4 `i `uc `i -> 15 `i `uc ]
-[; ;main.c: 641: hexval= valtoasciichar(hexval);
-"641
-[e = _hexval ( _valtoasciichar (1 _hexval ]
-[; ;main.c: 642: return hexval;
-"642
-[e ) _hexval ]
-[e $UE 1024  ]
-[; ;main.c: 644: }
-"644
-[e :UE 1024 ]
-}
-"646
-[v _valuetocharLowNibble `(uc ~T0 @X0 1 ef1`uc ]
-"647
+[; ;main.c: 600: if(EncoderPositionOneCycle < 32)
+"600
+[e $ ! < -> _EncoderPositionOneCycle `i -> 32 `i 1025  ]
+[; ;main.c: 601: {
+"601
 {
-[; ;main.c: 646: unsigned char valuetocharLowNibble(unsigned char hexvalue)
-[; ;main.c: 647: {
-[e :U _valuetocharLowNibble ]
-"646
-[v _hexvalue `uc ~T0 @X0 1 r1 ]
-"647
-[f ]
-"648
-[v _hexval `uc ~T0 @X0 1 a ]
-[; ;main.c: 648: unsigned char hexval;
-[; ;main.c: 649: hexval=(unsigned char)((unsigned char)(hexvalue) & 0x0F);
-"649
-[e = _hexval -> & -> _hexvalue `i -> 15 `i `uc ]
-[; ;main.c: 650: hexval= valtoasciichar(hexval);
-"650
-[e = _hexval ( _valtoasciichar (1 _hexval ]
-[; ;main.c: 651: return hexval;
-"651
-[e ) _hexval ]
-[e $UE 1025  ]
-[; ;main.c: 652: }
-"652
-[e :UE 1025 ]
+[; ;main.c: 602: EncPulseError=1;
+"602
+[e = _EncPulseError -> -> 1 `i `uc ]
+[; ;main.c: 603: EUSART_Write('X');
+"603
+[e ( _EUSART_Write (1 -> -> 88 `ui `uc ]
+[; ;main.c: 604: EUSART_Write(valuetocharHighNibble((unsigned char)((EncoderPositionOneCycle) & 0x00FF)));
+"604
+[e ( _EUSART_Write (1 ( _valuetocharHighNibble (1 -> & -> _EncoderPositionOneCycle `i -> 255 `i `uc ]
+[; ;main.c: 605: EUSART_Write(valuetocharLowNibble((unsigned char)((EncoderPositionOneCycle) & 0x00FF)));
+"605
+[e ( _EUSART_Write (1 ( _valuetocharLowNibble (1 -> & -> _EncoderPositionOneCycle `i -> 255 `i `uc ]
+"606
 }
-"655
-[v _valtoasciichar `(uc ~T0 @X0 1 ef1`uc ]
-"656
+[; ;main.c: 606: }
+[e $U 1026  ]
+"607
+[e :U 1025 ]
+[; ;main.c: 607: else if(EncoderPositionOneCycle > 32)
+[e $ ! > -> _EncoderPositionOneCycle `i -> 32 `i 1027  ]
+[; ;main.c: 608: {
+"608
 {
-[; ;main.c: 655: unsigned char valtoasciichar(unsigned char hexvalue1)
-[; ;main.c: 656: {
-[e :U _valtoasciichar ]
-"655
-[v _hexvalue1 `uc ~T0 @X0 1 r1 ]
-"656
-[f ]
-"657
-[v _hexval `uc ~T0 @X0 1 a ]
-[; ;main.c: 657: unsigned char hexval='0';
-[e = _hexval -> -> 48 `ui `uc ]
-[; ;main.c: 658: switch((unsigned char)hexvalue1)
-"658
-[e $U 1028  ]
-[; ;main.c: 659: {
-"659
-{
-[; ;main.c: 660: case 0x00: hexval= '0'; break;
-"660
-[e :U 1029 ]
-[e = _hexval -> -> 48 `ui `uc ]
-[e $U 1027  ]
-[; ;main.c: 661: case 0x01: hexval= '1'; break;
-"661
-[e :U 1030 ]
-[e = _hexval -> -> 49 `ui `uc ]
-[e $U 1027  ]
-[; ;main.c: 662: case 0x02: hexval= '2'; break;
-"662
-[e :U 1031 ]
-[e = _hexval -> -> 50 `ui `uc ]
-[e $U 1027  ]
-[; ;main.c: 663: case 0x03: hexval= '3'; break;
-"663
-[e :U 1032 ]
-[e = _hexval -> -> 51 `ui `uc ]
-[e $U 1027  ]
-[; ;main.c: 664: case 0x04: hexval= '4'; break;
-"664
-[e :U 1033 ]
-[e = _hexval -> -> 52 `ui `uc ]
-[e $U 1027  ]
-[; ;main.c: 665: case 0x05: hexval= '5'; break;
-"665
-[e :U 1034 ]
-[e = _hexval -> -> 53 `ui `uc ]
-[e $U 1027  ]
-[; ;main.c: 666: case 0x06: hexval= '6'; break;
-"666
-[e :U 1035 ]
-[e = _hexval -> -> 54 `ui `uc ]
-[e $U 1027  ]
-[; ;main.c: 667: case 0x07: hexval= '7'; break;
-"667
-[e :U 1036 ]
-[e = _hexval -> -> 55 `ui `uc ]
-[e $U 1027  ]
-[; ;main.c: 668: case 0x08: hexval= '8'; break;
-"668
-[e :U 1037 ]
-[e = _hexval -> -> 56 `ui `uc ]
-[e $U 1027  ]
-[; ;main.c: 669: case 0x09: hexval= '9'; break;
-"669
-[e :U 1038 ]
-[e = _hexval -> -> 57 `ui `uc ]
-[e $U 1027  ]
-[; ;main.c: 670: case 0x0A: hexval= 'A'; break;
-"670
-[e :U 1039 ]
-[e = _hexval -> -> 65 `ui `uc ]
-[e $U 1027  ]
-[; ;main.c: 671: case 0x0B: hexval= 'B'; break;
-"671
-[e :U 1040 ]
-[e = _hexval -> -> 66 `ui `uc ]
-[e $U 1027  ]
-[; ;main.c: 672: case 0x0C: hexval= 'C'; break;
-"672
-[e :U 1041 ]
-[e = _hexval -> -> 67 `ui `uc ]
-[e $U 1027  ]
-[; ;main.c: 673: case 0x0D: hexval= 'D'; break;
-"673
-[e :U 1042 ]
-[e = _hexval -> -> 68 `ui `uc ]
-[e $U 1027  ]
-[; ;main.c: 674: case 0x0E: hexval= 'E'; break;
-"674
-[e :U 1043 ]
-[e = _hexval -> -> 69 `ui `uc ]
-[e $U 1027  ]
-[; ;main.c: 675: case 0x0F: hexval= 'F'; break;
-"675
-[e :U 1044 ]
-[e = _hexval -> -> 70 `ui `uc ]
-[e $U 1027  ]
-[; ;main.c: 676: default : break;
-"676
-[e :U 1045 ]
-[e $U 1027  ]
-"677
+[; ;main.c: 609: EncPulseError=2;
+"609
+[e = _EncPulseError -> -> 2 `i `uc ]
+[; ;main.c: 610: EUSART_Write('Y');
+"610
+[e ( _EUSART_Write (1 -> -> 89 `ui `uc ]
+[; ;main.c: 611: EUSART_Write(valuetocharHighNibble((unsigned char)((EncoderPositionOneCycle) & 0x00FF)));
+"611
+[e ( _EUSART_Write (1 ( _valuetocharHighNibble (1 -> & -> _EncoderPositionOneCycle `i -> 255 `i `uc ]
+[; ;main.c: 612: EUSART_Write(valuetocharLowNibble((unsigned char)((EncoderPositionOneCycle) & 0x00FF)));
+"612
+[e ( _EUSART_Write (1 ( _valuetocharLowNibble (1 -> & -> _EncoderPositionOneCycle `i -> 255 `i `uc ]
+"613
 }
-[; ;main.c: 677: }
-[e $U 1027  ]
-"658
-[e :U 1028 ]
-[e [\ _hexvalue1 , $ -> -> 0 `i `uc 1029
- , $ -> -> 1 `i `uc 1030
- , $ -> -> 2 `i `uc 1031
- , $ -> -> 3 `i `uc 1032
- , $ -> -> 4 `i `uc 1033
- , $ -> -> 5 `i `uc 1034
- , $ -> -> 6 `i `uc 1035
- , $ -> -> 7 `i `uc 1036
- , $ -> -> 8 `i `uc 1037
- , $ -> -> 9 `i `uc 1038
- , $ -> -> 10 `i `uc 1039
- , $ -> -> 11 `i `uc 1040
- , $ -> -> 12 `i `uc 1041
- , $ -> -> 13 `i `uc 1042
- , $ -> -> 14 `i `uc 1043
- , $ -> -> 15 `i `uc 1044
- 1045 ]
-"677
 [e :U 1027 ]
-[; ;main.c: 678: return hexval;
+"628
+[e :U 1026 ]
+}
+[e :U 1024 ]
+[; ;main.c: 613: }
+[; ;main.c: 628: }
+[; ;main.c: 630: flagForFirstRevolution=1;
+"630
+[e = _flagForFirstRevolution -> -> 1 `i `uc ]
+[; ;main.c: 633: EncoderPositionOneCycle=0;
+"633
+[e = _EncoderPositionOneCycle -> -> 0 `i `c ]
+[; ;main.c: 634: }
+"634
+[e :UE 1022 ]
+}
+"637
+[v _Timer3_Overflow `(v ~T0 @X0 1 ef ]
+"638
+{
+[; ;main.c: 637: void Timer3_Overflow(void)
+[; ;main.c: 638: {
+[e :U _Timer3_Overflow ]
+[f ]
+[; ;main.c: 639: EncEdgeTimeInterval= EncEdgeTimeInterval + 0x0000FFFF;
+"639
+[e = _EncEdgeTimeInterval + _EncEdgeTimeInterval -> -> 65535 `ui `ul ]
+[; ;main.c: 640: if(EncEdgeTimeInterval >0xEFFFFFFF)
+"640
+[e $ ! > _EncEdgeTimeInterval -> -268435457 `ul 1029  ]
+[; ;main.c: 641: EncEdgeTimeInterval=0xEFFFFFFF;
+"641
+[e = _EncEdgeTimeInterval -> -268435457 `ul ]
+[e :U 1029 ]
+[; ;main.c: 643: }
+"643
+[e :UE 1028 ]
+}
+"644
+[v _Timer5_Overflow `(v ~T0 @X0 1 ef ]
+"645
+{
+[; ;main.c: 644: void Timer5_Overflow(void)
+[; ;main.c: 645: {
+[e :U _Timer5_Overflow ]
+[f ]
+[; ;main.c: 647: }
+"647
+[e :UE 1030 ]
+}
+"649
+[v _Timer0_tick10msecFunc `(v ~T0 @X0 1 ef ]
+"650
+{
+[; ;main.c: 649: void Timer0_tick10msecFunc(void)
+[; ;main.c: 650: {
+[e :U _Timer0_tick10msecFunc ]
+[f ]
+[; ;main.c: 651: LedON_Control_10msec();
+"651
+[e ( _LedON_Control_10msec ..  ]
+[; ;main.c: 653: TimertickMsec= TimertickMsec+5;
+"653
+[e = _TimertickMsec + _TimertickMsec -> -> -> 5 `i `l `ul ]
+[; ;main.c: 655: if(delayFlag==1)
+"655
+[e $ ! == -> _delayFlag `i -> 1 `i 1032  ]
+[; ;main.c: 656: delayCount+=5;
+"656
+[e =+ _delayCount -> -> 5 `i `ui ]
+[e :U 1032 ]
+[; ;main.c: 657: }
+"657
+[e :UE 1031 ]
+}
+"659
+[v _millis `(ul ~T0 @X0 1 ef ]
+"660
+{
+[; ;main.c: 659: unsigned long millis(void)
+[; ;main.c: 660: {
+[e :U _millis ]
+[f ]
+[; ;main.c: 661: return TimertickMsec;
+"661
+[e ) _TimertickMsec ]
+[e $UE 1033  ]
+[; ;main.c: 662: }
+"662
+[e :UE 1033 ]
+}
+"664
+[v _millisReset `(v ~T0 @X0 1 ef ]
+"665
+{
+[; ;main.c: 664: void millisReset(void)
+[; ;main.c: 665: {
+[e :U _millisReset ]
+[f ]
+[; ;main.c: 666: TimertickMsec=0;
+"666
+[e = _TimertickMsec -> -> -> 0 `i `l `ul ]
+[; ;main.c: 667: }
+"667
+[e :UE 1034 ]
+}
+"669
+[v _delayMsec `(v ~T0 @X0 1 ef1`ul ]
+"670
+{
+[; ;main.c: 669: void delayMsec(unsigned long timems)
+[; ;main.c: 670: {
+[e :U _delayMsec ]
+"669
+[v _timems `ul ~T0 @X0 1 r1 ]
+"670
+[f ]
+[; ;main.c: 671: delayCount=0;
+"671
+[e = _delayCount -> -> 0 `i `ui ]
+[; ;main.c: 672: delayFlag=1;
+"672
+[e = _delayFlag -> -> 1 `i `uc ]
+[; ;main.c: 673: while(delayCount < timems);
+"673
+[e $U 1036  ]
+[e :U 1037 ]
+[e :U 1036 ]
+[e $ < -> _delayCount `ul _timems 1037  ]
+[e :U 1038 ]
+[; ;main.c: 674: delayFlag=0;
+"674
+[e = _delayFlag -> -> 0 `i `uc ]
+[; ;main.c: 675: }
+"675
+[e :UE 1035 ]
+}
+"677
+[v _valuetocharHighNibble `(uc ~T0 @X0 1 ef1`uc ]
 "678
-[e ) _hexval ]
-[e $UE 1026  ]
-[; ;main.c: 679: }
+{
+[; ;main.c: 677: unsigned char valuetocharHighNibble(unsigned char hexvalue)
+[; ;main.c: 678: {
+[e :U _valuetocharHighNibble ]
+"677
+[v _hexvalue `uc ~T0 @X0 1 r1 ]
+"678
+[f ]
 "679
-[e :UE 1026 ]
+[v _hexval `uc ~T0 @X0 1 a ]
+[; ;main.c: 679: unsigned char hexval;
+[; ;main.c: 680: hexval=(unsigned char)((unsigned char)(hexvalue>>4) & 0x0F);
+"680
+[e = _hexval -> & -> -> >> -> _hexvalue `i -> 4 `i `uc `i -> 15 `i `uc ]
+[; ;main.c: 681: hexval= valtoasciichar(hexval);
+"681
+[e = _hexval ( _valtoasciichar (1 _hexval ]
+[; ;main.c: 682: return hexval;
+"682
+[e ) _hexval ]
+[e $UE 1039  ]
+[; ;main.c: 684: }
+"684
+[e :UE 1039 ]
+}
+"686
+[v _valuetocharLowNibble `(uc ~T0 @X0 1 ef1`uc ]
+"687
+{
+[; ;main.c: 686: unsigned char valuetocharLowNibble(unsigned char hexvalue)
+[; ;main.c: 687: {
+[e :U _valuetocharLowNibble ]
+"686
+[v _hexvalue `uc ~T0 @X0 1 r1 ]
+"687
+[f ]
+"688
+[v _hexval `uc ~T0 @X0 1 a ]
+[; ;main.c: 688: unsigned char hexval;
+[; ;main.c: 689: hexval=(unsigned char)((unsigned char)(hexvalue) & 0x0F);
+"689
+[e = _hexval -> & -> _hexvalue `i -> 15 `i `uc ]
+[; ;main.c: 690: hexval= valtoasciichar(hexval);
+"690
+[e = _hexval ( _valtoasciichar (1 _hexval ]
+[; ;main.c: 691: return hexval;
+"691
+[e ) _hexval ]
+[e $UE 1040  ]
+[; ;main.c: 692: }
+"692
+[e :UE 1040 ]
+}
+"695
+[v _valtoasciichar `(uc ~T0 @X0 1 ef1`uc ]
+"696
+{
+[; ;main.c: 695: unsigned char valtoasciichar(unsigned char hexvalue1)
+[; ;main.c: 696: {
+[e :U _valtoasciichar ]
+"695
+[v _hexvalue1 `uc ~T0 @X0 1 r1 ]
+"696
+[f ]
+"697
+[v _hexval `uc ~T0 @X0 1 a ]
+[; ;main.c: 697: unsigned char hexval='0';
+[e = _hexval -> -> 48 `ui `uc ]
+[; ;main.c: 698: switch((unsigned char)hexvalue1)
+"698
+[e $U 1043  ]
+[; ;main.c: 699: {
+"699
+{
+[; ;main.c: 700: case 0x00: hexval= '0'; break;
+"700
+[e :U 1044 ]
+[e = _hexval -> -> 48 `ui `uc ]
+[e $U 1042  ]
+[; ;main.c: 701: case 0x01: hexval= '1'; break;
+"701
+[e :U 1045 ]
+[e = _hexval -> -> 49 `ui `uc ]
+[e $U 1042  ]
+[; ;main.c: 702: case 0x02: hexval= '2'; break;
+"702
+[e :U 1046 ]
+[e = _hexval -> -> 50 `ui `uc ]
+[e $U 1042  ]
+[; ;main.c: 703: case 0x03: hexval= '3'; break;
+"703
+[e :U 1047 ]
+[e = _hexval -> -> 51 `ui `uc ]
+[e $U 1042  ]
+[; ;main.c: 704: case 0x04: hexval= '4'; break;
+"704
+[e :U 1048 ]
+[e = _hexval -> -> 52 `ui `uc ]
+[e $U 1042  ]
+[; ;main.c: 705: case 0x05: hexval= '5'; break;
+"705
+[e :U 1049 ]
+[e = _hexval -> -> 53 `ui `uc ]
+[e $U 1042  ]
+[; ;main.c: 706: case 0x06: hexval= '6'; break;
+"706
+[e :U 1050 ]
+[e = _hexval -> -> 54 `ui `uc ]
+[e $U 1042  ]
+[; ;main.c: 707: case 0x07: hexval= '7'; break;
+"707
+[e :U 1051 ]
+[e = _hexval -> -> 55 `ui `uc ]
+[e $U 1042  ]
+[; ;main.c: 708: case 0x08: hexval= '8'; break;
+"708
+[e :U 1052 ]
+[e = _hexval -> -> 56 `ui `uc ]
+[e $U 1042  ]
+[; ;main.c: 709: case 0x09: hexval= '9'; break;
+"709
+[e :U 1053 ]
+[e = _hexval -> -> 57 `ui `uc ]
+[e $U 1042  ]
+[; ;main.c: 710: case 0x0A: hexval= 'A'; break;
+"710
+[e :U 1054 ]
+[e = _hexval -> -> 65 `ui `uc ]
+[e $U 1042  ]
+[; ;main.c: 711: case 0x0B: hexval= 'B'; break;
+"711
+[e :U 1055 ]
+[e = _hexval -> -> 66 `ui `uc ]
+[e $U 1042  ]
+[; ;main.c: 712: case 0x0C: hexval= 'C'; break;
+"712
+[e :U 1056 ]
+[e = _hexval -> -> 67 `ui `uc ]
+[e $U 1042  ]
+[; ;main.c: 713: case 0x0D: hexval= 'D'; break;
+"713
+[e :U 1057 ]
+[e = _hexval -> -> 68 `ui `uc ]
+[e $U 1042  ]
+[; ;main.c: 714: case 0x0E: hexval= 'E'; break;
+"714
+[e :U 1058 ]
+[e = _hexval -> -> 69 `ui `uc ]
+[e $U 1042  ]
+[; ;main.c: 715: case 0x0F: hexval= 'F'; break;
+"715
+[e :U 1059 ]
+[e = _hexval -> -> 70 `ui `uc ]
+[e $U 1042  ]
+[; ;main.c: 716: default : break;
+"716
+[e :U 1060 ]
+[e $U 1042  ]
+"717
+}
+[; ;main.c: 717: }
+[e $U 1042  ]
+"698
+[e :U 1043 ]
+[e [\ _hexvalue1 , $ -> -> 0 `i `uc 1044
+ , $ -> -> 1 `i `uc 1045
+ , $ -> -> 2 `i `uc 1046
+ , $ -> -> 3 `i `uc 1047
+ , $ -> -> 4 `i `uc 1048
+ , $ -> -> 5 `i `uc 1049
+ , $ -> -> 6 `i `uc 1050
+ , $ -> -> 7 `i `uc 1051
+ , $ -> -> 8 `i `uc 1052
+ , $ -> -> 9 `i `uc 1053
+ , $ -> -> 10 `i `uc 1054
+ , $ -> -> 11 `i `uc 1055
+ , $ -> -> 12 `i `uc 1056
+ , $ -> -> 13 `i `uc 1057
+ , $ -> -> 14 `i `uc 1058
+ , $ -> -> 15 `i `uc 1059
+ 1060 ]
+"717
+[e :U 1042 ]
+[; ;main.c: 718: return hexval;
+"718
+[e ) _hexval ]
+[e $UE 1041  ]
+[; ;main.c: 719: }
+"719
+[e :UE 1041 ]
 }

@@ -63,7 +63,7 @@ unsigned int OldEncPulseOpState=0;
 
 unsigned long EncEdgeTimeIntervalOld=0, EncEdgeTimeInterval=0x00000000, EncEdgeMinTimeInterval=0xEFFFFFFF;
 unsigned long EncEdgeMinTimeIntSumAvg=0;
-unsigned int EncSpdredFact= 3;  //encoder speed reduction Factor, x/10=0.25 % reduce in speed to detect Nut run stop 
+unsigned long EncSpdredFact= 30;  //encoder speed reduction Factor, x/100=0.25 % reduce in speed to detect Nut run stop 
 
 unsigned int NutRunLength = 0;//interms of number of encoder pulse.
 
@@ -72,7 +72,7 @@ unsigned char multipleTimecheck1=0;
 
 signed int EncoderPosition=0, OldEncPos=0, EncoderPositionAtIndex=0;
 signed char EncoderPositionOneCycle=0; //it count the position from start to one revolution only, for every rev it reset
-bool EncPulseError=0;
+unsigned char EncPulseError=0;
 bool flagForFirstRevolution=0;
 
 bool EncEdgeGotFlag=0;
@@ -151,6 +151,10 @@ void main(void)
     while(LedONStatusBusy());//wait for LED blink    
     
     RS485_TXEN_RB6_SetHigh();
+    
+    //Test RS485
+    EUSART_Write('>');
+    EUSART_Write('>');
 
     while (1)
     {
@@ -173,13 +177,14 @@ void EPC_StateMachineControlLoop() //call the statemachine in main loop
 {
        
     if((NutRunstate == NUTRUN_SPEED_BELOWTHRES) || (NutRunstate == NUTRUN_CHECK_MAXSPEED))
-    {   //Track continuos pulse edge if no pulse for  100msec, then exit state to NUTRUN_IDLE
-        if((EncEdgeGotFlag == 0) && (EncEdgeTimeInterval > 10000))
+    {   //Track continuos pulse edge if no pulse for  1000msec, then exit state to NUTRUN_IDLE
+        //Edge time interval ticks at 0.5 usec
+        if((EncEdgeGotFlag == 0) && (EncEdgeTimeInterval > 2000000))
         {
             NutRunstate= NUTRUN_IDLE;
-            EncoderPosition = 0;
-            EncEdgeMinTimeInterval= 0xEFFFFFFF;
-            EUSART_Write('%');
+            NutRunCycleReset();
+            EUSART_Write('1');
+            LED_GREEN_RC1_SetLow();
             
         }    
     }    
@@ -188,6 +193,7 @@ void EPC_StateMachineControlLoop() //call the statemachine in main loop
     {
 
         ShutdownDetected=0;
+        LED_GREEN_RC1_SetLow();
         LedONStartConfig(LED_RED, 2, 15);
         EUSART_Write('\r');
         EUSART_Write('\n');
@@ -304,23 +310,25 @@ void OnEncPulseEdgeEvent(uint16_t capturevalue)//executed on ISR on each edges o
             //            if((EncoderPosition>64)||(EncoderPosition < -64))//check one revolution
             {
                 NutRunstate= NUTRUN_SPEED_BELOWTHRES;
-                EUSART_Write('!');
+                EUSART_Write('B');
             }
             break;
             
         case NUTRUN_SPEED_BELOWTHRES:
-            if(EncEdgeTimeInterval < 3000) // edge to edge time is 3000usec= 3.0 msec
+            if(EncEdgeTimeInterval < 6000) // edge to edge time is 6000 *0.5usec= 3.0 msec i.e spped > 600rpm = 10 rps = 32p pulse per rev
             {
                 NutRunstate= NUTRUN_CHECK_MAXSPEED;
                 multipleTimecheck0=0;
                 EncEdgeMinTimeIntSumAvg=0;
                 multipleTimecheck1=0;
                 EncEdgeMinTimeInterval=0xEFFFFFFF;
-                EUSART_Write('@');
+                EUSART_Write('C');
+                LED_GREEN_RC1_SetHigh();//
             }
             break;
             
         case NUTRUN_CHECK_MAXSPEED:
+                
             if(EncEdgeTimeInterval < EncEdgeMinTimeInterval)// Note Max speed point
             {    
                 multipleTimecheck0++;//check consecutive occurence
@@ -348,7 +356,7 @@ void OnEncPulseEdgeEvent(uint16_t capturevalue)//executed on ISR on each edges o
                 
                 //EUSART_Write('K');
             }
-            else if(EncEdgeTimeInterval >= (EncEdgeMinTimeInterval + ((EncEdgeMinTimeInterval*EncSpdredFact)/10)))
+            else if(EncEdgeTimeInterval >= (EncEdgeMinTimeInterval + ((EncEdgeMinTimeInterval*EncSpdredFact)/100)))
             {   //Look for a reduction in speed from maximum speed by some factor define by EncSpdredFact
                 //look for multiple consecutive event only
                 
@@ -374,7 +382,7 @@ void OnEncPulseEdgeEvent(uint16_t capturevalue)//executed on ISR on each edges o
                                     NutRunLength = EncoderPosition;
 
                                 IdleTimeOnShutOff = millis() + 2100;//wait in detect shutdown state for 2000 sec
-                                //EUSART_Write('#');
+                                EUSART_Write('D');
                                 NutRunstate = NUTRUN_DETECTSHUTDOWN;
                             }
                             multipleTimecheck1=0;
@@ -392,7 +400,7 @@ void OnEncPulseEdgeEvent(uint16_t capturevalue)//executed on ISR on each edges o
                 NutRunstate = NUTRUN_IDLE;
                 EncoderPosition = 0;
                 EncEdgeMinTimeInterval= 0xEFFFFFFF;
-                EUSART_Write('$');
+                EUSART_Write('A');
                 NutRunCycleStart();
             }    
             break;
@@ -408,8 +416,33 @@ void OnEncPulseEdgeEvent(uint16_t capturevalue)//executed on ISR on each edges o
     OldEncPulseOpState=EncPulseOpState;
     getEncoderState();// update current value of EncPulseOpState
     
-    EncoderPosition++;
-    EncoderPositionOneCycle++;
+    if((OldEncPulseOpState == EnALoEnBxx) && (EncPulseOpState == EnAHiEnBxx))//rising edge
+    {
+        if(ENC_B_RC4_GetValue()) //REVERSE DIRECTION DETECTED
+        {
+            EncoderPosition--;
+            EncoderPositionOneCycle--;                        
+        }
+        else//FORWARD DIRECTION DETECTED
+        {
+            EncoderPosition++;
+            EncoderPositionOneCycle++;            
+        }    
+    }
+    else if((OldEncPulseOpState == EnAHiEnBxx) && (EncPulseOpState == EnALoEnBxx))//falling edge
+    {
+        if(ENC_B_RC4_GetValue())//FORWARD DIRECTION DETECTED
+        {
+            EncoderPosition++;
+            EncoderPositionOneCycle++;                        
+        }
+        else //REVERSE DIRECTION DETECTED
+        {
+            EncoderPosition--;
+            EncoderPositionOneCycle--;                        
+        }
+    }    
+
               
 
 //    switch (EncPulseOpState)//will executed only on transition of Pulse Edge
@@ -479,6 +512,7 @@ void NutRunCycleReset(void)
     EncEdgeTimeInterval= 0x00000000;
     
     EncoderPosition= 0; // 
+    //EncoderPositionOneCycle=0;
 
     NutRunLength = 0; // interms of number of encoder pulse.
  
@@ -511,13 +545,15 @@ void getEncoderState(void)
 {
     if(ENC_A_RC5_GetValue())// rising uses timer 3 & CCP1 Enc A
     {
-            EncPulseOpState= EnAHiEnBLo;
+            //EncPulseOpState= EnAHiEnBLo;
+            EncPulseOpState= EnAHiEnBxx;
             //EUSART_Write('2');
     
     }
     else
     {
-            EncPulseOpState= EnALoEnBLo;
+            //EncPulseOpState= EnALoEnBLo;
+            EncPulseOpState= EnALoEnBxx;
             //EUSART_Write('0');
     }
     
@@ -554,22 +590,26 @@ void getEncoderState(void)
 void EncINX_PulseRisingEvent(void)
 {   //on rising only 
     EncoderPositionAtIndex = EncoderPosition;
+    
+    if(EncoderPositionOneCycle < 0)
+        EncoderPositionOneCycle=-EncoderPositionOneCycle;//make all neg to positive
             
-    if(flagForFirstRevolution == 1)
+    if(flagForFirstRevolution == 1 && EncoderPositionOneCycle > 5) 
+        //check 5 so that pending ISR issue due to INX ISR is highest priority 
     {    
-        if((EncoderPositionOneCycle < 32) && (EncoderPositionOneCycle>0))
+        if(EncoderPositionOneCycle < 32)
         {       
-            EncPulseError=1; 
+            EncPulseError=1; //Encoder Fault Code 1: Missing pulse detected in a revolution
             EUSART_Write('X');
+            EUSART_Write(valuetocharHighNibble((unsigned char)((EncoderPositionOneCycle) & 0x00FF)));
+            EUSART_Write(valuetocharLowNibble((unsigned char)((EncoderPositionOneCycle) & 0x00FF)));
         }
-        else if((EncoderPositionOneCycle > -32) && (EncoderPositionOneCycle<0))
+        else if(EncoderPositionOneCycle > 32)
         {
-            EncPulseError=1;
-            EUSART_Write('X');
-        }
-        else if((EncoderPositionOneCycle > 32) || (EncoderPositionOneCycle < -32))
-        {
+            EncPulseError=2; //Encoder Fault Code 2: More pulse detected in a revolution
             EUSART_Write('Y');
+            EUSART_Write(valuetocharHighNibble((unsigned char)((EncoderPositionOneCycle) & 0x00FF)));
+            EUSART_Write(valuetocharLowNibble((unsigned char)((EncoderPositionOneCycle) & 0x00FF)));    
         }    
 //        if((EncoderPositionOneCycle < 64) && (EncoderPositionOneCycle>0))
 //        {       
@@ -587,7 +627,7 @@ void EncINX_PulseRisingEvent(void)
 //        }    
     } 
     
-    flagForFirstRevolution=1;
+    flagForFirstRevolution=1; // to skip First revolution on device start or MCU On
         
     //EUSART_Write('*');
     EncoderPositionOneCycle=0;
