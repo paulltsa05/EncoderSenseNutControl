@@ -30,20 +30,20 @@ extern "C" {
     
 
 //data send to Modbus Slave    
-unsigned char EncPulseCntResult;
-unsigned int EncPulseOpState;
+ unsigned int MBreadSetNoOfPulse;   
+
 
 //data read from Modbus Slave
-unsigned int MBreadNoOfPulseCnt;
-unsigned int MBreadPulseTimeoutSec;
-unsigned int MBread_EPC_Ctrl;
+ unsigned int MBwriteCurrentNoOfPulse;
+ unsigned char MBwriteToolOperating;
 
 
-void ModbusMasterSetup(void);
-void MB_UpdateEPCParameter(void);//update MBreadNoOfPulseCnt and MBreadPulseTimeoutSec
-void MB_getEPC_PLC_Control(void);//update MBread_EPC_Ctrl
-void MB_SendEncPulseOpState(void);//SEND OR WRITE EncPulseOpState
-void MB_SendEncPulseCntResult(void);//SEND OR WRITE Coil EncPulseCntResult
+extern void MB_UpdateEPCParameter(void);//update MBreadSetNoOfPulse variable
+
+void MB_SendMBwriteToolOperating(void);//SEND OR WRITE MBwriteToolOperating
+
+void MB_SendResultNoOfPulse(void);//SEND OR WRITE Coil EncPulseCntResult
+
 
 
 #ifdef	__cplusplus

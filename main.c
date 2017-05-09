@@ -52,7 +52,7 @@
 /*
                          Main application
  */
-unsigned int OldEncPulseOpState=0;
+unsigned int OldEncPulseOpState=0,EncPulseOpState=0;
 
 //unsigned int Speed_rpm_pulseTime=0,Speed_rpm_pulsecnt=0,Speed_rpm=0;
 //unsigned int PulseTime_10uSec=0,PulseCount=0;
@@ -145,16 +145,18 @@ void main(void)
 
     LedONStartConfig(LED_RED, 1, 1);
     while(LedONStatusBusy());//wait for LED blink     
-    LedONStartConfig(LED_GREEN, 1, 1);
-    while(LedONStatusBusy());//wait for LED blink 
-    LedONStartConfig(LED_BLUE, 1, 1);
-    while(LedONStatusBusy());//wait for LED blink    
+//    LedONStartConfig(LED_GREEN, 1, 1);
+//    while(LedONStatusBusy());//wait for LED blink 
+//    LedONStartConfig(LED_BLUE, 1, 1);
+//    while(LedONStatusBusy());//wait for LED blink    
     
     RS485_TXEN_RB6_SetHigh();
     
     //Test RS485
-    EUSART_Write('>');
-    EUSART_Write('>');
+ //   EUSART_Write('>');
+ //   EUSART_Write('>');
+    
+    MB_UpdateEPCParameter();
 
     while (1)
     {
@@ -169,7 +171,7 @@ void main(void)
 //        else
 //            PulseCount++;
         // Add your application code
-        EPC_StateMachineControlLoop();
+ //       EPC_StateMachineControlLoop();
     }
 }
 
@@ -195,34 +197,34 @@ void EPC_StateMachineControlLoop() //call the statemachine in main loop
         ShutdownDetected=0;
         LED_GREEN_RC1_SetLow();
         LedONStartConfig(LED_RED, 2, 15);
-        EUSART_Write('\r');
-        EUSART_Write('\n');
-        EUSART_Write('N');
-        EUSART_Write('u');
-        EUSART_Write('t');
-        EUSART_Write(' ');
-        EUSART_Write('R');
-        EUSART_Write('u');
-        EUSART_Write('N');
-        EUSART_Write('=');
-        EUSART_Write('0');
-        EUSART_Write('x');
-        EUSART_Write(valuetocharHighNibble((unsigned char)((unsigned int)(NutRunLength>>8) & 0x00FF)));
-        EUSART_Write(valuetocharLowNibble((unsigned char)((unsigned int)(NutRunLength>>8) & 0x00FF)));
-        EUSART_Write(valuetocharHighNibble((unsigned char)((unsigned int)(NutRunLength) & 0x00FF)));
-        EUSART_Write(valuetocharLowNibble((unsigned char)((unsigned int)(NutRunLength) & 0x00FF)));  
-        EUSART_Write(',');
-        EUSART_Write(valuetocharHighNibble((unsigned char)((unsigned long)(EncEdgeMinTimeInterval>>24) & 0x000000FF)));
-        EUSART_Write(valuetocharLowNibble((unsigned char)((unsigned long)(EncEdgeMinTimeInterval>>24) & 0x000000FF)));
-        EUSART_Write(valuetocharHighNibble((unsigned char)((unsigned long)(EncEdgeMinTimeInterval>>16) & 0x000000FF)));
-        EUSART_Write(valuetocharLowNibble((unsigned char)((unsigned long)(EncEdgeMinTimeInterval>>16) & 0x000000FF)));
-        EUSART_Write(valuetocharHighNibble((unsigned char)((unsigned int)(EncEdgeMinTimeInterval>>8) & 0x00FF)));
-        EUSART_Write(valuetocharLowNibble((unsigned char)((unsigned int)(EncEdgeMinTimeInterval>>8) & 0x00FF)));
-        EUSART_Write(valuetocharHighNibble((unsigned char)((unsigned int)(EncEdgeMinTimeInterval) & 0x00FF)));
-        EUSART_Write(valuetocharLowNibble((unsigned char)((unsigned int)(EncEdgeMinTimeInterval) & 0x00FF)));  
-
-        EUSART_Write('\r');
-        EUSART_Write('\n');
+//        EUSART_Write('\r');
+//        EUSART_Write('\n');
+//        EUSART_Write('N');
+//        EUSART_Write('u');
+//        EUSART_Write('t');
+//        EUSART_Write(' ');
+//        EUSART_Write('R');
+//        EUSART_Write('u');
+//        EUSART_Write('N');
+//        EUSART_Write('=');
+//        EUSART_Write('0');
+//        EUSART_Write('x');
+//        EUSART_Write(valuetocharHighNibble((unsigned char)((unsigned int)(NutRunLength>>8) & 0x00FF)));
+//        EUSART_Write(valuetocharLowNibble((unsigned char)((unsigned int)(NutRunLength>>8) & 0x00FF)));
+//        EUSART_Write(valuetocharHighNibble((unsigned char)((unsigned int)(NutRunLength) & 0x00FF)));
+//        EUSART_Write(valuetocharLowNibble((unsigned char)((unsigned int)(NutRunLength) & 0x00FF)));  
+//        EUSART_Write(',');
+//        EUSART_Write(valuetocharHighNibble((unsigned char)((unsigned long)(EncEdgeMinTimeInterval>>24) & 0x000000FF)));
+//        EUSART_Write(valuetocharLowNibble((unsigned char)((unsigned long)(EncEdgeMinTimeInterval>>24) & 0x000000FF)));
+//        EUSART_Write(valuetocharHighNibble((unsigned char)((unsigned long)(EncEdgeMinTimeInterval>>16) & 0x000000FF)));
+//        EUSART_Write(valuetocharLowNibble((unsigned char)((unsigned long)(EncEdgeMinTimeInterval>>16) & 0x000000FF)));
+//        EUSART_Write(valuetocharHighNibble((unsigned char)((unsigned int)(EncEdgeMinTimeInterval>>8) & 0x00FF)));
+//        EUSART_Write(valuetocharLowNibble((unsigned char)((unsigned int)(EncEdgeMinTimeInterval>>8) & 0x00FF)));
+//        EUSART_Write(valuetocharHighNibble((unsigned char)((unsigned int)(EncEdgeMinTimeInterval) & 0x00FF)));
+//        EUSART_Write(valuetocharLowNibble((unsigned char)((unsigned int)(EncEdgeMinTimeInterval) & 0x00FF)));  
+//
+//        EUSART_Write('\r');
+//        EUSART_Write('\n');
 
  
     }
@@ -269,7 +271,7 @@ void EncA_PulseEdgeEvent(uint16_t capturedValue)// ISR callback function
     PIE4bits.CCP1IE = 0;
     // Disable the CCP2 interrupt
     PIE4bits.CCP2IE = 0;    
-    OnEncPulseEdgeEvent(capturedValue);
+//    OnEncPulseEdgeEvent(capturedValue);
 //    // Disable the CCP1 interrupt
     PIE4bits.CCP1IE = 1;
 //    // Enable the CCP2 interrupt
@@ -600,16 +602,16 @@ void EncINX_PulseRisingEvent(void)
         if(EncoderPositionOneCycle < 32)
         {       
             EncPulseError=1; //Encoder Fault Code 1: Missing pulse detected in a revolution
-            EUSART_Write('X');
-            EUSART_Write(valuetocharHighNibble((unsigned char)((EncoderPositionOneCycle) & 0x00FF)));
-            EUSART_Write(valuetocharLowNibble((unsigned char)((EncoderPositionOneCycle) & 0x00FF)));
+//            EUSART_Write('X');
+//            EUSART_Write(valuetocharHighNibble((unsigned char)((EncoderPositionOneCycle) & 0x00FF)));
+//            EUSART_Write(valuetocharLowNibble((unsigned char)((EncoderPositionOneCycle) & 0x00FF)));
         }
         else if(EncoderPositionOneCycle > 32)
         {
             EncPulseError=2; //Encoder Fault Code 2: More pulse detected in a revolution
-            EUSART_Write('Y');
-            EUSART_Write(valuetocharHighNibble((unsigned char)((EncoderPositionOneCycle) & 0x00FF)));
-            EUSART_Write(valuetocharLowNibble((unsigned char)((EncoderPositionOneCycle) & 0x00FF)));    
+//            EUSART_Write('Y');
+//            EUSART_Write(valuetocharHighNibble((unsigned char)((EncoderPositionOneCycle) & 0x00FF)));
+//            EUSART_Write(valuetocharLowNibble((unsigned char)((EncoderPositionOneCycle) & 0x00FF)));    
         }    
 //        if((EncoderPositionOneCycle < 64) && (EncoderPositionOneCycle>0))
 //        {       

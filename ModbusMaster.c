@@ -630,6 +630,24 @@ unsigned char ModbusMasterTransaction(unsigned char u8MBFunction)
       break;
   }
   
+  
+//  //Test query to slave
+////  Example
+////Field Name (Hex)
+////Slave Address 11
+////Function 08
+////Subfunction Hi 00
+////Subfunction Lo 00
+////Data Hi A5
+////Data Lo 37
+//  u8ModbusADUSize=0;
+//  u8ModbusADU[u8ModbusADUSize++]=0x05;
+//  u8ModbusADU[u8ModbusADUSize++]=0x08;//function code
+//  u8ModbusADU[u8ModbusADUSize++]=0x00;
+//  u8ModbusADU[u8ModbusADUSize++]=0x00;
+//  u8ModbusADU[u8ModbusADUSize++]=0xA5;        
+//  u8ModbusADU[u8ModbusADUSize++]=0x37;
+  
   // append CRC
   u16CRC = 0xFFFF;
   for (i = 0; i < u8ModbusADUSize; i++)
@@ -652,6 +670,8 @@ unsigned char ModbusMasterTransaction(unsigned char u8MBFunction)
   for (i = 0; i < u8ModbusADUSize; i++)
   {
     EUSART_Write(u8ModbusADU[i]);
+    u8ModbusADU[i]=0;
+    
   }
   
   u8ModbusADUSize = 0;
@@ -698,7 +718,7 @@ unsigned char ModbusMasterTransaction(unsigned char u8MBFunction)
  //   }
     
     // evaluate slave ID, function code once enough bytes have been read
-    if (u8ModbusADUSize == 5)
+    if (u8ModbusADUSize == 2)//5)
     {
       // verify response is for correct Modbus slave
       if (u8ModbusADU[0] != _u8MBSlave)

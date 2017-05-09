@@ -28,7 +28,7 @@ static unsigned int crc16_update(unsigned int crc, unsigned char a)
 {
   int i;
 
-  crc ^= a;
+  crc ^= (unsigned int)a;
   for (i = 0; i < 8; ++i)
   {
     if (crc & 1)
