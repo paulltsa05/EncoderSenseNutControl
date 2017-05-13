@@ -6,8 +6,7 @@
 
 
 /* _____GLOBAL VARIABLES_____________________________________________________ */
-
-
+unsigned char u8ModbusADU[64];  
 /* _____PUBLIC FUNCTIONS_____________________________________________________ */
 /**
 Constructor.
@@ -92,13 +91,6 @@ void send8(unsigned char data)
 {
   send16(((unsigned int)data)&0x00FF);
 }
-
-
-
-
-
-
-
 
 
 unsigned char available(void)
@@ -538,7 +530,7 @@ Sequence:
 unsigned char ModbusMasterTransaction(unsigned char u8MBFunction)
 {
   //unsigned char u8ModbusADU[256];
-  unsigned char u8ModbusADU[64];  
+//  unsigned char u8ModbusADU[64];  
   unsigned char u8ModbusADUSize = 0;
   unsigned char i, u8Qty;
   unsigned int u16CRC;
@@ -656,11 +648,12 @@ unsigned char ModbusMasterTransaction(unsigned char u8MBFunction)
   }
   u8ModbusADU[u8ModbusADUSize++] = lowByte(u16CRC);
   u8ModbusADU[u8ModbusADUSize++] = highByte(u16CRC);
-  u8ModbusADU[u8ModbusADUSize] = 0;
+  u8ModbusADU[u8ModbusADUSize++] = '\r';
+  u8ModbusADU[u8ModbusADUSize] = '\n';
 
   // flush receive buffer before transmitting request
   //while (_serial->read() != -1);
-    if(PIR1bits.RCIF){PIR1bits.RCIF=0;}//clear all RCIF
+    
 
   // transmit request
   if (_preTransmission)
@@ -673,7 +666,7 @@ unsigned char ModbusMasterTransaction(unsigned char u8MBFunction)
     u8ModbusADU[i]=0;
     
   }
-  
+  if(PIR1bits.RCIF){PIR1bits.RCIF=0;}//clear all RCIF
   u8ModbusADUSize = 0;
  // _serial->flush();    // wait flush transmit buffer
   while(0 == PIR1bits.TXIF)

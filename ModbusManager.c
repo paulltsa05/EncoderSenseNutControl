@@ -5,13 +5,13 @@
 #include "mcc_generated_files/eusart.h"
 
 //*****************  Modbus DATA ******************************** 
-#define MODBUSSLAVE_ID 5
+#define MODBUSSLAVE_ID 0x05
 //EPC-MCU : (Encoder Pulse Counter MCU is the Master) Data for Modbus Communication
 
 //##########  Slave to Master  --- Register data array of 4 bytes at start address 0xE100
     
     //Holding register
-    #define ADDR_MBreadParam        14 // offset 40001 + 14 = 40015 //Start address of 4 byte Pulse count Parameter data
+    #define ADDR_MBreadParam        1107 // offset 40001 + 14 = 40015 //Start address of 4 byte Pulse count Parameter data
     unsigned int MBreadSetNoOfPulse=0;
     
 //##########   Master to slave  --- Binary data (represent as coil in MOdbus)

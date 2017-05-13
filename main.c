@@ -171,6 +171,8 @@ void main(void)
 //        else
 //            PulseCount++;
         // Add your application code
+        MB_UpdateEPCParameter();
+        delayMsec(2000);
  //       EPC_StateMachineControlLoop();
     }
 }
