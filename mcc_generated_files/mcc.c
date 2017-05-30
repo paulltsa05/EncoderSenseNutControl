@@ -91,8 +91,8 @@ void SYSTEM_Initialize(void)
 
 void OSCILLATOR_Initialize(void)
 {
-    // NOSC HFINTOSC with 2x PLL; NDIV 1; 
-    OSCCON1 = 0x00;
+    // NOSC HFINTOSC with 2x PLL; NDIV 4; 
+    OSCCON1 = 0x02;
     // CSWHOLD may proceed; SOSCPWR Low power; SOSCBE crystal oscillator; 
     OSCCON3 = 0x00;
     // LFOEN disabled; ADOEN disabled; SOSCEN disabled; EXTOEN disabled; HFOEN disabled; 

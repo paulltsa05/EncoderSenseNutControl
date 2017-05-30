@@ -183,7 +183,7 @@ void main(void)
   
     Modbusinit(0);//Master mode init if 0
     ModbussetTimeOut( 1000 );
-    u32wait = millis() + 1000;
+    u32wait = millis() + 250;
     u8state_t = 0;
     u8query= 0;
 
@@ -204,7 +204,7 @@ void main(void)
                  ModbuspollMaster(); // check incoming messages
                  if (ModbusgetState() == COM_IDLE) {
                    u8state_t = 0;
-                   u32wait = millis() + 1000; 
+                   u32wait = millis() + 250; 
 
                  }
                  au16data[4]=au16data[3];

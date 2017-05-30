@@ -13,47 +13,47 @@
 %PSECTS
 $dist/default/debug\EncoderSenseNutControl.debug.obj
 cinit CODE 0 68 68 39 2
-text1 CODE 0 DFD DFD B 2
-text2 CODE 0 EA9 EA9 12 2
-text3 CODE 0 F0F F0F 17 2
+text1 CODE 0 DFE DFE B 2
+text2 CODE 0 EAA EAA 12 2
+text3 CODE 0 F10 F10 17 2
 text4 CODE 0 D63 D63 3 2
 text5 CODE 0 D60 D60 3 2
 text6 CODE 0 7BB 7BB 21 2
 text7 CODE 0 D66 D66 4 2
 text8 CODE 0 F8F F8F 1B 2
 text9 CODE 0 D5D D5D 3 2
-text10 CODE 0 DDF DDF 9 2
+text10 CODE 0 DE0 DE0 9 2
 text11 CODE 0 F74 F74 1B 2
-text12 CODE 0 DD6 DD6 9 2
-text13 CODE 0 EE3 EE3 15 2
+text12 CODE 0 DD7 DD7 9 2
+text13 CODE 0 EE4 EE4 15 2
 text14 CODE 0 D5A D5A 3 2
-text15 CODE 0 DCD DCD 9 2
+text15 CODE 0 DCE DCE 9 2
 text16 CODE 0 555 555 61 2
-text17 CODE 0 DC4 DC4 9 2
-text18 CODE 0 DBB DBB 9 2
-text19 CODE 0 D87 D87 8 2
-text20 CODE 0 E14 E14 C 2
-text21 CODE 0 DB2 DB2 9 2
-text22 CODE 0 DA9 DA9 9 2
-text23 CODE 0 E65 E65 F 2
-text24 CODE 0 DA0 DA0 9 2
-text25 CODE 0 E56 E56 F 2
-text26 CODE 0 EF8 EF8 17 2
+text17 CODE 0 DC5 DC5 9 2
+text18 CODE 0 DBC DBC 9 2
+text19 CODE 0 DB3 DB3 9 2
+text20 CODE 0 E15 E15 C 2
+text21 CODE 0 DAA DAA 9 2
+text22 CODE 0 DA1 DA1 9 2
+text23 CODE 0 E66 E66 F 2
+text24 CODE 0 D98 D98 9 2
+text25 CODE 0 E57 E57 F 2
+text26 CODE 0 EF9 EF9 17 2
 text27 CODE 0 D57 D57 3 2
-text28 CODE 0 F26 F26 18 2
+text28 CODE 0 F27 F27 18 2
 text29 CODE 0 D41 D41 1 2
 text30 CODE 0 A1 A1 13B 2
 text31 CODE 0 39E 39E 71 2
-text32 CODE 0 DE8 DE8 A 2
+text32 CODE 0 DE9 DE9 A 2
 text33 CODE 0 799 799 22 2
-text34 CODE 0 E48 E48 E 2
+text34 CODE 0 E49 E49 E 2
 text35 CODE 0 2EC 2EC B2 2
 text36 CODE 0 480 480 6C 2
 text37 CODE 0 5B6 5B6 53 2
-text38 CODE 0 E74 E74 11 2
+text38 CODE 0 E75 E75 11 2
 text39 CODE 0 65B 65B 47 2
 text40 CODE 0 6A2 6A2 44 2
-text41 CODE 0 E97 E97 12 2
+text41 CODE 0 E98 E98 12 2
 text42 CODE 0 609 609 52 2
 text43 CODE 0 71B 71B 32 2
 text44 CODE 0 D54 D54 3 2
@@ -61,36 +61,36 @@ text45 CODE 0 7DC 7DC 20 2
 text46 CODE 0 D51 D51 3 2
 text47 CODE 0 F59 F59 1B 2
 text48 CODE 0 D4E D4E 3 2
-text49 CODE 0 F3E F3E 1B 2
+text49 CODE 0 F3F F3F 1A 2
 text50 CODE 0 D4B D4B 3 2
 text51 CODE 0 D48 D48 3 2
 text52 CODE 0 4EC 4EC 69 2
 text53 CODE 0 FC6 FC6 1C 2
 text54 CODE 0 6E6 6E6 35 2
-text56 CODE 0 ECF ECF 14 2
+text56 CODE 0 ED0 ED0 14 2
 text57 CODE 0 D45 D45 3 2
 text58 CODE 0 D40 D40 1 2
-text59 CODE 0 EBB EBB 14 2
+text59 CODE 0 EBC EBC 14 2
 text60 CODE 0 D42 D42 3 2
 text61 CODE 0 74D 74D 26 2
 text62 CODE 0 D6F D6F 5 2
-text63 CODE 0 E3A E3A E 2
+text63 CODE 0 E3B E3B E 2
 text64 CODE 0 773 773 26 2
 text65 CODE 0 40F 40F 71 2
 text66 CODE 0 D3F D3F 1 2
-text67 CODE 0 E08 E08 C 2
-text68 CODE 0 E2D E2D D 2
+text67 CODE 0 E09 E09 C 2
+text68 CODE 0 E2E E2E D 2
 text69 CODE 0 D3E D3E 1 2
-text70 CODE 0 E20 E20 D 2
+text70 CODE 0 E21 E21 D 2
 text71 CODE 0 D3D D3D 1 2
 text72 CODE 0 D6A D6A 5 2
-text73 CODE 0 DF2 DF2 B 2
+text73 CODE 0 DF3 DF3 B 2
 text74 CODE 0 D3C D3C 1 2
 text75 CODE 0 FE2 FE2 1E 2
 text76 CODE 0 FAA FAA 1C 2
-text77 CODE 0 E85 E85 12 2
+text77 CODE 0 E86 E86 12 2
 text78 CODE 0 D80 D80 7 2
-text79 CODE 0 D97 D97 9 2
+text79 CODE 0 D8F D8F 9 2
 nvBANK0 BANK0 1 6A 6A 5 1
 nvBANK1 BANK1 1 EE EE 2 1
 nvBANK2 BANK2 1 15A 15A A 1
@@ -105,12 +105,12 @@ bssBANK2 BANK2 1 120 120 3A 1
 bssBANK3 BANK3 1 1A0 1A0 40 1
 stringtext STRCODE 0 7FC 7FC 8 2
 idataBANK0 CODE 0 3 3 1 2
-idataBANK1 CODE 0 D8F D8F 8 2
+idataBANK1 CODE 0 D87 D87 8 2
 dataBANK0 BANK0 1 6F 6F 1 1
 dataBANK1 BANK1 1 E6 E6 8 1
 clrtext CODE 0 D74 D74 6 2
 bssCOMMON COMMON 1 78 78 6 1
-$C:\Users\paull\AppData\Local\Temp\sf7k.obj
+$C:\Users\paull\AppData\Local\Temp\shpc.obj
 reset_vec CODE 0 0 0 3 2
 end_init CODE 0 66 66 2 2
 config CONFIG 0 8007 8007 4 2
@@ -185,54 +185,54 @@ STRING 804-D3B 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/debug\EncoderSenseNutControl.debug.obj
-68 cinit CODE >10058:C:\Users\paull\AppData\Local\Temp\sf7k.
-68 cinit CODE >10061:C:\Users\paull\AppData\Local\Temp\sf7k.
-68 cinit CODE >10273:C:\Users\paull\AppData\Local\Temp\sf7k.
-6B cinit CODE >10274:C:\Users\paull\AppData\Local\Temp\sf7k.
-6C cinit CODE >10278:C:\Users\paull\AppData\Local\Temp\sf7k.
-6D cinit CODE >10279:C:\Users\paull\AppData\Local\Temp\sf7k.
-6E cinit CODE >10280:C:\Users\paull\AppData\Local\Temp\sf7k.
-6F cinit CODE >10281:C:\Users\paull\AppData\Local\Temp\sf7k.
-70 cinit CODE >10282:C:\Users\paull\AppData\Local\Temp\sf7k.
-71 cinit CODE >10283:C:\Users\paull\AppData\Local\Temp\sf7k.
-72 cinit CODE >10284:C:\Users\paull\AppData\Local\Temp\sf7k.
-73 cinit CODE >10285:C:\Users\paull\AppData\Local\Temp\sf7k.
-74 cinit CODE >10286:C:\Users\paull\AppData\Local\Temp\sf7k.
-75 cinit CODE >10287:C:\Users\paull\AppData\Local\Temp\sf7k.
-78 cinit CODE >10304:C:\Users\paull\AppData\Local\Temp\sf7k.
-79 cinit CODE >10305:C:\Users\paull\AppData\Local\Temp\sf7k.
-7A cinit CODE >10306:C:\Users\paull\AppData\Local\Temp\sf7k.
-7B cinit CODE >10307:C:\Users\paull\AppData\Local\Temp\sf7k.
-7C cinit CODE >10308:C:\Users\paull\AppData\Local\Temp\sf7k.
-7D cinit CODE >10309:C:\Users\paull\AppData\Local\Temp\sf7k.
-7E cinit CODE >10313:C:\Users\paull\AppData\Local\Temp\sf7k.
-7F cinit CODE >10314:C:\Users\paull\AppData\Local\Temp\sf7k.
-80 cinit CODE >10315:C:\Users\paull\AppData\Local\Temp\sf7k.
-81 cinit CODE >10316:C:\Users\paull\AppData\Local\Temp\sf7k.
-82 cinit CODE >10317:C:\Users\paull\AppData\Local\Temp\sf7k.
-83 cinit CODE >10318:C:\Users\paull\AppData\Local\Temp\sf7k.
-86 cinit CODE >10322:C:\Users\paull\AppData\Local\Temp\sf7k.
-87 cinit CODE >10323:C:\Users\paull\AppData\Local\Temp\sf7k.
-88 cinit CODE >10324:C:\Users\paull\AppData\Local\Temp\sf7k.
-89 cinit CODE >10325:C:\Users\paull\AppData\Local\Temp\sf7k.
-8A cinit CODE >10326:C:\Users\paull\AppData\Local\Temp\sf7k.
-8B cinit CODE >10327:C:\Users\paull\AppData\Local\Temp\sf7k.
-8E cinit CODE >10331:C:\Users\paull\AppData\Local\Temp\sf7k.
-8F cinit CODE >10332:C:\Users\paull\AppData\Local\Temp\sf7k.
-90 cinit CODE >10333:C:\Users\paull\AppData\Local\Temp\sf7k.
-91 cinit CODE >10334:C:\Users\paull\AppData\Local\Temp\sf7k.
-92 cinit CODE >10335:C:\Users\paull\AppData\Local\Temp\sf7k.
-93 cinit CODE >10336:C:\Users\paull\AppData\Local\Temp\sf7k.
-96 cinit CODE >10340:C:\Users\paull\AppData\Local\Temp\sf7k.
-97 cinit CODE >10341:C:\Users\paull\AppData\Local\Temp\sf7k.
-98 cinit CODE >10342:C:\Users\paull\AppData\Local\Temp\sf7k.
-99 cinit CODE >10343:C:\Users\paull\AppData\Local\Temp\sf7k.
-9A cinit CODE >10344:C:\Users\paull\AppData\Local\Temp\sf7k.
-9B cinit CODE >10345:C:\Users\paull\AppData\Local\Temp\sf7k.
-9D cinit CODE >10351:C:\Users\paull\AppData\Local\Temp\sf7k.
-9D cinit CODE >10353:C:\Users\paull\AppData\Local\Temp\sf7k.
-9E cinit CODE >10354:C:\Users\paull\AppData\Local\Temp\sf7k.
-9F cinit CODE >10355:C:\Users\paull\AppData\Local\Temp\sf7k.
+68 cinit CODE >10058:C:\Users\paull\AppData\Local\Temp\shpc.
+68 cinit CODE >10061:C:\Users\paull\AppData\Local\Temp\shpc.
+68 cinit CODE >10273:C:\Users\paull\AppData\Local\Temp\shpc.
+6B cinit CODE >10274:C:\Users\paull\AppData\Local\Temp\shpc.
+6C cinit CODE >10278:C:\Users\paull\AppData\Local\Temp\shpc.
+6D cinit CODE >10279:C:\Users\paull\AppData\Local\Temp\shpc.
+6E cinit CODE >10280:C:\Users\paull\AppData\Local\Temp\shpc.
+6F cinit CODE >10281:C:\Users\paull\AppData\Local\Temp\shpc.
+70 cinit CODE >10282:C:\Users\paull\AppData\Local\Temp\shpc.
+71 cinit CODE >10283:C:\Users\paull\AppData\Local\Temp\shpc.
+72 cinit CODE >10284:C:\Users\paull\AppData\Local\Temp\shpc.
+73 cinit CODE >10285:C:\Users\paull\AppData\Local\Temp\shpc.
+74 cinit CODE >10286:C:\Users\paull\AppData\Local\Temp\shpc.
+75 cinit CODE >10287:C:\Users\paull\AppData\Local\Temp\shpc.
+78 cinit CODE >10304:C:\Users\paull\AppData\Local\Temp\shpc.
+79 cinit CODE >10305:C:\Users\paull\AppData\Local\Temp\shpc.
+7A cinit CODE >10306:C:\Users\paull\AppData\Local\Temp\shpc.
+7B cinit CODE >10307:C:\Users\paull\AppData\Local\Temp\shpc.
+7C cinit CODE >10308:C:\Users\paull\AppData\Local\Temp\shpc.
+7D cinit CODE >10309:C:\Users\paull\AppData\Local\Temp\shpc.
+7E cinit CODE >10313:C:\Users\paull\AppData\Local\Temp\shpc.
+7F cinit CODE >10314:C:\Users\paull\AppData\Local\Temp\shpc.
+80 cinit CODE >10315:C:\Users\paull\AppData\Local\Temp\shpc.
+81 cinit CODE >10316:C:\Users\paull\AppData\Local\Temp\shpc.
+82 cinit CODE >10317:C:\Users\paull\AppData\Local\Temp\shpc.
+83 cinit CODE >10318:C:\Users\paull\AppData\Local\Temp\shpc.
+86 cinit CODE >10322:C:\Users\paull\AppData\Local\Temp\shpc.
+87 cinit CODE >10323:C:\Users\paull\AppData\Local\Temp\shpc.
+88 cinit CODE >10324:C:\Users\paull\AppData\Local\Temp\shpc.
+89 cinit CODE >10325:C:\Users\paull\AppData\Local\Temp\shpc.
+8A cinit CODE >10326:C:\Users\paull\AppData\Local\Temp\shpc.
+8B cinit CODE >10327:C:\Users\paull\AppData\Local\Temp\shpc.
+8E cinit CODE >10331:C:\Users\paull\AppData\Local\Temp\shpc.
+8F cinit CODE >10332:C:\Users\paull\AppData\Local\Temp\shpc.
+90 cinit CODE >10333:C:\Users\paull\AppData\Local\Temp\shpc.
+91 cinit CODE >10334:C:\Users\paull\AppData\Local\Temp\shpc.
+92 cinit CODE >10335:C:\Users\paull\AppData\Local\Temp\shpc.
+93 cinit CODE >10336:C:\Users\paull\AppData\Local\Temp\shpc.
+96 cinit CODE >10340:C:\Users\paull\AppData\Local\Temp\shpc.
+97 cinit CODE >10341:C:\Users\paull\AppData\Local\Temp\shpc.
+98 cinit CODE >10342:C:\Users\paull\AppData\Local\Temp\shpc.
+99 cinit CODE >10343:C:\Users\paull\AppData\Local\Temp\shpc.
+9A cinit CODE >10344:C:\Users\paull\AppData\Local\Temp\shpc.
+9B cinit CODE >10345:C:\Users\paull\AppData\Local\Temp\shpc.
+9D cinit CODE >10351:C:\Users\paull\AppData\Local\Temp\shpc.
+9D cinit CODE >10353:C:\Users\paull\AppData\Local\Temp\shpc.
+9E cinit CODE >10354:C:\Users\paull\AppData\Local\Temp\shpc.
+9F cinit CODE >10355:C:\Users\paull\AppData\Local\Temp\shpc.
 4 intentry CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
 4 intentry CODE >51:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/interrupt_manager.c
 9 intentry CODE >54:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/interrupt_manager.c
@@ -259,21 +259,21 @@ F intentry CODE >56:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\m
 59 intentry CODE >82:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/interrupt_manager.c
 5F intentry CODE >84:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/interrupt_manager.c
 61 intentry CODE >90:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/interrupt_manager.c
-D97 text79 CODE >320:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-D97 text79 CODE >322:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-D99 text79 CODE >324:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-D9B text79 CODE >326:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-D9C text79 CODE >329:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-D9D text79 CODE >332:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+D8F text79 CODE >320:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+D8F text79 CODE >322:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+D91 text79 CODE >324:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+D93 text79 CODE >326:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+D94 text79 CODE >329:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+D95 text79 CODE >332:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
 D80 text78 CODE >99:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
 D80 text78 CODE >102:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
 D86 text78 CODE >103:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
-E85 text77 CODE >84:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
-E85 text77 CODE >89:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
-E87 text77 CODE >92:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
-E8C text77 CODE >93:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
-E90 text77 CODE >96:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
-E96 text77 CODE >97:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
+E86 text77 CODE >84:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
+E86 text77 CODE >89:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
+E88 text77 CODE >92:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
+E8D text77 CODE >93:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
+E91 text77 CODE >96:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
+E97 text77 CODE >97:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
 FAA text76 CODE >174:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/eusart.c
 FAA text76 CODE >177:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/eusart.c
 FAD text76 CODE >181:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/eusart.c
@@ -294,32 +294,32 @@ FFD text75 CODE >168:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\
 FFD text75 CODE >170:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/eusart.c
 D3C text74 CODE >77:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
 D3C text74 CODE >80:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
-DF2 text73 CODE >58:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
-DF2 text73 CODE >61:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
-DF7 text73 CODE >63:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
+DF3 text73 CODE >58:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
+DF3 text73 CODE >61:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
+DF8 text73 CODE >63:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
 D6A text72 CODE >43:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
 D6A text72 CODE >49:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
 D6C text72 CODE >52:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
 D6E text72 CODE >53:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
 D3D text71 CODE >174:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
 D3D text71 CODE >177:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
-E20 text70 CODE >152:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
-E20 text70 CODE >157:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
-E25 text70 CODE >159:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
-E2A text70 CODE >161:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
-E2C text70 CODE >162:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
+E21 text70 CODE >152:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
+E21 text70 CODE >157:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
+E26 text70 CODE >159:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
+E2B text70 CODE >161:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
+E2D text70 CODE >162:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
 D3E text69 CODE >204:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
 D3E text69 CODE >207:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
-E2D text68 CODE >182:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
-E2D text68 CODE >187:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
-E32 text68 CODE >189:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
-E37 text68 CODE >191:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
-E39 text68 CODE >192:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
-E08 text67 CODE >132:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
-E08 text67 CODE >135:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
-E0B text67 CODE >137:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
-E0E text67 CODE >141:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
-E11 text67 CODE >143:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
+E2E text68 CODE >182:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
+E2E text68 CODE >187:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
+E33 text68 CODE >189:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
+E38 text68 CODE >191:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
+E3A text68 CODE >192:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
+E09 text67 CODE >132:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
+E09 text67 CODE >135:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
+E0C text67 CODE >137:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
+E0F text67 CODE >141:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
+E12 text67 CODE >143:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
 D3F text66 CODE >149:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
 D3F text66 CODE >152:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
 40F text65 CODE >54:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\LED_Ctrl.c
@@ -349,10 +349,10 @@ D3F text66 CODE >152:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\
 776 text64 CODE >708:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
 78F text64 CODE >710:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
 793 text64 CODE >711:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-E3A text63 CODE >134:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
-E3A text63 CODE >137:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
-E3D text63 CODE >139:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
-E42 text63 CODE >141:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
+E3B text63 CODE >134:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
+E3B text63 CODE >137:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
+E3E text63 CODE >139:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
+E43 text63 CODE >141:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
 D6F text62 CODE >123:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
 D6F text62 CODE >126:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
 D71 text62 CODE >129:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
@@ -364,23 +364,23 @@ D73 text62 CODE >132:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\
 D42 text60 CODE >176:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
 D42 text60 CODE >178:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
 D44 text60 CODE >180:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
-EBB text59 CODE >156:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
-EBB text59 CODE >160:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
-EBD text59 CODE >162:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
-EC0 text59 CODE >163:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
-EC4 text59 CODE >165:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
-EC9 text59 CODE >167:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
+EBC text59 CODE >156:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
+EBC text59 CODE >160:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
+EBE text59 CODE >162:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
+EC1 text59 CODE >163:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
+EC5 text59 CODE >165:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
+ECA text59 CODE >167:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
 D40 text58 CODE >699:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
 D40 text58 CODE >702:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
 D45 text57 CODE >176:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
 D45 text57 CODE >178:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
 D47 text57 CODE >180:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
-ECF text56 CODE >156:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
-ECF text56 CODE >160:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
-ED1 text56 CODE >162:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
-ED4 text56 CODE >163:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
-ED8 text56 CODE >165:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
-EDD text56 CODE >167:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
+ED0 text56 CODE >156:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
+ED0 text56 CODE >160:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
+ED2 text56 CODE >162:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
+ED5 text56 CODE >163:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
+ED9 text56 CODE >165:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
+EDE text56 CODE >167:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
 6E6 text54 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
 6E6 text54 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
 6E9 text54 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
@@ -427,14 +427,14 @@ D48 text51 CODE >12:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\L
 D48 text51 CODE >14:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\LED_Ctrl.c
 D4B text50 CODE >1023:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\modbusMS.c
 D4B text50 CODE >1025:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\modbusMS.c
-F3E text49 CODE >75:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/eusart.c
-F3E text49 CODE >78:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/eusart.c
-F40 text49 CODE >79:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/eusart.c
-F41 text49 CODE >84:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/eusart.c
-F44 text49 CODE >87:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/eusart.c
-F46 text49 CODE >90:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/eusart.c
-F48 text49 CODE >93:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/eusart.c
-F4A text49 CODE >96:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/eusart.c
+F3F text49 CODE >75:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/eusart.c
+F3F text49 CODE >78:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/eusart.c
+F41 text49 CODE >79:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/eusart.c
+F42 text49 CODE >84:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/eusart.c
+F45 text49 CODE >87:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/eusart.c
+F47 text49 CODE >90:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/eusart.c
+F49 text49 CODE >93:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/eusart.c
+F4B text49 CODE >96:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/eusart.c
 F4C text49 CODE >100:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/eusart.c
 F4D text49 CODE >101:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/eusart.c
 F4E text49 CODE >102:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/eusart.c
@@ -503,8 +503,8 @@ D54 text44 CODE >809:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\
 64E text42 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
 651 text42 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
 656 text42 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
-E97 text41 CODE >1042:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\modbusMS.c
-E99 text41 CODE >1044:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\modbusMS.c
+E98 text41 CODE >1042:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\modbusMS.c
+E9A text41 CODE >1044:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\modbusMS.c
 6A2 text40 CODE >657:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\modbusMS.c
 6A2 text40 CODE >660:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\modbusMS.c
 6A4 text40 CODE >662:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\modbusMS.c
@@ -517,8 +517,8 @@ E99 text41 CODE >1044:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl
 67B text39 CODE >682:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\modbusMS.c
 699 text39 CODE >685:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\modbusMS.c
 69D text39 CODE >680:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\modbusMS.c
-E74 text38 CODE >714:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-E74 text38 CODE >716:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+E75 text38 CODE >714:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+E75 text38 CODE >716:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
 5B6 text37 CODE >495:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\modbusMS.c
 5B8 text37 CODE >498:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\modbusMS.c
 5BC text37 CODE >499:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\modbusMS.c
@@ -583,23 +583,23 @@ E74 text38 CODE >716:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\
 37F text35 CODE >300:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\modbusMS.c
 380 text35 CODE >266:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\modbusMS.c
 39B text35 CODE >301:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\modbusMS.c
-E48 text34 CODE >795:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-E48 text34 CODE >798:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-E4C text34 CODE >800:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-E53 text34 CODE >798:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-E54 text34 CODE >802:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-E55 text34 CODE >804:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+E49 text34 CODE >795:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+E49 text34 CODE >798:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+E4D text34 CODE >800:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+E54 text34 CODE >798:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+E55 text34 CODE >802:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+E56 text34 CODE >804:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
 799 text33 CODE >724:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
 799 text33 CODE >726:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
 79C text33 CODE >727:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
 79F text33 CODE >728:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
 7B9 text33 CODE >729:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
 7BA text33 CODE >730:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-DE8 text32 CODE >811:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-DEA text32 CODE >814:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-DEB text32 CODE >815:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-DEE text32 CODE >816:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-DEE text32 CODE >818:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+DE9 text32 CODE >811:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+DEB text32 CODE >814:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+DEC text32 CODE >815:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+DEF text32 CODE >816:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+DEF text32 CODE >818:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
 39E text31 CODE >444:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\modbusMS.c
 39E text31 CODE >446:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\modbusMS.c
 3A0 text31 CODE >449:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\modbusMS.c
@@ -671,75 +671,75 @@ F7 text30 CODE >126:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\m
 1D9 text30 CODE >187:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\modbusMS.c
 D41 text29 CODE >960:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\modbusMS.c
 D41 text29 CODE >963:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\modbusMS.c
-F26 text28 CODE >564:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-F26 text28 CODE >566:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-F2F text28 CODE >567:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-F38 text28 CODE >569:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-F3A text28 CODE >572:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-F3D text28 CODE >574:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+F27 text28 CODE >564:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+F27 text28 CODE >566:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+F30 text28 CODE >567:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+F39 text28 CODE >569:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+F3B text28 CODE >572:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+F3E text28 CODE >574:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
 D57 text27 CODE >96:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
 D57 text27 CODE >99:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
 D59 text27 CODE >100:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
-EF8 text26 CODE >117:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
-EF8 text26 CODE >119:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
-EFB text26 CODE >122:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
-EFC text26 CODE >125:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
-F00 text26 CODE >126:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
-F04 text26 CODE >129:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
-F05 text26 CODE >130:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
-F06 text26 CODE >134:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
-F0A text26 CODE >135:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
-E56 text25 CODE >576:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-E56 text25 CODE >578:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-E59 text25 CODE >580:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-E60 text25 CODE >581:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-E62 text25 CODE >582:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-E64 text25 CODE >587:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-DA0 text24 CODE >64:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/adc.c
-DA0 text24 CODE >69:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/adc.c
-DA3 text24 CODE >72:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/adc.c
-DA5 text24 CODE >75:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/adc.c
-DA6 text24 CODE >78:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/adc.c
-DA7 text24 CODE >81:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/adc.c
-DA8 text24 CODE >83:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/adc.c
-E65 text23 CODE >58:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
-E65 text23 CODE >63:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
-E68 text23 CODE >66:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
-E69 text23 CODE >69:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
-E6A text23 CODE >72:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
-E6B text23 CODE >75:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
-E6F text23 CODE >78:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
-E71 text23 CODE >81:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
-E73 text23 CODE >82:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
-DA9 text22 CODE >57:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp2.c
-DA9 text22 CODE >62:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp2.c
-DAC text22 CODE >65:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp2.c
-DAD text22 CODE >68:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp2.c
-DAE text22 CODE >71:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp2.c
-DAF text22 CODE >74:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp2.c
-DB1 text22 CODE >75:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp2.c
-DB2 text21 CODE >70:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
-DB2 text21 CODE >71:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
-DBA text21 CODE >72:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
-E14 text20 CODE >90:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
-E14 text20 CODE >99:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
-E16 text20 CODE >100:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
-E17 text20 CODE >102:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
-E1D text20 CODE >103:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
-E1F text20 CODE >109:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
-D87 text19 CODE >92:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/mcc.c
-D87 text19 CODE >95:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/mcc.c
-D89 text19 CODE >97:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/mcc.c
-D8A text19 CODE >99:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/mcc.c
-D8B text19 CODE >101:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/mcc.c
-D8D text19 CODE >103:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/mcc.c
-D8E text19 CODE >106:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/mcc.c
-DBB text18 CODE >167:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
-DBB text18 CODE >168:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
-DC3 text18 CODE >169:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
-DC4 text17 CODE >197:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
-DC4 text17 CODE >198:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
-DCC text17 CODE >199:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
+EF9 text26 CODE >117:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
+EF9 text26 CODE >119:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
+EFC text26 CODE >122:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
+EFD text26 CODE >125:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
+F01 text26 CODE >126:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
+F05 text26 CODE >129:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
+F06 text26 CODE >130:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
+F07 text26 CODE >134:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
+F0B text26 CODE >135:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
+E57 text25 CODE >576:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+E57 text25 CODE >578:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+E5A text25 CODE >580:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+E61 text25 CODE >581:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+E63 text25 CODE >582:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+E65 text25 CODE >587:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+D98 text24 CODE >64:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/adc.c
+D98 text24 CODE >69:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/adc.c
+D9B text24 CODE >72:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/adc.c
+D9D text24 CODE >75:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/adc.c
+D9E text24 CODE >78:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/adc.c
+D9F text24 CODE >81:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/adc.c
+DA0 text24 CODE >83:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/adc.c
+E66 text23 CODE >58:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
+E66 text23 CODE >63:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
+E69 text23 CODE >66:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
+E6A text23 CODE >69:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
+E6B text23 CODE >72:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
+E6C text23 CODE >75:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
+E70 text23 CODE >78:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
+E72 text23 CODE >81:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
+E74 text23 CODE >82:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp1.c
+DA1 text22 CODE >57:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp2.c
+DA1 text22 CODE >62:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp2.c
+DA4 text22 CODE >65:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp2.c
+DA5 text22 CODE >68:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp2.c
+DA6 text22 CODE >71:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp2.c
+DA7 text22 CODE >74:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp2.c
+DA9 text22 CODE >75:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ccp2.c
+DAA text21 CODE >70:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
+DAA text21 CODE >71:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
+DB2 text21 CODE >72:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
+E15 text20 CODE >90:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
+E15 text20 CODE >99:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
+E17 text20 CODE >100:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
+E18 text20 CODE >102:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
+E1E text20 CODE >103:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
+E20 text20 CODE >109:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/ext_int.c
+DB3 text19 CODE >92:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/mcc.c
+DB3 text19 CODE >95:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/mcc.c
+DB6 text19 CODE >97:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/mcc.c
+DB7 text19 CODE >99:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/mcc.c
+DB8 text19 CODE >101:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/mcc.c
+DBA text19 CODE >103:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/mcc.c
+DBB text19 CODE >106:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/mcc.c
+DBC text18 CODE >167:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
+DBC text18 CODE >168:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
+DC4 text18 CODE >169:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
+DC5 text17 CODE >197:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
+DC5 text17 CODE >198:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
+DCD text17 CODE >199:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
 555 text16 CODE >54:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
 555 text16 CODE >59:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
 557 text16 CODE >60:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
@@ -780,25 +780,25 @@ DCC text17 CODE >199:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\
 5AE text16 CODE >127:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
 5AF text16 CODE >129:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
 5B5 text16 CODE >130:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/pin_manager.c
-DCD text15 CODE >145:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
-DCD text15 CODE >146:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
-DD5 text15 CODE >147:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
+DCE text15 CODE >145:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
+DCE text15 CODE >146:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
+DD6 text15 CODE >147:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
 D5A text14 CODE >89:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
 D5A text14 CODE >92:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
 D5C text14 CODE >93:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
-EE3 text13 CODE >60:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
-EE3 text13 CODE >65:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
-EE5 text13 CODE >68:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
-EE7 text13 CODE >71:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
-EE9 text13 CODE >74:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
-EEA text13 CODE >77:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
-EEB text13 CODE >80:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
-EED text13 CODE >83:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
-EF5 text13 CODE >86:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
-EF7 text13 CODE >87:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
-DD6 text12 CODE >172:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
-DD6 text12 CODE >173:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
-DDE text12 CODE >174:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
+EE4 text13 CODE >60:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
+EE4 text13 CODE >65:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
+EE6 text13 CODE >68:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
+EE8 text13 CODE >71:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
+EEA text13 CODE >74:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
+EEB text13 CODE >77:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
+EEC text13 CODE >80:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
+EEE text13 CODE >83:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
+EF6 text13 CODE >86:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
+EF8 text13 CODE >87:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr0.c
+DD7 text12 CODE >172:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
+DD7 text12 CODE >173:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
+DDF text12 CODE >174:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
 F74 text11 CODE >64:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
 F74 text11 CODE >69:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
 F77 text11 CODE >72:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
@@ -810,9 +810,9 @@ F82 text11 CODE >87:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\m
 F84 text11 CODE >90:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
 F8C text11 CODE >93:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
 F8E text11 CODE >94:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr3.c
-DDF text10 CODE >172:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
-DDF text10 CODE >173:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
-DE7 text10 CODE >174:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
+DE0 text10 CODE >172:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
+DE0 text10 CODE >173:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
+DE8 text10 CODE >174:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
 D5D text9 CODE >96:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
 D5D text9 CODE >99:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
 D5F text9 CODE >100:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
@@ -849,28 +849,28 @@ D62 text5 CODE >106:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\m
 D63 text4 CODE >102:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
 D63 text4 CODE >105:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
 D65 text4 CODE >106:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
-F0F text3 CODE >117:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
-F0F text3 CODE >119:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
-F12 text3 CODE >122:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
-F13 text3 CODE >125:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
-F17 text3 CODE >126:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
-F1B text3 CODE >129:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
-F1C text3 CODE >130:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
-F1D text3 CODE >134:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
-F21 text3 CODE >135:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
-EA9 text2 CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul8.c
-EAB text2 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul8.c
-EAC text2 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul8.c
-EAE text2 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul8.c
-EB2 text2 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul8.c
-EB4 text2 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul8.c
-EB6 text2 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul8.c
-EB9 text2 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul8.c
-DFD text1 CODE >599:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-DFD text1 CODE >601:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-E00 text1 CODE >604:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-E04 text1 CODE >607:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-E05 text1 CODE >611:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+F10 text3 CODE >117:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
+F10 text3 CODE >119:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
+F13 text3 CODE >122:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
+F14 text3 CODE >125:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
+F18 text3 CODE >126:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
+F1C text3 CODE >129:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
+F1D text3 CODE >130:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
+F1E text3 CODE >134:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
+F22 text3 CODE >135:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\mcc_generated_files/tmr5.c
+EAA text2 CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul8.c
+EAC text2 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul8.c
+EAD text2 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul8.c
+EAF text2 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul8.c
+EB3 text2 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul8.c
+EB5 text2 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul8.c
+EB7 text2 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul8.c
+EBA text2 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul8.c
+DFE text1 CODE >599:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+DFE text1 CODE >601:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+E01 text1 CODE >604:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+E05 text1 CODE >607:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
+E06 text1 CODE >611:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
 1DC maintext CODE >116:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
 1DC maintext CODE >119:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
 1DF maintext CODE >126:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
@@ -916,22 +916,22 @@ E05 text1 CODE >611:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\m
 2DA maintext CODE >210:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
 2DF maintext CODE >192:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
 2EB maintext CODE >190:D:\BackUp\Paul\IEC\EncoderPulseTool\EncoderSenseNutControl\main.c
-D74 clrtext CODE >10293:C:\Users\paull\AppData\Local\Temp\sf7k.
-D74 clrtext CODE >10294:C:\Users\paull\AppData\Local\Temp\sf7k.
-D75 clrtext CODE >10295:C:\Users\paull\AppData\Local\Temp\sf7k.
-D75 clrtext CODE >10296:C:\Users\paull\AppData\Local\Temp\sf7k.
-D76 clrtext CODE >10297:C:\Users\paull\AppData\Local\Temp\sf7k.
-D77 clrtext CODE >10298:C:\Users\paull\AppData\Local\Temp\sf7k.
-D78 clrtext CODE >10299:C:\Users\paull\AppData\Local\Temp\sf7k.
-D79 clrtext CODE >10300:C:\Users\paull\AppData\Local\Temp\sf7k.
-D7A inittext CODE >10262:C:\Users\paull\AppData\Local\Temp\sf7k.
-D7A inittext CODE >10263:C:\Users\paull\AppData\Local\Temp\sf7k.
-D7B inittext CODE >10264:C:\Users\paull\AppData\Local\Temp\sf7k.
-D7B inittext CODE >10265:C:\Users\paull\AppData\Local\Temp\sf7k.
-D7C inittext CODE >10266:C:\Users\paull\AppData\Local\Temp\sf7k.
-D7D inittext CODE >10267:C:\Users\paull\AppData\Local\Temp\sf7k.
-D7E inittext CODE >10268:C:\Users\paull\AppData\Local\Temp\sf7k.
-D7F inittext CODE >10269:C:\Users\paull\AppData\Local\Temp\sf7k.
+D74 clrtext CODE >10293:C:\Users\paull\AppData\Local\Temp\shpc.
+D74 clrtext CODE >10294:C:\Users\paull\AppData\Local\Temp\shpc.
+D75 clrtext CODE >10295:C:\Users\paull\AppData\Local\Temp\shpc.
+D75 clrtext CODE >10296:C:\Users\paull\AppData\Local\Temp\shpc.
+D76 clrtext CODE >10297:C:\Users\paull\AppData\Local\Temp\shpc.
+D77 clrtext CODE >10298:C:\Users\paull\AppData\Local\Temp\shpc.
+D78 clrtext CODE >10299:C:\Users\paull\AppData\Local\Temp\shpc.
+D79 clrtext CODE >10300:C:\Users\paull\AppData\Local\Temp\shpc.
+D7A inittext CODE >10262:C:\Users\paull\AppData\Local\Temp\shpc.
+D7A inittext CODE >10263:C:\Users\paull\AppData\Local\Temp\shpc.
+D7B inittext CODE >10264:C:\Users\paull\AppData\Local\Temp\shpc.
+D7B inittext CODE >10265:C:\Users\paull\AppData\Local\Temp\shpc.
+D7C inittext CODE >10266:C:\Users\paull\AppData\Local\Temp\shpc.
+D7D inittext CODE >10267:C:\Users\paull\AppData\Local\Temp\shpc.
+D7E inittext CODE >10268:C:\Users\paull\AppData\Local\Temp\shpc.
+D7F inittext CODE >10269:C:\Users\paull\AppData\Local\Temp\shpc.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -947,7 +947,7 @@ D7F inittext CODE >10269:C:\Users\paull\AppData\Local\Temp\sf7k.
 ___latbits 1 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 _EUSART_Read FB8 0 CODE 0 text45 dist/default/debug\EncoderSenseNutControl.debug.obj
 ___awdiv@counter 25 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
-__end_of_wordConvert 1D52 0 CODE 0 text41 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_wordConvert 1D54 0 CODE 0 text41 dist/default/debug\EncoderSenseNutControl.debug.obj
 __LdataBANK0 0 0 ABS 0 dataBANK0 -
 __LdataBANK1 0 0 ABS 0 dataBANK1 -
 __Hspace_0 800B 0 ABS 0 - -
@@ -961,15 +961,15 @@ __HidataBANK1 0 0 ABS 0 idataBANK1 -
 _Timer3_Overflow E9A 0 CODE 0 text61 dist/default/debug\EncoderSenseNutControl.debug.obj
 _u8lastRec 58 0 BANK0 1 bssBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
 Serialbegin@baud 21 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
-__end_of_TMR3_SetInterruptHandler 1BBE 0 CODE 0 text12 dist/default/debug\EncoderSenseNutControl.debug.obj
-__end_of_CCP1_Initialize 1CE8 0 CODE 0 text23 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_TMR3_SetInterruptHandler 1BC0 0 CODE 0 text12 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_CCP1_Initialize 1CEA 0 CODE 0 text23 dist/default/debug\EncoderSenseNutControl.debug.obj
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
-_INT_CallBack 1BE4 0 CODE 0 text73 dist/default/debug\EncoderSenseNutControl.debug.obj
+_INT_CallBack 1BE6 0 CODE 0 text73 dist/default/debug\EncoderSenseNutControl.debug.obj
 _EncoderPositionOneCycle 65 0 BANK0 1 bssBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
 _RXPPSbits E24 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of_EXT_INT_Initialize 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
-__end_of_PIN_MANAGER_IOC 1C28 0 CODE 0 text67 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_PIN_MANAGER_IOC 1C2A 0 CODE 0 text67 dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of_TMR3_StopTimer 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 __Lstringtext 0 0 ABS 0 stringtext -
 __size_of_IOCCF5_DefaultInterruptHandler 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
@@ -983,19 +983,19 @@ _LATC 10E 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 _WPUA 20C 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 _WPUB 20D 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 _WPUC 20E 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
-___sp 0 0 STACK 2 stack C:\Users\paull\AppData\Local\Temp\sf7k.obj
+___sp 0 0 STACK 2 stack C:\Users\paull\AppData\Local\Temp\shpc.obj
 _main 3B8 0 CODE 0 maintext dist/default/debug\EncoderSenseNutControl.debug.obj
 _u8id 5C 0 BANK0 1 bssBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
 btemp 7E 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of_sendTxBuffer 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
-start CC 0 CODE 0 init C:\Users\paull\AppData\Local\Temp\sf7k.obj
+start CC 0 CODE 0 init C:\Users\paull\AppData\Local\Temp\shpc.obj
 _TMR0_InterruptHandler 160 0 BANK2 1 nvBANK2 dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of___awdiv 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of_main 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of___lwdiv 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 TMR5_WriteTimer@timerVal 20 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
-__end_of_TMR0_SetInterruptHandler 1BAC 0 CODE 0 text15 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_TMR0_SetInterruptHandler 1BAE 0 CODE 0 text15 dist/default/debug\EncoderSenseNutControl.debug.obj
 ModbussetTimeOut@u16timeOut 20 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
 _get_FC1 D44 0 CODE 0 text40 dist/default/debug\EncoderSenseNutControl.debug.obj
 _get_FC3 CB6 0 CODE 0 text39 dist/default/debug\EncoderSenseNutControl.debug.obj
@@ -1006,33 +1006,33 @@ __size_of_TMR5_StopTimer 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.d
 __LidataBANK0 0 0 ABS 0 idataBANK0 -
 __LidataBANK1 0 0 ABS 0 idataBANK1 -
 __end_of_EUSART_Initialize 1EB2 0 CODE 0 text49 dist/default/debug\EncoderSenseNutControl.debug.obj
-__end_of_IOCCF4_SetInterruptHandler 1B88 0 CODE 0 text18 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_IOCCF4_SetInterruptHandler 1B8A 0 CODE 0 text18 dist/default/debug\EncoderSenseNutControl.debug.obj
 __Hpowerup 0 0 CODE 0 powerup -
 __end_of_Modbusinit 1EE8 0 CODE 0 text47 dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 __end_of_sendTxBuffer 81E 0 CODE 0 text31 dist/default/debug\EncoderSenseNutControl.debug.obj
 TMR0_SetInterruptHandler@InterruptHandler 20 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
-intlevel0 0 0 CODE 0 functab C:\Users\paull\AppData\Local\Temp\sf7k.obj
-intlevel1 0 0 CODE 0 functab C:\Users\paull\AppData\Local\Temp\sf7k.obj
-intlevel2 0 0 CODE 0 functab C:\Users\paull\AppData\Local\Temp\sf7k.obj
-intlevel3 0 0 CODE 0 functab C:\Users\paull\AppData\Local\Temp\sf7k.obj
-intlevel4 0 0 CODE 0 functab C:\Users\paull\AppData\Local\Temp\sf7k.obj
-intlevel5 0 0 CODE 0 functab C:\Users\paull\AppData\Local\Temp\sf7k.obj
+intlevel0 0 0 CODE 0 functab C:\Users\paull\AppData\Local\Temp\shpc.obj
+intlevel1 0 0 CODE 0 functab C:\Users\paull\AppData\Local\Temp\shpc.obj
+intlevel2 0 0 CODE 0 functab C:\Users\paull\AppData\Local\Temp\shpc.obj
+intlevel3 0 0 CODE 0 functab C:\Users\paull\AppData\Local\Temp\shpc.obj
+intlevel4 0 0 CODE 0 functab C:\Users\paull\AppData\Local\Temp\shpc.obj
+intlevel5 0 0 CODE 0 functab C:\Users\paull\AppData\Local\Temp\shpc.obj
 __size_of_INT_CallBack 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 LedONStartConfig@LedONNumBlink 29 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
 ___bmul@multiplicand 20 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
-_IOCCF4_ISR 1C40 0 CODE 0 text70 dist/default/debug\EncoderSenseNutControl.debug.obj
-_IOCCF5_ISR 1C5A 0 CODE 0 text68 dist/default/debug\EncoderSenseNutControl.debug.obj
+_IOCCF4_ISR 1C42 0 CODE 0 text70 dist/default/debug\EncoderSenseNutControl.debug.obj
+_IOCCF5_ISR 1C5C 0 CODE 0 text68 dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of_ADC_Initialize 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
-_CCP1_Initialize 1CCA 0 CODE 0 text23 dist/default/debug\EncoderSenseNutControl.debug.obj
+_CCP1_Initialize 1CCC 0 CODE 0 text23 dist/default/debug\EncoderSenseNutControl.debug.obj
 wtemp0 7E 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
-_NutRunCycleReset 1E4C 0 CODE 0 text28 dist/default/debug\EncoderSenseNutControl.debug.obj
-_NutRunCycleStart 1CAC 0 CODE 0 text25 dist/default/debug\EncoderSenseNutControl.debug.obj
+_NutRunCycleReset 1E4E 0 CODE 0 text28 dist/default/debug\EncoderSenseNutControl.debug.obj
+_NutRunCycleStart 1CAE 0 CODE 0 text25 dist/default/debug\EncoderSenseNutControl.debug.obj
 __Hfunctab 0 0 CODE 0 functab -
 _RC1STAbits 19D 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 _u16OutCnt D4 0 BANK1 1 bssBANK1 dist/default/debug\EncoderSenseNutControl.debug.obj
-_PIN_MANAGER_IOC 1C10 0 CODE 0 text67 dist/default/debug\EncoderSenseNutControl.debug.obj
+_PIN_MANAGER_IOC 1C12 0 CODE 0 text67 dist/default/debug\EncoderSenseNutControl.debug.obj
 __end_of_EUSART_Transmit_ISR 2000 0 CODE 0 text75 dist/default/debug\EncoderSenseNutControl.debug.obj
 ___awdiv@sign 26 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
 __Hclrtext 0 0 ABS 0 clrtext -
@@ -1042,7 +1042,7 @@ ___wmul@multiplicand 22 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNut
 _EncEdgeGotFlag 64 0 BANK0 1 bssBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
 __end_of_TMR3_Initialize 1F1E 0 CODE 0 text11 dist/default/debug\EncoderSenseNutControl.debug.obj
 __end_of_TMR3_StartTimer 1AB4 0 CODE 0 text27 dist/default/debug\EncoderSenseNutControl.debug.obj
-__end_of_TMR3_WriteTimer 1E1E 0 CODE 0 text26 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_TMR3_WriteTimer 1E20 0 CODE 0 text26 dist/default/debug\EncoderSenseNutControl.debug.obj
 _ADCON0 9D 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 _ADCON1 9E 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 _ADRESH 9C 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
@@ -1052,7 +1052,7 @@ _ANSELB 18D 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 _ANSELC 18E 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 _TMR0_DefaultInterruptHandler 1A7E 0 CODE 0 text66 dist/default/debug\EncoderSenseNutControl.debug.obj
 ___awdiv@dividend 22 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
-__end_of_INT_CallBack 1BFA 0 CODE 0 text73 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_INT_CallBack 1BFC 0 CODE 0 text73 dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of_Timer3_Overflow 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 _CCPR1H 292 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 _CCPR1L 291 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
@@ -1062,14 +1062,14 @@ __end_of_INTERRUPT_InterruptManager CC 0 CODE 0 intentry dist/default/debug\Enco
 ?_millis 20 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
 _TMR3_DefaultInterruptHandler 1A84 0 CODE 0 text60 dist/default/debug\EncoderSenseNutControl.debug.obj
 ?_wordConvert 20 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
-__end_of___bmul 1D76 0 CODE 0 text2 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of___bmul 1D78 0 CODE 0 text2 dist/default/debug\EncoderSenseNutControl.debug.obj
 __end_of___wmul 1FC4 0 CODE 0 text53 dist/default/debug\EncoderSenseNutControl.debug.obj
-__end_of_CCP2_Initialize 1B64 0 CODE 0 text22 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_CCP2_Initialize 1B54 0 CODE 0 text22 dist/default/debug\EncoderSenseNutControl.debug.obj
 _EncEdgeMinTimeInterval EA 0 BANK1 1 dataBANK1 dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of_Timer5_Overflow 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 __Lmaintext 0 0 ABS 0 maintext -
 __size_of_validateAnswer 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
-_TMR5_SetInterruptHandler 1BBE 0 CODE 0 text10 dist/default/debug\EncoderSenseNutControl.debug.obj
+_TMR5_SetInterruptHandler 1BC0 0 CODE 0 text10 dist/default/debug\EncoderSenseNutControl.debug.obj
 __LnvBANK0 0 0 ABS 0 nvBANK0 -
 __LnvBANK1 0 0 ABS 0 nvBANK1 -
 __LnvBANK2 0 0 ABS 0 nvBANK2 -
@@ -1087,12 +1087,12 @@ _INLVLA 38C 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 _INLVLC 38E 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 TMR5_SetInterruptHandler@InterruptHandler 20 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
 __end_of_IOCCF5_DefaultInterruptHandler 1A7E 0 CODE 0 text69 dist/default/debug\EncoderSenseNutControl.debug.obj
-__end_of_IOCCF4_ISR 1C5A 0 CODE 0 text70 dist/default/debug\EncoderSenseNutControl.debug.obj
-__end_of_IOCCF5_ISR 1C74 0 CODE 0 text68 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_IOCCF4_ISR 1C5C 0 CODE 0 text70 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_IOCCF5_ISR 1C76 0 CODE 0 text68 dist/default/debug\EncoderSenseNutControl.debug.obj
 PIN_MANAGER_Initialize@state 22 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of_wordConvert 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 _ModbusgetState 1A96 0 CODE 0 text50 dist/default/debug\EncoderSenseNutControl.debug.obj
-_EUSART_Initialize 1E7C 0 CODE 0 text49 dist/default/debug\EncoderSenseNutControl.debug.obj
+_EUSART_Initialize 1E7E 0 CODE 0 text49 dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of_calcCRC 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 ___lwdiv@quotient 25 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
 _u8state_t 60 0 BANK0 1 bssBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
@@ -1102,10 +1102,10 @@ _au8Buffer A0 0 BANK1 1 bssBANK1 dist/default/debug\EncoderSenseNutControl.debug
 _Serialbegin 1A9C 0 CODE 0 text48 dist/default/debug\EncoderSenseNutControl.debug.obj
 _Led_ON 5D 0 BANK0 1 bssBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
 _LED_Color 6F 0 BANK0 1 dataBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
-_Serialwrite 1BD0 0 CODE 0 text32 dist/default/debug\EncoderSenseNutControl.debug.obj
+_Serialwrite 1BD2 0 CODE 0 text32 dist/default/debug\EncoderSenseNutControl.debug.obj
 _TMR3_Initialize 1EE8 0 CODE 0 text11 dist/default/debug\EncoderSenseNutControl.debug.obj
 _TMR3_StartTimer 1AAE 0 CODE 0 text27 dist/default/debug\EncoderSenseNutControl.debug.obj
-_TMR3_WriteTimer 1DF0 0 CODE 0 text26 dist/default/debug\EncoderSenseNutControl.debug.obj
+_TMR3_WriteTimer 1DF2 0 CODE 0 text26 dist/default/debug\EncoderSenseNutControl.debug.obj
 _CCP1_CallBack 1B00 0 CODE 0 text78 dist/default/debug\EncoderSenseNutControl.debug.obj
 _PIN_MANAGER_Initialize AAA 0 CODE 0 text16 dist/default/debug\EncoderSenseNutControl.debug.obj
 _ModbussetTimeOut 1A82 0 CODE 0 text29 dist/default/debug\EncoderSenseNutControl.debug.obj
@@ -1117,12 +1117,12 @@ _CCPTMRSbits 29F 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 __end_of_Serialavailable 1AA8 0 CODE 0 text46 dist/default/debug\EncoderSenseNutControl.debug.obj
 _OSCFRQ 91F 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 validateAnswer@isSupported 36 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
-__end_of_NutRunCycleReset 1E7C 0 CODE 0 text28 dist/default/debug\EncoderSenseNutControl.debug.obj
-__end_of_NutRunCycleStart 1CCA 0 CODE 0 text25 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_NutRunCycleReset 1E7E 0 CODE 0 text28 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_NutRunCycleStart 1CCC 0 CODE 0 text25 dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of_CCP1_Initialize 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 _au16data 13A 0 BANK2 1 bssBANK2 dist/default/debug\EncoderSenseNutControl.debug.obj
 _au16regs 57 0 BANK0 1 bssBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
-_CCP2_Initialize 1B52 0 CODE 0 text22 dist/default/debug\EncoderSenseNutControl.debug.obj
+_CCP2_Initialize 1B42 0 CODE 0 text22 dist/default/debug\EncoderSenseNutControl.debug.obj
 __end_of_getRxBuffer E9A 0 CODE 0 text43 dist/default/debug\EncoderSenseNutControl.debug.obj
 _eusartRxBuffer 1A0 0 BANK3 1 bssBANK3 dist/default/debug\EncoderSenseNutControl.debug.obj
 Serialwrite@temp 20 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
@@ -1130,7 +1130,7 @@ __end_of_LedONStatusBusy 1A96 0 CODE 0 text51 dist/default/debug\EncoderSenseNut
 _RC1REG 199 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 _RC1STA 19D 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of_PIN_MANAGER_IOC 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
-__end_of_millis 1D0A 0 CODE 0 text38 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_millis 1D0C 0 CODE 0 text38 dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of_NutRunCycleReset 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of_NutRunCycleStart 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 __end_of_SYSTEM_Initialize FB8 0 CODE 0 text6 dist/default/debug\EncoderSenseNutControl.debug.obj
@@ -1159,9 +1159,9 @@ _WDTCON 97 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of_ClearSerialRxBuffer 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 _u16InCnt D6 0 BANK1 1 bssBANK1 dist/default/debug\EncoderSenseNutControl.debug.obj
 __end_of_ModbusgetState 1A9C 0 CODE 0 text50 dist/default/debug\EncoderSenseNutControl.debug.obj
-___int_sp 0 0 STACK 2 stack C:\Users\paull\AppData\Local\Temp\sf7k.obj
+___int_sp 0 0 STACK 2 stack C:\Users\paull\AppData\Local\Temp\shpc.obj
 __end_of_EUSART_Read FF8 0 CODE 0 text45 dist/default/debug\EncoderSenseNutControl.debug.obj
-_EncA_PulseEdgeEvent 1B2E 0 CODE 0 text79 dist/default/debug\EncoderSenseNutControl.debug.obj
+_EncA_PulseEdgeEvent 1B1E 0 CODE 0 text79 dist/default/debug\EncoderSenseNutControl.debug.obj
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -1228,7 +1228,7 @@ calcCRC@temp2 24 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl
 __Hbigram 0 0 ABS 0 bigram -
 __Hmaintext 0 0 ABS 0 maintext -
 _BAUD1CON 19F 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
-__end_of_IOCCF5_SetInterruptHandler 1B9A 0 CODE 0 text17 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_IOCCF5_SetInterruptHandler 1B9C 0 CODE 0 text17 dist/default/debug\EncoderSenseNutControl.debug.obj
 __end_of_LedON_Control_10msec 900 0 CODE 0 text65 dist/default/debug\EncoderSenseNutControl.debug.obj
 CCP1_CaptureISR@module 75 0 COMMON 1 cstackCOMMON dist/default/debug\EncoderSenseNutControl.debug.obj
 __Hcommon 0 0 ABS 0 common -
@@ -1311,7 +1311,7 @@ __pnvBANK0 6A 0 BANK0 1 nvBANK0 dist/default/debug\EncoderSenseNutControl.debug.
 __pnvBANK1 EE 0 BANK1 1 nvBANK1 dist/default/debug\EncoderSenseNutControl.debug.obj
 __pnvBANK2 15A 0 BANK2 1 nvBANK2 dist/default/debug\EncoderSenseNutControl.debug.obj
 IOCCF5_SetInterruptHandler@InterruptHandler 20 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
-___bmul 1D52 0 CODE 0 text2 dist/default/debug\EncoderSenseNutControl.debug.obj
+___bmul 1D54 0 CODE 0 text2 dist/default/debug\EncoderSenseNutControl.debug.obj
 ___wmul 1F8C 0 CODE 0 text53 dist/default/debug\EncoderSenseNutControl.debug.obj
 _u32timeOut 12E 0 BANK2 1 bssBANK2 dist/default/debug\EncoderSenseNutControl.debug.obj
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
@@ -1320,11 +1320,11 @@ __end_of_calcCRC C12 0 CODE 0 text37 dist/default/debug\EncoderSenseNutControl.d
 int$flags 7E 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 __end_of_INT_ISR 1ADE 0 CODE 0 text72 dist/default/debug\EncoderSenseNutControl.debug.obj
 Modbusquery@telegram 36 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
-__end_of_getEncoderState 1C10 0 CODE 0 text1 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_getEncoderState 1C12 0 CODE 0 text1 dist/default/debug\EncoderSenseNutControl.debug.obj
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 __size_of_TMR5_SetInterruptHandler 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of_INTERRUPT_InterruptManager 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
-_IOCCF4_SetInterruptHandler 1B76 0 CODE 0 text18 dist/default/debug\EncoderSenseNutControl.debug.obj
+_IOCCF4_SetInterruptHandler 1B78 0 CODE 0 text18 dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of_WDT_Initialize 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 _GIE 5F 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 __S0 800B 0 ABS 0 - -
@@ -1342,7 +1342,7 @@ _LedONStartConfig 9D8 0 CODE 0 text52 dist/default/debug\EncoderSenseNutControl.
 _TMR3_StopTimer 1AC0 0 CODE 0 text5 dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of_TMR3_WriteTimer 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 _IOCCF5_DefaultInterruptHandler 1A7C 0 CODE 0 text69 dist/default/debug\EncoderSenseNutControl.debug.obj
-_ClearSerialRxBuffer 1C90 0 CODE 0 text34 dist/default/debug\EncoderSenseNutControl.debug.obj
+_ClearSerialRxBuffer 1C92 0 CODE 0 text34 dist/default/debug\EncoderSenseNutControl.debug.obj
 _EncoderPosition 51 0 BANK0 1 bssBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
 __end_of_Serialread 1AAE 0 CODE 0 text44 dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of_TMR3_DefaultInterruptHandler 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
@@ -1350,7 +1350,7 @@ __size_of_CCP1_CallBack 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.de
 _Timer0_tick10msecFunc EE6 0 CODE 0 text64 dist/default/debug\EncoderSenseNutControl.debug.obj
 __end_of_TMR0_DefaultInterruptHandler 1A80 0 CODE 0 text66 dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of_ModbussetTimeOut 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
-_TMR0_CallBack 1C74 0 CODE 0 text63 dist/default/debug\EncoderSenseNutControl.debug.obj
+_TMR0_CallBack 1C76 0 CODE 0 text63 dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of_CCP2_Initialize 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 _IdleTimeOnShutOff C8 0 BANK1 1 bssBANK1 dist/default/debug\EncoderSenseNutControl.debug.obj
 __end_of_EUSART_Receive_ISR 1F8C 0 CODE 0 text76 dist/default/debug\EncoderSenseNutControl.debug.obj
@@ -1368,7 +1368,7 @@ __HnvBANK2 0 0 ABS 0 nvBANK2 -
 __Lintentry 8 0 CODE 0 intentry -
 calcCRC@u8length 28 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
 _TMR5_DefaultInterruptHandler 1A8A 0 CODE 0 text57 dist/default/debug\EncoderSenseNutControl.debug.obj
-reset_vec 0 0 CODE 0 reset_vec C:\Users\paull\AppData\Local\Temp\sf7k.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\paull\AppData\Local\Temp\shpc.obj
 _EncEdgeMinTimeIntSumAvg CC 0 BANK1 1 bssBANK1 dist/default/debug\EncoderSenseNutControl.debug.obj
 EUSART_Read@readValue 21 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
 __end_of_ModbuspollMaster 73C 0 CODE 0 text35 dist/default/debug\EncoderSenseNutControl.debug.obj
@@ -1376,7 +1376,7 @@ __end_of_TMR5_Initialize 1F54 0 CODE 0 text8 dist/default/debug\EncoderSenseNutC
 __end_of_TMR5_StartTimer 1AC0 0 CODE 0 text9 dist/default/debug\EncoderSenseNutControl.debug.obj
 __pdataBANK0 6F 0 BANK0 1 dataBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
 __pdataBANK1 E6 0 BANK1 1 dataBANK1 dist/default/debug\EncoderSenseNutControl.debug.obj
-__end_of_TMR5_WriteTimer 1E4C 0 CODE 0 text3 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_TMR5_WriteTimer 1E4E 0 CODE 0 text3 dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of___bmul 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of___wmul 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 getRxBuffer@bBuffOverflow 23 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
@@ -1393,54 +1393,54 @@ __size_of_IOCCF5_ISR 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug
 __end_of_CCP1_CallBack 1B0E 0 CODE 0 text78 dist/default/debug\EncoderSenseNutControl.debug.obj
 _INTERRUPT_InterruptManager 8 0 CODE 0 intentry dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of_ModbuspollMaster 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
-_ADC_Initialize 1B40 0 CODE 0 text24 dist/default/debug\EncoderSenseNutControl.debug.obj
-__end_of_CCP1_CaptureISR 1D2E 0 CODE 0 text77 dist/default/debug\EncoderSenseNutControl.debug.obj
-_getEncoderState 1BFA 0 CODE 0 text1 dist/default/debug\EncoderSenseNutControl.debug.obj
+_ADC_Initialize 1B30 0 CODE 0 text24 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_CCP1_CaptureISR 1D30 0 CODE 0 text77 dist/default/debug\EncoderSenseNutControl.debug.obj
+_getEncoderState 1BFC 0 CODE 0 text1 dist/default/debug\EncoderSenseNutControl.debug.obj
 _PIE0bits 90 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 _PIE1bits 91 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 _PIE3bits 93 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 _PIE4bits 94 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
-__end_of_EXT_INT_Initialize 1C40 0 CODE 0 text20 dist/default/debug\EncoderSenseNutControl.debug.obj
-__end_of_EncA_PulseEdgeEvent 1B40 0 CODE 0 text79 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_EXT_INT_Initialize 1C42 0 CODE 0 text20 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_EncA_PulseEdgeEvent 1B30 0 CODE 0 text79 dist/default/debug\EncoderSenseNutControl.debug.obj
 __end_of_IOCCF4_DefaultInterruptHandler 1A7C 0 CODE 0 text71 dist/default/debug\EncoderSenseNutControl.debug.obj
-_millis 1CE8 0 CODE 0 text38 dist/default/debug\EncoderSenseNutControl.debug.obj
-_wordConvert 1D2E 0 CODE 0 text41 dist/default/debug\EncoderSenseNutControl.debug.obj
+_millis 1CEA 0 CODE 0 text38 dist/default/debug\EncoderSenseNutControl.debug.obj
+_wordConvert 1D30 0 CODE 0 text41 dist/default/debug\EncoderSenseNutControl.debug.obj
 Modbusquery@i 43 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
 _TMR0_ISR 1ADE 0 CODE 0 text62 dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of_getRxBuffer 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 _telegram 120 0 BANK2 1 bssBANK2 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext10 1BBE 0 CODE 0 text10 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext10 1BC0 0 CODE 0 text10 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext11 1EE8 0 CODE 0 text11 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext12 1BAC 0 CODE 0 text12 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext13 1DC6 0 CODE 0 text13 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext12 1BAE 0 CODE 0 text12 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext13 1DC8 0 CODE 0 text13 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext14 1AB4 0 CODE 0 text14 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext15 1B9A 0 CODE 0 text15 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext15 1B9C 0 CODE 0 text15 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext16 AAA 0 CODE 0 text16 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext17 1B88 0 CODE 0 text17 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext18 1B76 0 CODE 0 text18 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext19 1B0E 0 CODE 0 text19 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext20 1C28 0 CODE 0 text20 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext21 1B64 0 CODE 0 text21 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext22 1B52 0 CODE 0 text22 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext23 1CCA 0 CODE 0 text23 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext24 1B40 0 CODE 0 text24 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext25 1CAC 0 CODE 0 text25 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext26 1DF0 0 CODE 0 text26 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext17 1B8A 0 CODE 0 text17 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext18 1B78 0 CODE 0 text18 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext19 1B66 0 CODE 0 text19 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext20 1C2A 0 CODE 0 text20 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext21 1B54 0 CODE 0 text21 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext22 1B42 0 CODE 0 text22 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext23 1CCC 0 CODE 0 text23 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext24 1B30 0 CODE 0 text24 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext25 1CAE 0 CODE 0 text25 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext26 1DF2 0 CODE 0 text26 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext27 1AAE 0 CODE 0 text27 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext28 1E4C 0 CODE 0 text28 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext28 1E4E 0 CODE 0 text28 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext29 1A82 0 CODE 0 text29 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext30 142 0 CODE 0 text30 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext31 73C 0 CODE 0 text31 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext32 1BD0 0 CODE 0 text32 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext32 1BD2 0 CODE 0 text32 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext33 F32 0 CODE 0 text33 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext34 1C90 0 CODE 0 text34 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext34 1C92 0 CODE 0 text34 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext35 5D8 0 CODE 0 text35 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext36 900 0 CODE 0 text36 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext37 B6C 0 CODE 0 text37 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext38 1CE8 0 CODE 0 text38 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext38 1CEA 0 CODE 0 text38 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext39 CB6 0 CODE 0 text39 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext40 D44 0 CODE 0 text40 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext41 1D2E 0 CODE 0 text41 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext41 1D30 0 CODE 0 text41 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext42 C12 0 CODE 0 text42 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext43 E36 0 CODE 0 text43 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext44 1AA8 0 CODE 0 text44 dist/default/debug\EncoderSenseNutControl.debug.obj
@@ -1448,47 +1448,47 @@ __ptext45 FB8 0 CODE 0 text45 dist/default/debug\EncoderSenseNutControl.debug.ob
 __ptext46 1AA2 0 CODE 0 text46 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext47 1EB2 0 CODE 0 text47 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext48 1A9C 0 CODE 0 text48 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext49 1E7C 0 CODE 0 text49 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext49 1E7E 0 CODE 0 text49 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext50 1A96 0 CODE 0 text50 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext51 1A90 0 CODE 0 text51 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext52 9D8 0 CODE 0 text52 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext53 1F8C 0 CODE 0 text53 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext54 DCC 0 CODE 0 text54 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext56 1D9E 0 CODE 0 text56 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext56 1DA0 0 CODE 0 text56 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext57 1A8A 0 CODE 0 text57 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext58 1A80 0 CODE 0 text58 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext59 1D76 0 CODE 0 text59 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext59 1D78 0 CODE 0 text59 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext60 1A84 0 CODE 0 text60 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext61 E9A 0 CODE 0 text61 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext62 1ADE 0 CODE 0 text62 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext63 1C74 0 CODE 0 text63 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext63 1C76 0 CODE 0 text63 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext64 EE6 0 CODE 0 text64 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext65 81E 0 CODE 0 text65 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext66 1A7E 0 CODE 0 text66 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext67 1C10 0 CODE 0 text67 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext68 1C5A 0 CODE 0 text68 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext67 1C12 0 CODE 0 text67 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext68 1C5C 0 CODE 0 text68 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext69 1A7C 0 CODE 0 text69 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext70 1C40 0 CODE 0 text70 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext70 1C42 0 CODE 0 text70 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext71 1A7A 0 CODE 0 text71 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext72 1AD4 0 CODE 0 text72 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext73 1BE4 0 CODE 0 text73 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext73 1BE6 0 CODE 0 text73 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext74 1A78 0 CODE 0 text74 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext75 1FC4 0 CODE 0 text75 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext76 1F54 0 CODE 0 text76 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext77 1D0A 0 CODE 0 text77 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext77 1D0C 0 CODE 0 text77 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext78 1B00 0 CODE 0 text78 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext79 1B2E 0 CODE 0 text79 dist/default/debug\EncoderSenseNutControl.debug.obj
-_TMR3_ISR 1D76 0 CODE 0 text59 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext79 1B1E 0 CODE 0 text79 dist/default/debug\EncoderSenseNutControl.debug.obj
+_TMR3_ISR 1D78 0 CODE 0 text59 dist/default/debug\EncoderSenseNutControl.debug.obj
 _IOCCFbits 399 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
-_TMR5_ISR 1D9E 0 CODE 0 text56 dist/default/debug\EncoderSenseNutControl.debug.obj
+_TMR5_ISR 1DA0 0 CODE 0 text56 dist/default/debug\EncoderSenseNutControl.debug.obj
 _EUSART_Receive_ISR 1F54 0 CODE 0 text76 dist/default/debug\EncoderSenseNutControl.debug.obj
-_TMR3_SetInterruptHandler 1BAC 0 CODE 0 text12 dist/default/debug\EncoderSenseNutControl.debug.obj
+_TMR3_SetInterruptHandler 1BAE 0 CODE 0 text12 dist/default/debug\EncoderSenseNutControl.debug.obj
 __end_of_TMR3_StopTimer 1AC6 0 CODE 0 text5 dist/default/debug\EncoderSenseNutControl.debug.obj
 _IOCCNbits 398 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 _IOCCPbits 397 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 __end_of_PIN_MANAGER_Initialize B6C 0 CODE 0 text16 dist/default/debug\EncoderSenseNutControl.debug.obj
 ___awdiv C12 0 CODE 0 text42 dist/default/debug\EncoderSenseNutControl.debug.obj
-__end_of_TMR0_Initialize 1DF0 0 CODE 0 text13 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_TMR0_Initialize 1DF2 0 CODE 0 text13 dist/default/debug\EncoderSenseNutControl.debug.obj
 __end_of_TMR0_StartTimer 1ABA 0 CODE 0 text14 dist/default/debug\EncoderSenseNutControl.debug.obj
 ___lwdiv DCC 0 CODE 0 text54 dist/default/debug\EncoderSenseNutControl.debug.obj
 __Lbank10 0 0 BANK10 1 bank10 -
@@ -1522,28 +1522,28 @@ __Lconfig 1000E 0 CONFIG 0 config -
 __CFG_CP$OFF 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 __end_of_TMR0_ISR 1AE8 0 CODE 0 text62 dist/default/debug\EncoderSenseNutControl.debug.obj
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
-__end_of_TMR3_ISR 1D9E 0 CODE 0 text59 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_TMR3_ISR 1DA0 0 CODE 0 text59 dist/default/debug\EncoderSenseNutControl.debug.obj
 __Hinittext 0 0 ABS 0 inittext -
-__end_of_TMR5_ISR 1DC6 0 CODE 0 text56 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_TMR5_ISR 1DC8 0 CODE 0 text56 dist/default/debug\EncoderSenseNutControl.debug.obj
 ___wmul@multiplier 20 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
 _LATBbits 10D 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 _LATCbits 10E 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of_LedONStatusBusy 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 __end_of_TMR5_StopTimer 1ACC 0 CODE 0 text4 dist/default/debug\EncoderSenseNutControl.debug.obj
-__end_of_TMR5_SetInterruptHandler 1BD0 0 CODE 0 text10 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_TMR5_SetInterruptHandler 1BD2 0 CODE 0 text10 dist/default/debug\EncoderSenseNutControl.debug.obj
 ___lwdiv@divisor 20 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
-_TMR0_SetInterruptHandler 1B9A 0 CODE 0 text15 dist/default/debug\EncoderSenseNutControl.debug.obj
+_TMR0_SetInterruptHandler 1B9C 0 CODE 0 text15 dist/default/debug\EncoderSenseNutControl.debug.obj
 _NutRunLength E4 0 BANK1 1 bssBANK1 dist/default/debug\EncoderSenseNutControl.debug.obj
 _u8lastError 5A 0 BANK0 1 bssBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
 _NutRunstate 62 0 BANK0 1 bssBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
 LedONStartConfig@LedONDurationSec 28 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
 __end_of_LedONStartConfig AAA 0 CODE 0 text52 dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of_EUSART_Read 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
-stackhi 21EF 0 ABS 0 - C:\Users\paull\AppData\Local\Temp\sf7k.obj
-stacklo 2130 0 ABS 0 - C:\Users\paull\AppData\Local\Temp\sf7k.obj
+stackhi 21EF 0 ABS 0 - C:\Users\paull\AppData\Local\Temp\shpc.obj
+stacklo 2130 0 ABS 0 - C:\Users\paull\AppData\Local\Temp\shpc.obj
 calcCRC@flag 26 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
 calcCRC@temp 2B 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
-_EXT_INT_Initialize 1C28 0 CODE 0 text20 dist/default/debug\EncoderSenseNutControl.debug.obj
+_EXT_INT_Initialize 1C2A 0 CODE 0 text20 dist/default/debug\EncoderSenseNutControl.debug.obj
 _OSCCON1 919 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 _OSCCON3 91B 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 _OSCTUNE 91E 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
@@ -1551,11 +1551,11 @@ _TMR5_Initialize 1F1E 0 CODE 0 text8 dist/default/debug\EncoderSenseNutControl.d
 _validateAnswer 900 0 CODE 0 text36 dist/default/debug\EncoderSenseNutControl.debug.obj
 _TMR5_StartTimer 1ABA 0 CODE 0 text9 dist/default/debug\EncoderSenseNutControl.debug.obj
 _ADCON0bits 9D 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
-_TMR5_WriteTimer 1E1E 0 CODE 0 text3 dist/default/debug\EncoderSenseNutControl.debug.obj
+_TMR5_WriteTimer 1E20 0 CODE 0 text3 dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of_IOCCF5_SetInterruptHandler 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of_LedONStartConfig 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 __end_of_Serialbegin 1AA2 0 CODE 0 text48 dist/default/debug\EncoderSenseNutControl.debug.obj
-__end_of_ClearSerialRxBuffer 1CAC 0 CODE 0 text34 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_ClearSerialRxBuffer 1CAE 0 CODE 0 text34 dist/default/debug\EncoderSenseNutControl.debug.obj
 wordConvert@hByte 27 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
 wordConvert@lByte 20 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
 validateAnswer@u16MsgCRC 32 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
@@ -1563,12 +1563,12 @@ __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
-__end_of_Serialwrite 1BE4 0 CODE 0 text32 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_Serialwrite 1BE6 0 CODE 0 text32 dist/default/debug\EncoderSenseNutControl.debug.obj
 __pbssCOMMON 78 0 COMMON 1 bssCOMMON dist/default/debug\EncoderSenseNutControl.debug.obj
 __CFG_LPBOREN$OFF 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of_millis 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
-__end_of_ADC_Initialize 1B52 0 CODE 0 text24 dist/default/debug\EncoderSenseNutControl.debug.obj
-_CCP1_CaptureISR 1D0A 0 CODE 0 text77 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_ADC_Initialize 1B42 0 CODE 0 text24 dist/default/debug\EncoderSenseNutControl.debug.obj
+_CCP1_CaptureISR 1D0C 0 CODE 0 text77 dist/default/debug\EncoderSenseNutControl.debug.obj
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 -
 _PIR0bits 10 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 _PIR1bits 11 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
@@ -1587,7 +1587,7 @@ _EncPulseOpState 53 0 BANK0 1 bssBANK0 dist/default/debug\EncoderSenseNutControl
 _EncPulseError 7A 0 COMMON 1 bssCOMMON dist/default/debug\EncoderSenseNutControl.debug.obj
 end_of_initialization 13A 0 CODE 0 cinit dist/default/debug\EncoderSenseNutControl.debug.obj
 _T5CONbits 41A 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
-_TMR0_Initialize 1DC6 0 CODE 0 text13 dist/default/debug\EncoderSenseNutControl.debug.obj
+_TMR0_Initialize 1DC8 0 CODE 0 text13 dist/default/debug\EncoderSenseNutControl.debug.obj
 _TMR0_StartTimer 1AB4 0 CODE 0 text14 dist/default/debug\EncoderSenseNutControl.debug.obj
 __Hintentry CC 0 CODE 0 intentry -
 __CFG_STVREN$ON 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
@@ -1600,18 +1600,18 @@ _multipleTimecheck0 67 0 BANK0 1 bssBANK0 dist/default/debug\EncoderSenseNutCont
 _multipleTimecheck1 66 0 BANK0 1 bssBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
 ?___lwdiv 20 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
 __Hreset_vec 6 0 CODE 0 reset_vec -
-_INT_SetInterruptHandler 1B64 0 CODE 0 text21 dist/default/debug\EncoderSenseNutControl.debug.obj
+_INT_SetInterruptHandler 1B54 0 CODE 0 text21 dist/default/debug\EncoderSenseNutControl.debug.obj
 __end_of_delayMsec F76 0 CODE 0 text33 dist/default/debug\EncoderSenseNutControl.debug.obj
 __HbssBANK0 0 0 ABS 0 bssBANK0 -
 __HbssBANK1 0 0 ABS 0 bssBANK1 -
 __HbssBANK2 0 0 ABS 0 bssBANK2 -
 __HbssBANK3 0 0 ABS 0 bssBANK3 -
 __size_of_delayMsec 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
-__end_of_INT_SetInterruptHandler 1B76 0 CODE 0 text21 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_INT_SetInterruptHandler 1B66 0 CODE 0 text21 dist/default/debug\EncoderSenseNutControl.debug.obj
 sendTxBuffer@i_1782 34 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext1 1BFA 0 CODE 0 text1 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext2 1D52 0 CODE 0 text2 dist/default/debug\EncoderSenseNutControl.debug.obj
-__ptext3 1E1E 0 CODE 0 text3 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext1 1BFC 0 CODE 0 text1 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext2 1D54 0 CODE 0 text2 dist/default/debug\EncoderSenseNutControl.debug.obj
+__ptext3 1E20 0 CODE 0 text3 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext4 1AC6 0 CODE 0 text4 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext5 1AC0 0 CODE 0 text5 dist/default/debug\EncoderSenseNutControl.debug.obj
 __ptext6 F76 0 CODE 0 text6 dist/default/debug\EncoderSenseNutControl.debug.obj
@@ -1623,9 +1623,9 @@ _LED_msec_Cnt DC 0 BANK1 1 bssBANK1 dist/default/debug\EncoderSenseNutControl.de
 __size_of_getEncoderState 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 get_FC1@i 2C 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
 get_FC3@i 2C 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
-__end_of_TMR0_CallBack 1C90 0 CODE 0 text63 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_TMR0_CallBack 1C92 0 CODE 0 text63 dist/default/debug\EncoderSenseNutControl.debug.obj
 __Lpowerup 0 0 CODE 0 powerup -
-_IOCCF5_SetInterruptHandler 1B88 0 CODE 0 text17 dist/default/debug\EncoderSenseNutControl.debug.obj
+_IOCCF5_SetInterruptHandler 1B8A 0 CODE 0 text17 dist/default/debug\EncoderSenseNutControl.debug.obj
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 __pstringtext FF8 0 STRCODE 0 stringtext dist/default/debug\EncoderSenseNutControl.debug.obj
 ModbuspollMaster@i8state 39 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
@@ -1653,7 +1653,7 @@ IOCCF4_SetInterruptHandler@InterruptHandler 20 0 BANK0 1 cstackBANK0 dist/defaul
 __size_of_TMR3_SetInterruptHandler 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 __size_of_TMR5_DefaultInterruptHandler 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 __pidataBANK0 6 0 CODE 0 idataBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
-__pidataBANK1 1B1E 0 CODE 0 idataBANK1 dist/default/debug\EncoderSenseNutControl.debug.obj
+__pidataBANK1 1B0E 0 CODE 0 idataBANK1 dist/default/debug\EncoderSenseNutControl.debug.obj
 _LedON_Control_10msec 81E 0 CODE 0 text65 dist/default/debug\EncoderSenseNutControl.debug.obj
 _TMR3_InterruptHandler 162 0 BANK2 1 nvBANK2 dist/default/debug\EncoderSenseNutControl.debug.obj
 _u8regsize 78 0 COMMON 1 bssCOMMON dist/default/debug\EncoderSenseNutControl.debug.obj
@@ -1724,7 +1724,7 @@ __pintentry 8 0 CODE 0 intentry dist/default/debug\EncoderSenseNutControl.debug.
 _getRxBuffer E36 0 CODE 0 text43 dist/default/debug\EncoderSenseNutControl.debug.obj
 __HdataBANK0 0 0 ABS 0 dataBANK0 -
 __HdataBANK1 0 0 ABS 0 dataBANK1 -
-__end_of_OSCILLATOR_Initialize 1B1E 0 CODE 0 text19 dist/default/debug\EncoderSenseNutControl.debug.obj
+__end_of_OSCILLATOR_Initialize 1B78 0 CODE 0 text19 dist/default/debug\EncoderSenseNutControl.debug.obj
 __CFG_PPS1WAY$ON 0 0 ABS 0 - dist/default/debug\EncoderSenseNutControl.debug.obj
 __initialization D0 0 CODE 0 cinit dist/default/debug\EncoderSenseNutControl.debug.obj
 ___bmul@product 22 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
@@ -1753,7 +1753,7 @@ _eusartTxHead 7D 0 COMMON 1 bssCOMMON dist/default/debug\EncoderSenseNutControl.
 _eusartTxTail 7C 0 COMMON 1 bssCOMMON dist/default/debug\EncoderSenseNutControl.debug.obj
 _Modbusinit 1EB2 0 CODE 0 text47 dist/default/debug\EncoderSenseNutControl.debug.obj
 ModbuspollMaster@u8exception 3A 0 BANK0 1 cstackBANK0 dist/default/debug\EncoderSenseNutControl.debug.obj
-_OSCILLATOR_Initialize 1B0E 0 CODE 0 text19 dist/default/debug\EncoderSenseNutControl.debug.obj
+_OSCILLATOR_Initialize 1B66 0 CODE 0 text19 dist/default/debug\EncoderSenseNutControl.debug.obj
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -1779,66 +1779,66 @@ _OSCILLATOR_Initialize 1B0E 0 CODE 0 text19 dist/default/debug\EncoderSenseNutCo
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-text1 0 DFD 1BFA B 2
-text2 0 EA9 1D52 12 2
-text3 0 F0F 1E1E 17 2
+text1 0 DFE 1BFC B 2
+text2 0 EAA 1D54 12 2
+text3 0 F10 1E20 17 2
 text4 0 D63 1AC6 3 2
 text5 0 D60 1AC0 3 2
 text7 0 D66 1ACC 4 2
 text8 0 F8F 1F1E 1B 2
 text9 0 D5D 1ABA 3 2
-text10 0 DDF 1BBE 9 2
+text10 0 DE0 1BC0 9 2
 text11 0 F74 1EE8 1B 2
-text12 0 DD6 1BAC 9 2
-text13 0 EE3 1DC6 15 2
+text12 0 DD7 1BAE 9 2
+text13 0 EE4 1DC8 15 2
 text14 0 D5A 1AB4 3 2
-text15 0 DCD 1B9A 9 2
-text17 0 DC4 1B88 9 2
-text18 0 DBB 1B76 9 2
-text19 0 D87 1B0E 8 2
-text20 0 E14 1C28 C 2
-text21 0 DB2 1B64 9 2
-text22 0 DA9 1B52 9 2
-text23 0 E65 1CCA F 2
-text24 0 DA0 1B40 9 2
-text25 0 E56 1CAC F 2
-text26 0 EF8 1DF0 17 2
+text15 0 DCE 1B9C 9 2
+text17 0 DC5 1B8A 9 2
+text18 0 DBC 1B78 9 2
+text19 0 DB3 1B66 9 2
+text20 0 E15 1C2A C 2
+text21 0 DAA 1B54 9 2
+text22 0 DA1 1B42 9 2
+text23 0 E66 1CCC F 2
+text24 0 D98 1B30 9 2
+text25 0 E57 1CAE F 2
+text26 0 EF9 1DF2 17 2
 text27 0 D57 1AAE 3 2
-text28 0 F26 1E4C 18 2
+text28 0 F27 1E4E 18 2
 text29 0 D41 1A82 1 2
-text32 0 DE8 1BD0 A 2
-text34 0 E48 1C90 E 2
-text38 0 E74 1CE8 11 2
-text41 0 E97 1D2E 12 2
+text32 0 DE9 1BD2 A 2
+text34 0 E49 1C92 E 2
+text38 0 E75 1CEA 11 2
+text41 0 E98 1D30 12 2
 text44 0 D54 1AA8 3 2
 text46 0 D51 1AA2 3 2
 text47 0 F59 1EB2 1B 2
 text48 0 D4E 1A9C 3 2
-text49 0 F3E 1E7C 1B 2
+text49 0 F3F 1E7E 1A 2
 text50 0 D4B 1A96 3 2
 text51 0 D48 1A90 3 2
 text53 0 FC6 1F8C 1C 2
-text56 0 ECF 1D9E 14 2
+text56 0 ED0 1DA0 14 2
 text57 0 D45 1A8A 3 2
 text58 0 D40 1A80 1 2
-text59 0 EBB 1D76 14 2
+text59 0 EBC 1D78 14 2
 text60 0 D42 1A84 3 2
 text62 0 D6F 1ADE 5 2
-text63 0 E3A 1C74 E 2
+text63 0 E3B 1C76 E 2
 text66 0 D3F 1A7E 1 2
-text67 0 E08 1C10 C 2
-text68 0 E2D 1C5A D 2
+text67 0 E09 1C12 C 2
+text68 0 E2E 1C5C D 2
 text69 0 D3E 1A7C 1 2
-text70 0 E20 1C40 D 2
+text70 0 E21 1C42 D 2
 text71 0 D3D 1A7A 1 2
 text72 0 D6A 1AD4 5 2
-text73 0 DF2 1BE4 B 2
+text73 0 DF3 1BE6 B 2
 text74 0 D3C 1A78 1 2
 text75 0 FE2 1FC4 1E 2
 text76 0 FAA 1F54 1C 2
-text77 0 E85 1D0A 12 2
+text77 0 E86 1D0C 12 2
 text78 0 D80 1B00 7 2
-text79 0 D97 1B2E 9 2
+text79 0 D8F 1B1E 9 2
 cstackCOMMON 1 70 70 E 1
 cstackBANK0 1 20 20 50 1
 inittext 0 D7A 1AF4 6 2
@@ -1848,6 +1848,6 @@ bssBANK1 1 A0 A0 50 1
 bssBANK2 1 120 120 44 1
 bssBANK3 1 1A0 1A0 40 1
 stringtext 0 7FC FF8 8 2
-idataBANK1 0 D8F 1B1E 8 2
+idataBANK1 0 D87 1B0E 8 2
 clrtext 0 D74 1AE8 6 2
 config 0 8007 1000E 4 2
