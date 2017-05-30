@@ -54,6 +54,7 @@
 void preTransmission_App()
 {
     RS485_TXEN_RB6_SetHigh();// transmit enable RS485 driver chip
+    PIR1bits.TXIF=0;
 }
 
 void postTransmission_App()

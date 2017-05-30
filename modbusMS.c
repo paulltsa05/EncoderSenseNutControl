@@ -163,6 +163,7 @@ signed char Modbusquery( modbus_t telegram )
         }
         break;
     }
+    PIE1bits.RCIE = 0;
 
     sendTxBuffer();
     
@@ -171,13 +172,20 @@ signed char Modbusquery( modbus_t telegram )
     while(0 == PIR1bits.TXIF)
     {
     }
-    PIR1bits.RCIF=0;//flush receive buffer
-    PIE1bits.RCIE = 1;
+    PIR1bits.TXIF=0;
+//    while(PIE1bits.TXIE == 1)
+//    {
+//        
+//    }    
+     
     delayMsec(1);
-   
+  //   PIR1bits.RCIF=0;//flush receive buffer
+    PIE1bits.RCIE = 1;  
     
     RS485_TXEN_RB6_SetLow();//
-
+    
+    ClearSerialRxBuffer();
+    //PIE1bits.RCIE = 1;
     
     return 0;
 }
@@ -447,7 +455,8 @@ void sendTxBuffer()
     u8BufferSize++;
     au8Buffer[ u8BufferSize ] = u16crc & 0x00ff;
     u8BufferSize++;
-
+//    au8Buffer[ u8BufferSize ] = '\r';
+//    u8BufferSize++;
     // set RS485 transceiver to transmit mode
     //    digitalWrite( u8txenpin, HIGH );
  

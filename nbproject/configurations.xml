@@ -20,11 +20,10 @@
         <itemPath>mcc_generated_files/ext_int.h</itemPath>
       </logicalFolder>
       <itemPath>crc16.h</itemPath>
-      <itemPath>ModbusMaster.h</itemPath>
       <itemPath>word.h</itemPath>
-      <itemPath>ModbusManager.h</itemPath>
       <itemPath>main.h</itemPath>
       <itemPath>LED_Ctrl.h</itemPath>
+      <itemPath>modbusMS.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -49,9 +48,8 @@
         <itemPath>mcc_generated_files/ext_int.c</itemPath>
       </logicalFolder>
       <itemPath>main.c</itemPath>
-      <itemPath>ModbusMaster.c</itemPath>
-      <itemPath>ModbusManager.c</itemPath>
       <itemPath>LED_Ctrl.c</itemPath>
+      <itemPath>modbusMS.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -60,6 +58,9 @@
       <itemPath>MyConfigPulseCounter.mc3</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="default" type="2">

@@ -27,7 +27,6 @@
  */
 #include <xc.h>
 #include "ext_int.h"
-#include "../main.h"
 //***User Area Begin->code: Add External Interrupt handler specific headers 
 
 //***User Area End->code: Add External Interrupt handler specific headers
@@ -59,8 +58,6 @@ void INT_ISR(void)
 void INT_CallBack(void)
 {
     // Add your custom callback code here
-    EncINX_PulseRisingEvent();
-    
     if(INT_InterruptHandler)
     {
         INT_InterruptHandler();

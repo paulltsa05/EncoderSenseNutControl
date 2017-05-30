@@ -50,13 +50,13 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include "interrupt_manager.h"
-#include "tmr5.h"
-#include "tmr3.h"
-#include "ccp2.h"
 #include "ccp1.h"
+#include "ccp2.h"
+#include "tmr3.h"
+#include "tmr5.h"
 #include "adc.h"
-#include "eusart.h"
 #include "ext_int.h"
+#include "eusart.h"
 #include "tmr0.h"
 
 #define _XTAL_FREQ  32000000

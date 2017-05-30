@@ -195,7 +195,7 @@ RS232/485 (via RTU protocol).
     void     clearTransmitBuffer();
     
     void beginTransmission(unsigned int);
-    unsigned char requestFrom(unsigned int, unsigned int);
+ //   unsigned char requestFrom(unsigned int, unsigned int);
  //   void sendbit(bool);
     void send8(unsigned char);
     void send16(unsigned int);

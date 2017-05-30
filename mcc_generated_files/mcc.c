@@ -81,8 +81,8 @@ void SYSTEM_Initialize(void)
     WDT_Initialize();
     CCP2_Initialize();
     ADC_Initialize();
-    TMR3_Initialize();
     CCP1_Initialize();
+    TMR3_Initialize();
     TMR5_Initialize();
     EXT_INT_Initialize();
     TMR0_Initialize();

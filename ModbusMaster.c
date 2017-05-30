@@ -6,7 +6,8 @@
 
 
 /* _____GLOBAL VARIABLES_____________________________________________________ */
-unsigned char u8ModbusADU[64];  
+unsigned char u8ModbusADU[64];//,tempbuff[32];  
+unsigned char u8MBStatus = ku8MBSuccess;
 /* _____PUBLIC FUNCTIONS_____________________________________________________ */
 /**
 Constructor.
@@ -38,20 +39,20 @@ void beginTransmission(unsigned int u16Address)
 }
 
 // eliminate this function in favor of using existing MB request functions
-unsigned char requestFrom(unsigned int address, unsigned int quantity)
-{
-  unsigned char read;
-  // clamp to buffer length
-  if (quantity > ku8MaxBufferSize)
-  {
-    quantity = ku8MaxBufferSize;
-  }
-  // set rx buffer iterator vars
-  _u8ResponseBufferIndex = 0;
-  _u8ResponseBufferLength = read;
-
-  return read;
-}
+//unsigned char requestFrom(unsigned int address, unsigned int quantity)
+//{
+//  unsigned char read;
+//  // clamp to buffer length
+//  if (quantity > ku8MaxBufferSize)
+//  {
+//    quantity = ku8MaxBufferSize;
+//  }
+//  // set rx buffer iterator vars
+//  _u8ResponseBufferIndex = 0;
+//  _u8ResponseBufferLength = read;
+//
+//  return read;
+//}
 
 
 //void sendbit(bool bitVal)
@@ -536,7 +537,7 @@ unsigned char ModbusMasterTransaction(unsigned char u8MBFunction)
   unsigned int u16CRC;
   unsigned long u32StartTime;
   unsigned char u8BytesLeft = 8;
-  unsigned char u8MBStatus = ku8MBSuccess;
+  u8MBStatus = ku8MBSuccess;
   
   // assemble Modbus Request Application Data Unit
   u8ModbusADU[u8ModbusADUSize++] = _u8MBSlave;
@@ -666,13 +667,13 @@ unsigned char ModbusMasterTransaction(unsigned char u8MBFunction)
     u8ModbusADU[i]=0;
     
   }
-  if(PIR1bits.RCIF){PIR1bits.RCIF=0;}//clear all RCIF
+  //if(PIR1bits.RCIF){PIR1bits.RCIF=0;}//clear all RCIF
   u8ModbusADUSize = 0;
  // _serial->flush();    // wait flush transmit buffer
   while(0 == PIR1bits.TXIF)
     {
     }
-  
+
   if (_postTransmission)
   {
     _postTransmission();
@@ -682,6 +683,27 @@ unsigned char ModbusMasterTransaction(unsigned char u8MBFunction)
   millisReset();
   
   u32StartTime = millis();// to be implemented TBD
+  
+  RC1STAbits.CREN = 0; 
+         
+        
+        
+  PIR1bits.TXIF=0;//clear all tx      
+  PIR1bits.RCIF=0;//clear all rx      
+  u8ModbusADUSize = 0;   
+  u8MBStatus=8;
+  u8MBStatus=0;
+  
+  
+  RC1STAbits.CREN = 1;
+  
+  while(u8ModbusADUSize < 2)
+  {
+      u8ModbusADU[u8ModbusADUSize++] = EUSART_Read();//continously wait for RX byte
+  }    
+  
+  
+  u8ModbusADUSize=0;
   while (u8BytesLeft && !u8MBStatus)
   {
 //    if (_serial->available())
@@ -691,7 +713,12 @@ unsigned char ModbusMasterTransaction(unsigned char u8MBFunction)
 #endif
       //u8ModbusADU[u8ModbusADUSize++] = _serial->read();
       u8ModbusADU[u8ModbusADUSize++] = EUSART_Read();//continously wait for RX byte
+      
+      
+      //tempbuff[u8ModbusADUSize-1]=u8ModbusADU[u8ModbusADUSize-1];
       u8BytesLeft--;
+//      if(u8ModbusADUSize>=7)
+//          break;
 #if __MODBUSMASTER_DEBUG__
       digitalWrite(__MODBUSMASTER_DEBUG_PIN_A__, false);
 #endif
@@ -711,7 +738,7 @@ unsigned char ModbusMasterTransaction(unsigned char u8MBFunction)
  //   }
     
     // evaluate slave ID, function code once enough bytes have been read
-    if (u8ModbusADUSize == 2)//5)
+    if (u8ModbusADUSize == 3)//5)
     {
       // verify response is for correct Modbus slave
       if (u8ModbusADU[0] != _u8MBSlave)
@@ -755,6 +782,8 @@ unsigned char ModbusMasterTransaction(unsigned char u8MBFunction)
         case ku8MBMaskWriteRegister:
           u8BytesLeft = 5;
           break;
+          default : break;  
+          
       }
     }
     if ((millis() - u32StartTime) > ku16MBResponseTimeout)
@@ -764,22 +793,22 @@ unsigned char ModbusMasterTransaction(unsigned char u8MBFunction)
   }
   
   // verify response is large enough to inspect further
-  if (!u8MBStatus && u8ModbusADUSize >= 5)
-  {
-    // calculate CRC
-    u16CRC = 0xFFFF;
-    for (i = 0; i < (u8ModbusADUSize - 2); i++)
-    {
-      u16CRC = crc16_update(u16CRC, u8ModbusADU[i]);
-    }
-    
-    // verify CRC
-    if (!u8MBStatus && (lowByte(u16CRC) != u8ModbusADU[u8ModbusADUSize - 2] ||
-      highByte(u16CRC) != u8ModbusADU[u8ModbusADUSize - 1]))
-    {
-      u8MBStatus = ku8MBInvalidCRC;
-    }
-  }
+//  if (!u8MBStatus && u8ModbusADUSize >= 5)
+//  {
+//    // calculate CRC
+//    u16CRC = 0xFFFF;
+//    for (i = 0; i < (u8ModbusADUSize - 2); i++)
+//    {
+//      u16CRC = crc16_update(u16CRC, u8ModbusADU[i]);
+//    }
+//    
+//    // verify CRC
+//    if (!u8MBStatus && (lowByte(u16CRC) != u8ModbusADU[u8ModbusADUSize - 2] ||
+//      highByte(u16CRC) != u8ModbusADU[u8ModbusADUSize - 1]))
+//    {
+//      u8MBStatus = ku8MBInvalidCRC;
+//    }
+//  }
 
   // disassemble ADU into words
   if (!u8MBStatus)
@@ -826,6 +855,8 @@ unsigned char ModbusMasterTransaction(unsigned char u8MBFunction)
           _u8ResponseBufferLength = i;
         }
         break;
+        default:break;
+        
     }
   }
   
