@@ -44,7 +44,8 @@
 */
 
 #include "mcc_generated_files/mcc.h"
-#include "ModbusManager.h"
+//#include "ModbusManager.h"
+#include "modbusMS.h"
 #include "LED_Ctrl.h"
 #include "main.h"
 
@@ -87,7 +88,14 @@ unsigned long TimertickMsec=0;
 unsigned int delayCount=0;
 bool delayFlag=0;
 
+uint16_t au16data[16];
+uint8_t u8state_t;
+uint8_t u8query; //!< pointer to message query
+modbus_t telegram[2];
 
+bool toggle=0;
+
+unsigned long u32wait;
 
 void NutRunCycleReset(void);
 
@@ -120,8 +128,8 @@ void main(void)
     TMR5_WriteTimer(0);//reset TMR5
     TMR5_StopTimer();//Stop TMR5
     
-    ModbusMasterSetup();
-    EncPulseOpState=IDLE;
+    //ModbusMasterSetup();
+//    EncPulseOpState=IDLE;
     
     INLVLC = 0xFF;
     INLVLA = 0xFF;
@@ -150,16 +158,59 @@ void main(void)
 //    LedONStartConfig(LED_BLUE, 1, 1);
 //    while(LedONStatusBusy());//wait for LED blink    
     
-    RS485_TXEN_RB6_SetHigh();
+    RS485_TXEN_RB6_SetLow();
     
     //Test RS485
  //   EUSART_Write('>');
  //   EUSART_Write('>');
     
-    MB_UpdateEPCParameter();
+   // MB_UpdateEPCParameter();
+   // telegram 0: read registers
+
+  telegram[0].u8id = 1; // slave address
+  telegram[0].u8fct = 3; // function code (this one is registers read)
+  telegram[0].u16RegAdd = 0; // start address in slave
+  telegram[0].u16CoilsNo = 4; // number of elements (coils or registers) to read
+  telegram[0].au16reg = &(au16data[0]); // pointer to a memory array in the Arduino
+
+  // telegram 1: write a single register
+  telegram[1].u8id = 1; // slave address
+  telegram[1].u8fct = 6; // function code (this one is write a single register)
+  telegram[1].u16RegAdd = 4; // start address in slave
+  telegram[1].u16CoilsNo = 1; // number of elements (coils or registers) to read
+  telegram[1].au16reg = &(au16data[4]); // pointer to a memory array in the Arduino 
+  
+  
+    Modbusinit(0);//Master mode init if 0
+    ModbussetTimeOut( 1000 );
+    u32wait = millis() + 1000;
+    u8state_t = 0;
+    u8query= 0;
 
     while (1)
     {
+                switch( u8state_t ) {
+               case 0: 
+                 if (millis() > u32wait) {u8state_t++; }// wait state
+                 break;
+               case 1: 
+                 au16data[4]=au16data[4]+1;
+                 Modbusquery( telegram[u8query] ); // send query (only once)
+                 u8state_t++;
+                 u8query++;
+                 if (u8query > 1) u8query = 0;
+                 break;
+               case 2:
+                 ModbuspollMaster(); // check incoming messages
+                 if (ModbusgetState() == COM_IDLE) {
+                   u8state_t = 0;
+                   u32wait = millis() + 1000; 
+
+                 }
+                 au16data[4]=au16data[3];
+                 break;
+               }       
+        
 //        if(!ENC_B_RC4_GetValue())
 //            PulseCount++;
 //            
@@ -171,8 +222,8 @@ void main(void)
 //        else
 //            PulseCount++;
         // Add your application code
-        MB_UpdateEPCParameter();
-        delayMsec(2000);
+       // MB_UpdateEPCParameter();
+ //       delayMsec(2000);
  //       EPC_StateMachineControlLoop();
     }
 }
@@ -722,6 +773,50 @@ unsigned char valtoasciichar(unsigned char hexvalue1)
     return hexval;
 }
 
+void SerialDebugSend(const char *dat)
+{
+  
+}
+void SerialDebugSendDEC(int dat)
+{
+  
+}
+
+
+void Serialbegin(unsigned long baud)
+{
+  EUSART_Initialize();
+}
+uint8_t Serialavailable(void)
+{
+  return eusartRxCount;
+   //return (bool)PIR1bits.RCIF;
+}
+void ClearSerialRxBuffer(void)
+{
+  unsigned char bdummy;
+  while(eusartRxCount)
+  {
+      bdummy=EUSART_Read();
+  }  
+  eusartRxCount=0;  
+   //return (bool)PIR1bits.RCIF;
+}
+
+
+uint8_t Serialread(void)
+{
+  return EUSART_Read();
+}
+void Serialwrite(uint8_t temp)
+{
+
+    PIR1bits.TXIF=0; 
+    TX1REG = temp; 
+    while(0 == PIR1bits.TXIF)
+    {
+    }
+}
 
 /**
  End of File
